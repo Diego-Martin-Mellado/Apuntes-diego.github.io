@@ -1,0 +1,396 @@
+@font-face {
+	font-family: "fuente-apuntes";
+	 /*src: url(../Mierda/Fuentes/autoradiographic_rg.ttf); */
+	 /*src: url(../Mierda/Fuentes/Baby%20Monsta.otf); */
+	 src: url(./img/maxwell.bold.ttf); 
+	/*src: url(../Mierda/Fuentes/RifficFree-Bold.ttf);*/
+}
+
+html, body {
+	overflow-x: hidden;
+}
+
+* {
+	word-wrap: break-word;	
+	font-family: "fuente-apuntes";
+	scrollbar-color: #AAAAAA transparent;
+	scrollbar-width: 5px;
+	scrollbar-height: 5px;
+}
+
+.logo {
+	height: 100px;
+	width: 100px;
+}
+
+.bordeInf {
+	border-bottom: 4px solid #FFFFFF;
+}
+
+.miborde {
+	border: 1px solid #ABABAB;
+}
+
+.ov-auto {
+	overflow-x: auto;
+}
+
+.ov-h {
+	overflow-x: hidden;
+}
+
+.miw-50 {
+	width: 50%;
+}
+
+.img-html {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.valign-middle {
+	display: flex;
+	align-items: center;
+}
+
+/* .todo {
+	height: 700px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-image: url("./img/lupa.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.todo > div {
+	height: 100%;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-top: 15%;
+	width: 60%;
+}
+.todo > div > h1 {
+	font-size: 80px;
+	color: black;
+}
+.todo > div > p {
+	font-size: 30px;
+	color: grey;
+}
+.todo > div > p.dos {
+	font-size: 20px;
+	color: grey;
+} */
+
+@media screen and (max-width: 732px) {
+	.miw-50 {
+		width: 90%;
+	}
+}
+/*----------------------------------------------------------------------------------------*/
+.bg-css {
+	background-color: #4092CF;
+}
+
+.bg-css-suave {
+	background-color: #66E3ED;
+}
+
+.bg-cpp {
+	background-color: #4083FF;
+}
+
+.bg-cpp-suave {
+	background-color: #7FDAFF;
+}
+
+.bg-py {
+	background: -webkit-linear-gradient(left, #497DD3 40%, #FFDD00 60%);
+	background: -moz-linear-gradient(left, #497DD3 40%, #FFDD00 60%);
+	background: -ms-linear-gradient(left, #497DD3 40%, #FFDD00 60%);
+	background: -o-linear-gradient(left, #497DD3 40%, #FFDD00 60%);
+}
+
+.bg-py-suave {
+	background: -webkit-linear-gradient(left, #83ABEE 40%, #FFEE66 60%);
+	background: -moz-linear-gradient(left, #83ABEE 40%, #FFEE66 60%);
+	background: -ms-linear-gradient(left, #83ABEE 40%, #FFEE66 60%);
+	background: -o-linear-gradient(left, #83ABEE 40%, #FFEE66 60%);
+}
+
+.bg-pygame {
+	background: -webkit-linear-gradient(left, #4BCF41 40%, #FFDD00 60%);
+	background: -moz-linear-gradient(left, #4BCF41 40%, #FFDD00 60%);
+	background: -ms-linear-gradient(left, #4BCF41 40%, #FFDD00 60%);
+	background: -o-linear-gradient(left, #4BCF41 40%, #FFDD00 60%);
+}
+
+.bg-pygame-suave {
+	background: -webkit-linear-gradient(left, #A6FF9F 40%, #FFEE66 60%);
+	background: -moz-linear-gradient(left, #A6FF9F 40%, #FFEE66 60%);
+	background: -ms-linear-gradient(left, #A6FF9F 40%, #FFEE66 60%);
+	background: -o-linear-gradient(left, #A6FF9F 40%, #FFEE66 60%);
+}
+
+.bg-mysql {
+	background: -webkit-linear-gradient(left, #497DD3 40%, #FF8800 60%);
+	background: -moz-linear-gradient(left, #497DD3 40%, #FF8800 60%);
+	background: -ms-linear-gradient(left, #497DD3 40%, #FF8800 60%);
+	background: -o-linear-gradient(left, #497DD3 40%, #FF8800 60%);
+}
+
+.bg-mysql-suave {
+	background: -webkit-linear-gradient(left, #83ABEE 40%, #FF9966 60%);
+	background: -moz-linear-gradient(left, #83ABEE 40%, #FF9966 60%);
+	background: -ms-linear-gradient(left, #83ABEE 40%, #FF9966 60%);
+	background: -o-linear-gradient(left, #83ABEE 40%, #FF9966 60%);
+}
+
+.bg-covid {
+	background: -webkit-linear-gradient(left, #DE00FF 40%, #4BCF41 60%);
+	background: -moz-linear-gradient(left, #DE00FF 40%, #4BCF41 60%);
+	background: -ms-linear-gradient(left, #DE00FF 40%, #4BCF41 60%);
+	background: -o-linear-gradient(left, #DE00FF 40%, #4BCF41 60%);
+}
+
+.bg-covid-suave {
+	background: -webkit-linear-gradient(left, #EB72FD 40%, #A6FF9F 60%);
+	background: -moz-linear-gradient(left, #EB72FD 40%, #A6FF9F 60%);
+	background: -ms-linear-gradient(left, #EB72FD 40%, #A6FF9F 60%);
+	background: -o-linear-gradient(left, #EB72FD 40%, #A6FF9F 60%);
+}
+
+.bg-java {
+	background-color: #FF9F33;
+}
+
+.bg-java-suave {
+	background-color: #FFC27E;
+}
+
+.bg-html {
+	background-color: #FF6400;
+}
+
+.bg-html-suave {
+	background-color: #FFC198;
+}
+
+.bg-js, .bg-sql {
+	background-color: #E5CC16;
+}
+
+.bg-js-suave, .bg-sql-suave {
+	background-color: #FFEF79;
+}
+
+.bg-materialize {
+	background-color: #DA919E;
+}
+
+.bg-materialize-suave {
+	background-color: #FDC0CB;
+}
+
+.bg-w3css, .bg-nodejs {
+	background-color: #4CAF50;
+}
+
+.bg-w3css-suave, .bg-nodejs-suave {
+	background-color: #96EA99;
+}
+
+.bg-vue {
+	background-color: #42C583;
+}
+
+.bg-vue-suave {
+	background-color: #81F3B9;
+}
+
+.bg-bootstrap, .bg-csharp {
+	background-color: #9000A0 !important;
+}
+
+.bg-bootstrap-suave, .bg-csharp-suave {
+	background-color: #E070F0;
+}
+
+.bg-bowser {
+	background-color: #FF7C00;
+}
+
+.bg-bowser-suave {
+	background-color: #FFBB7B;
+}
+
+.bg-jquery {
+	background-color: #0074FF;
+}
+
+.bg-jquery-suave {
+	background-color: #7BB7FF;
+}
+
+.bg-angular, .bg-ruby {
+	background-color: #FF3333;
+}
+
+.bg-angular-suave, .bg-ruby-suave {
+	background-color: #FF8888;
+}
+
+.bg-ajax {
+	background-color: #507CC9;
+}
+
+.bg-ajax-suave {
+	background-color: #A2C2FA;
+}
+
+.bg-react {
+	background-color: #4FDDF9;
+}
+
+.bg-react-suave {
+	background-color: #B9F3FE;
+}
+
+.bg-meteor {
+	background-color: #E9000D;
+}
+
+.bg-meteor-suave {
+	background-color: #FF666F;
+}
+
+.bg-tesseract {
+	background-color: #61A0E7;
+}
+
+.bg-tesseract-suave {
+	background-color: #B0CDEE;
+}
+
+.bg-discord {
+	background-color: #7289DA;
+}
+
+.bg-discord-suave {
+	background-color: #AFBCEA;
+}
+
+.bg-bulma {
+	background-color: #00E8BE;
+}
+
+.bg-bulma-suave {
+	background-color: #99F0E0;
+}
+
+.bg-skeleton, .bg-watchdog {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+.bg-skeleton-suave, .bg-watchdog-suave {
+	background-color: #444444;
+}
+
+.bg-playsound {
+	background-color: #EEC17C;
+}
+
+.bg-playsound-suave {
+	background-color: #FFE5BD;
+}
+
+.bg-php {
+	background-color: #0F54AC;
+}
+
+.bg-php-suave {
+	background-color: #4F94EC;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+.html .delim, .cpp .comilla, .js .comilla, .java .comilla, .py .comilla, .mysql .comilla {
+	color: #008080;
+}
+
+.html .nombreEtiqueta {
+	color: #C72727;
+}
+
+.html .atrib {
+	color: #AD4DBE;
+}
+
+.html .igual, .py .igual {
+	color: #7C7C7C;
+}
+
+.html .valor, .cpp .string, .js .string, .java .string, .py .string, .mysql .string {
+	color: #84BC42;
+}
+
+.html .texto, .cpp .caracterEspecial, .js .caracterEspecial, .java .caracterEspecial, .py .caracterEspecial, .mysql .caracterEspecial, .css .caracterEspecial {
+	color: #000000;
+}
+
+.bg-mariana {
+	background-color: #505571;
+}
+
+.cpp .bucleCond, .cpp .ampAstBool, .cpp .include, .java .import, .py .import, .py .bool, .py .cond, .js .op, .css .seleEtiqueta {
+	color: #C72727;
+}
+
+.cpp .coment, .js .coment, .java .comment, .py .comment {
+	color: #6F6F6F;
+}
+
+.cpp .libreria, .cpp .numero, .js .numero, .java .numero, .py .numero, .css .seleEspecial, .css .hex {
+	color: #DD9922;
+}
+
+.cpp .tipoDato, .js .tipoDato, .java .tipoDato, .py .tipoDato, .mysql .ins, .css .valor {
+	color: #A000A0;
+	font-style: italic;
+}
+
+.cpp .nombreParametro, .py .nombreParametro {
+	color: #DD4422;
+}
+
+.cpp .funNombre, .js .funNombre, .java .funNombre, .py .funNombre, .css .propiedad {
+	color: #0F54AC;
+	font-style: italic;
+}
+
+.cpp .cespecial, .java .cespecial, .py .cespecial {
+	color: #6E4CCF;
+}
+/* ------------------------------------------------------------------------------------ */
+::-webkit-scrollbar {width: 5px; height: 5px;}
+::-webkit-scrollbar-track {background: transparent;}
+::-webkit-scrollbar-thumb {background: #AAAAAA;}
+::-webkit-scrollbar-thumb:hover {background: #777777;}
+::-moz-scrollbar {width: 5px; height: 5px;}
+::-moz-scrollbar-track {background: transparent;}
+::-moz-scrollbar-thumb {background: #AAAAAA;}
+::-moz-scrollbar-thumb:hover {background: #777777;}
+::-ms-scrollbar {width: 5px; height: 5px;}
+::-ms-scrollbar-track {background: transparent;}
+::-ms-scrollbar-thumb {background: #AAAAAA;}
+::-ms-scrollbar-thumb:hover {background: #777777;}
+::-o-scrollbar {width: 5px; height: 5px;}
+::-o-scrollbar-track {background: transparent;}
+::-o-scrollbar-thumb {background: #AAAAAA;}
+::-o-scrollbar-thumb:hover {background: #777777;}
+::scrollbar {width: 5px; height: 5px;}
+::scrollbar-track {background: transparent;}
+::scrollbar-thumb {background: #AAAAAA;}
+::scrollbar-thumb:hover {background: #777777;}
