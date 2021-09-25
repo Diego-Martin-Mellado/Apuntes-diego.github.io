@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta itemprop="name" content="Conceptos de C++">
+	<meta itemprop="description" content="Conceptos básicos del lenguaje de programación C++. Caracteres, identificadores, tipos de datos, scopes.">
+	<meta itemprop="image" content="../../img/leng/C++.png">
+	<meta name="twitter:description" content="Conceptos básicos del lenguaje de programación C++. Caracteres, identificadores, tipos de datos, scopes.">
+	<meta name="twitter:image" content="../../img/leng/C++.png">
+	<meta name="twitter:title" content="Conceptos de C++">
+	<meta property="og:description" content="Conceptos básicos del lenguaje de programación C++. Caracteres, identificadores, tipos de datos, scopes.">
+	<meta property="og:image" content="../../img/leng/C++.png">
+	<meta property="og:title" content="Conceptos de C++">
+	<link rel="shortcut icon" type="image/png" href="../../img/leng/C++.png">
+	<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="../../index.css">
+	<title>Conceptos básicos - C++</title>
+</head>
+<body class="bg-cpp-suave cpp">
+	<nav class="navbar navbar-expand-sm bg-cpp text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../img/leng/C++.png" class="logo rounded float-right">
+		</a>
+		<h1>C++</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../">Menu</a> / 
+			<a href="../">C++</a> / 
+			<a href="./">Lecciones</a> / 
+			Conceptos básicos.
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Conceptos básicos.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Entrada de conceptos básicos de <em>C/C++</em>.
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Conjunto de caracteres de C/C++.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Para programar en <em>C/C++</em>, se utilizan los caracteres a-z, A-Z, 0-9 y la siguiente lista de caracteres especiales:<br><br>
+				<div class="alert alert-dark">
+					<div class="row">
+						<div class="col border text-center bg-light">+</div>
+						<div class="col border text-center bg-light">-</div>
+						<div class="col border text-center bg-light">*</div>
+						<div class="col border text-center bg-light">/</div>
+						<div class="col border text-center bg-light">=</div>
+						<div class="col border text-center bg-light">%</div>
+						<div class="col border text-center bg-light">&</div>
+						<div class="col border text-center bg-light">#</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">!</div>
+						<div class="col border text-center bg-light">?</div>
+						<div class="col border text-center bg-light">^</div>
+						<div class="col border text-center bg-light">"</div>
+						<div class="col border text-center bg-light">'</div>
+						<div class="col border text-center bg-light">~</div>
+						<div class="col border text-center bg-light">\</div>
+						<div class="col border text-center bg-light">|</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light"><</div>
+						<div class="col border text-center bg-light">></div>
+						<div class="col border text-center bg-light">(</div>
+						<div class="col border text-center bg-light">)</div>
+						<div class="col border text-center bg-light">[</div>
+						<div class="col border text-center bg-light">]</div>
+						<div class="col border text-center bg-light">{</div>
+						<div class="col border text-center bg-light">}</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">:</div>
+						<div class="col border text-center bg-light">;</div>
+						<div class="col border text-center bg-light">.</div>
+						<div class="col border text-center bg-light">,</div>
+						<div class="col border text-center bg-light">-</div>
+						<div class="col border text-center bg-light">(espacio)</div>
+						<div class="col border text-center bg-light"></div>
+						<div class="col border text-center bg-light"></div>
+					</div>
+				</div><br>
+				También se permite que otros caracteres que no estén en la tabla se incluyan dentro de cadenas de caracteres. <br><br>
+				<div class="alert alert-success border border-success">
+					<em>C</em> y <em>C++</em> también utilizan combinaciones de estos caracteres para representar elementos especiales, como por ejemplo:<br><br>
+					<div class="d-flex justify-content-center">
+						<div class="alert alert-dark miw-50 text-center">
+							<div class="row">
+								<div class="col text-center text-light bg-dark">Secuencia</div>
+								<div class="col text-center text-light bg-dark">Caracter</div>
+							</div>
+							<div class="row">
+								<div class="col border text-center bg-light">\a</div>
+								<div class="col border text-center bg-light">Sonido.</div>
+							</div>
+							<div class="row">
+								<div class="col border text-center bg-light">\b</div>
+								<div class="col border text-center bg-light">Retroceso de 1 caracter.</div>
+							</div>
+							<div class="row">
+								<div class="col border text-center bg-light">\n</div>
+								<div class="col border text-center bg-light">Salto de línea (Intro).</div>
+							</div>
+							<div class="row">
+								<div class="col border text-center bg-light">\r</div>
+								<div class="col border text-center bg-light">Retorno de carro.</div>
+							</div>
+							<div class="row">
+								<div class="col border text-center bg-light">\t</div>
+								<div class="col border text-center bg-light">Tabulador.</div>
+							</div>
+							<div class="row">
+								<div class="col border text-center bg-light">\v</div>
+								<div class="col border text-center bg-light">Tabulador vertical.</div>
+							</div>
+							<div class="row">
+								<div class="col border text-center bg-light">\?</div>
+								<div class="col border text-center bg-light">Signo de interrogación.</div>
+							</div>
+							<div class="row">
+								<div class="col border text-center bg-light">\\</div>
+								<div class="col border text-center bg-light">Barra inclinada.</div>
+							</div>
+							<div class="row">
+								<div class="col border text-center bg-light">\"</div>
+								<div class="col border text-center bg-light">Dobles comillas (").</div>
+							</div>
+							<div class="row">
+								<div class="col border text-center bg-light">\'</div>
+								<div class="col border text-center bg-light">Comilla simple (').</div>
+							</div>
+							<div class="row">
+								<div class="col border text-center bg-light">\0</div>
+								<div class="col border text-center bg-light">Fin de cadena (Valor nulo).</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Identificadores y palabras reservadas.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Los <em>identificadores</em> son nombres que se les da a varios elementos de un programa (Funciones, variables...), no deben contener caracteres especiales y no pueden empezar por un número. <br><br>
+				Los identificadores no pueden ser palabras reservadas, las palabras reservadas de C son:<br><br>
+				<div class="alert alert-dark">
+					<div class="row">
+						<div class="col border text-center bg-light">auto</div>
+						<div class="col border text-center bg-light">extern</div>
+						<div class="col border text-center bg-light">sizeof</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">break</div>
+						<div class="col border text-center bg-light">float</div>
+						<div class="col border text-center bg-light">static</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">case</div>
+						<div class="col border text-center bg-light">for</div>
+						<div class="col border text-center bg-light">struct</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">char</div>
+						<div class="col border text-center bg-light">goto</div>
+						<div class="col border text-center bg-light">switch</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">const</div>
+						<div class="col border text-center bg-light">if</div>
+						<div class="col border text-center bg-light">typedef</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">continue</div>
+						<div class="col border text-center bg-light">int</div>
+						<div class="col border text-center bg-light">union</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">default</div>
+						<div class="col border text-center bg-light">long</div>
+						<div class="col border text-center bg-light">unsigned</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">do</div>
+						<div class="col border text-center bg-light">register</div>
+						<div class="col border text-center bg-light">void</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">double</div>
+						<div class="col border text-center bg-light">return</div>
+						<div class="col border text-center bg-light">volatile</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">else</div>
+						<div class="col border text-center bg-light">short</div>
+						<div class="col border text-center bg-light">while</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">enum</div>
+						<div class="col border text-center bg-light">signed</div>
+						<div class="col border text-center bg-light"></div>
+					</div>
+				</div><br><br>
+				Las palabras reservadas deben estar escritas tal y como se describen en el ejemplo, no se admiten en mayúsculas ni con la primera letra en mayúscula.
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Tipos de datos.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Las variables en C/C++ deben tener un 'tipo', significa esto que al ser declaradas, éste debe ser especificado. <br><br>
+				Los tipos de datos base en C/C++ son:<br><br>
+				<div class="alert alert-dark">
+					<div class="row">
+						<div class="col text-center text-light bg-dark">Tipo de dato</div>
+						<div class="col text-center text-light bg-dark">Descripción</div>
+						<div class="col text-center text-light bg-dark">Requisito en memoria</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">void</div>
+						<div class="col border text-center bg-light">Ningún valor</div>
+						<div class="col border text-center bg-light">0 Bytes</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">NULL</div>
+						<div class="col border text-center bg-light">Ningún valor (void *)</div>
+						<div class="col border text-center bg-light">0 Bytes</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">bool (C++)</div>
+						<div class="col border text-center bg-light">Valor booleano (0 o 1)</div>
+						<div class="col border text-center bg-light">1 Bit</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">char</div>
+						<div class="col border text-center bg-light">Caracter</div>
+						<div class="col border text-center bg-light">1 Byte</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">int</div>
+						<div class="col border text-center bg-light">Cantidad entera (Número)</div>
+						<div class="col border text-center bg-light">4 Bytes</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">float</div>
+						<div class="col border text-center bg-light">Número flotante (incluye punto o exponente)</div>
+						<div class="col border text-center bg-light">4 Bytes</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">double</div>
+						<div class="col border text-center bg-light">Número flotante (Doble precisión)</div>
+						<div class="col border text-center bg-light">8 Bytes</div>
+					</div>
+				</div><br>
+				También existen <em>cualificadores</em> de tipos de datos, lo que permite ampliar o acortar la cantidad de memoria reservada por el compilador para almacenar cierto dato. <br><br>
+				Los cualificadores son:<br><br>
+				<div class="alert alert-dark">
+					<div class="row">
+						<div class="col text-center text-light bg-dark">Nombre</div>
+						<div class="col text-center text-light bg-dark">Descripción</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">short</div>
+						<div class="col border text-center bg-light">Divide a la mitad la cantidad de memoria utilizada por la variable.</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">long</div>
+						<div class="col border text-center bg-light">Multiplica por 2 la cantidad de memoria utilizada por la variable (Si se especifican dos de estos modificadores, se multiplicará por 4).</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">unsigned</div>
+						<div class="col border text-center bg-light">Quita el signo a un int, float o double, de manera que aumenta por 2 el número máximo que puede albergar dicha variable.</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">signed</div>
+						<div class="col border text-center bg-light">Estado por defecto en un int, float o double, indica que puede tener signo (-/+).</div>
+					</div>
+					<div class="row">
+						<div class="col border text-center bg-light">static</div>
+						<div class="col border text-center bg-light">Hace que el valor de la variable no se pierda aunque el programa ya no se esté ejecutando dentro de ese scope.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="seccion" id="scope">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Scopes.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				El scope, en español "Alcance", de una variable es la extensión de tu programa en <em>C/C++</em> desde la que dicha variable puede ser accedida o utilizada. <br><br>
+				Cualquier variable declarada entre '{' y '}' está en un bloque, por lo que no puede ser accedida desde fuera del mismo, aunque sí desde un sub-bloque, la extensión de esos bloques es el scope de cada uno.
+			</div>
+		</div>
+		<div class="ruta bg-light p-3 clearfix">
+			<a href="./introduccion.html" class="float-left btn btn-danger">Anterior</a>
+			<a href="./estructura-de-un-programa.html" class="float-right btn btn-success">Siguiente.</a>
+		</div>
+	</div>
+</body>
+</html>

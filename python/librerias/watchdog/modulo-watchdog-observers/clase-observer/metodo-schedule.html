@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="../../../../../img/imglib/Python/WatchDog.png">
+	<link rel="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="../../../../../index.css">
+	<title>Metodo watchdog.observers.Observer.schedule - Python</title>
+</head>
+<body class="bg-watchdog-suave py">
+	<nav class="navbar navbar-expand-sm bg-watchdog text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../../../../img/imglib/Python/WatchDog.png" class="logo rounded float-right">
+		</a>
+		<h1>WatchDog</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../../../../">Menu</a> / 
+			<a href="../../../../">Python</a> / 
+			<a href="../../../">Librerías</a> / 
+			<a href="../../">WatchDog</a> / 
+			<a href="../">Módulo watchdog.observers</a> / 
+			<a href="./">Clase watchdog.observers.Observer</a> / 
+			Metodo schedule().
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-watchdog text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Metodo schedule - WatchDog</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				El método <span class="tipoDato">Observer</span>.<span class="funNombre">schedule</span>() es el que une los eventos que se van a ejecutar, con la carpeta de actuación.<br><br>
+				<div class="alert alert-success ov-auto">
+					Sintaxis:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="caracterEspecial">mi_observador = <span class="funNombre">Observer</span>()</span><br>
+						<span class="caracterEspecial">mi_observador.<span class="funNombre">schedule</span> (<span class="tipoDato">PatternMatchingEventHandler</span> event_handler, <span class="tipoDato">str</span> path, <span class="tipoDato">bool</span> recursive)</span>
+					</div>
+				</div>
+				Referencia:<br>
+				<ul>
+					<li>
+						<h5>event_handler:</h5> Es la instancia de un manejador de eventos debidamente configurado para que los métodos puedan ser controlados por el objeto de tipo <span class="tipoDato">Observer</span>.
+					</li>
+					<li>
+						<h5>path:</h5> Se refiere a la ruta de la carpeta donde el objeto <span class="tipoDato">Observer</span> va a actuar.
+					</li>
+					<li>
+						<h5>recursive:</h5> Éste parámetro indica si <span class="tipoDato">Observer</span> debe actuar solo en la carpeta indicada en <span class="numero">path</span> o debe actuar en ésta y todas las carpetas anidadas.
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-watchdog text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Uso de schedule - WatchDog</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Uso de <span class="tipoDato">Observer</span>.<span class="funNombre">schedule</span>().<br><br>
+				<div class="alert alert-light border ov-auto">
+					# Variables <br>
+					<span class="caracterEspecial">patrones = </span><span class="comilla">'</span><span class="string">*</span><span class="comilla">'</span><br>
+					<span class="caracterEspecial">patrones_a_ignorar = </span><span class="comilla">''</span><br>
+					<span class="caracterEspecial">ignorar_directorios = </span><span class="bool">False</span><br>
+					<span class="caracterEspecial">sensible_al_caso = </span><span class="bool">True</span><br>
+					<span class="caracterEspecial">manejador_de_eventos = </span><span class="funNombre">PatternMatchingEventHandler</span> <span class="caracterEspecial">(patrones, patrones_a_ignorar, ignorar_directorios, sensible_al_caso)</span><br><br>
+					# Asignamos funciones a eventos <br>
+					<span class="caracterEspecial">manejador_de_eventos.on_created = mi_funcion_on_created</span><br>
+					<span class="caracterEspecial">manejador_de_eventos.on_deleted = mi_funcion_on_deleted</span><br>
+					<span class="caracterEspecial">manejador_de_eventos.on_modified = mi_funcion_on_modified</span><br>
+					<span class="caracterEspecial">manejador_de_eventos.on_moved = mi_funcion_on_moved</span><br><br>
+					# Crear el Observador <br>
+					<span class="caracterEspecial">ruta = </span><span class="comilla">'</span><span class="string">./carpeta</span><span class="comilla">'</span><br>
+					<span class="caracterEspecial">observador = </span><span class="funNombre">Observer</span> <span class="caracterEspecial">()</span><br><br>
+					# Juntamos todo <br>
+					<span class="caracterEspecial">observador.</span><span class="funNombre">schedule</span> <span class="caracterEspecial">(manejador_de_eventos, ruta, <span class="nombreParametro">recursive</span> = <span class="bool">True</span>)</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

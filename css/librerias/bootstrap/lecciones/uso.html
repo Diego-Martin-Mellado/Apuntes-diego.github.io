@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="../../../../img/imglib/CSS/Bootstrap.png">
+	<link rel="stylesheet" type="text/css" href="../../../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../../../index.css">
+	<title>Uso - Bootstrap</title>
+</head>
+<body class="bg-bootstrap-suave html">
+	<nav class="navbar navbar-expand-sm bg-bootstrap text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../../../img/imglib/CSS/Bootstrap.png" class=" logo rounded float-right">
+		</a>
+		<h1>Bootstrap</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../../../">Menu</a> / 
+			<a href="../../../">CSS</a> / 
+			<a href="../../">Librerias</a> / 
+			<a href="../">Bootstrap</a> / 
+			<a href="./">Lecciones</a> / 
+			Uso.
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-bootstrap text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Cómo usar Bootstrap en tu página web.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Bootstrap, al ser un framework de CSS <a href="./00_Introduccion.php">responsive</a>, requiere que la página sepa en todo momento el tamaño del dispositivo, eso se puede conseguir añadiendo la siguiente etiqueta en el <span class="delim"><</span><span class="nombreEtiqueta">head</span><span class="delim">></span> de tu página web. <br><br>
+				<div class="alert alert-light border m-2 ov-auto">
+					<span class="delim"><</span><span class="nombreEtiqueta">meta</span> <span class="atrib">name</span><span class="igual">=</span><span class="delim">"</span><span class="valor">viewport</span><span class="delim">"</span> <span class="atrib">content</span><span class="igual">=</span><span class="delim">"</span><span class="valor">width=device-width, initial-scale=1.0</span><span class="delim">"></span>
+				</div><br>
+				Una vez le hayamos indicado a nuestra página que tamaño tiene, deberemos incluir Bootstrap, puedes descargar la librería <a href="../../img/util/bootstrap.zip" download="Bootstrap">aquí</a> e incluirla en tu proyecto como CSS con la etiqueta <span class="delim"><</span><span class="nombreEtiqueta">link</span><span class="delim">></span> o copiando esta línea que coge la versión 4.4.1. <br><br>
+				<div class="alert alert-light border m-2 ov-auto">
+					<span class="delim"><</span><span class="nombreEtiqueta">link</span> <span class="atrib">rel</span><span class="igual">=</span><span class="delim">"</span><span class="valor">stylesheet</span><span class="delim">"</span> <span class="atrib">type</span><span class="igual">=</span><span class="delim">"</span><span class="valor">text/css</span><span class="delim">"</span> <span class="atrib">href</span><span class="igual">=</span><span class="delim">"</span><span class="valor">https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css</span><span class="delim">"></span>
+				</div><br>
+				Bootstrap es muy fácil de utilizar, al únicamente ser clases predefinidas, lo que debes hacer es incluir dichas clases en el atributo <span class="atrib">class</span><span class="igual">=</span><span class="delim">"</span><span class="delim">"</span> de tus elementos de HTML. <br>Por ejemplo:<br><br>
+				<div class="alert alert-light border m-2 ov-auto">
+					<span class="delim"><&#33;</span><span class="atrib">DOCTYPE</span> <span class="nombreEtiqueta"><i>html</i></span><span class="delim">></span><br>
+					<span class="delim"><</span><span class="nombreEtiqueta">html</span><span class="delim">></span><br>
+					&nbsp;&nbsp;<span class="delim"><</span><span class="nombreEtiqueta">head</span><span class="delim">></span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="delim"><</span><span class="nombreEtiqueta">meta</span> <span class="atrib">charset</span><span class="igual">=</span><span class="delim">"</span><span class="valor">utf-8</span><span class="delim">"</span><span class="delim">></span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="delim"><</span><span class="nombreEtiqueta">meta</span> <span class="atrib">name</span><span class="igual">=</span><span class="delim">"</span><span class="valor">viewport</span><span class="delim">"</span> <span class="atrib">content</span><span class="igual">=</span><span class="delim">"</span><span class="valor">width=device-width, initial-scale=1.0</span><span class="delim">"></span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="delim"><</span><span class="nombreEtiqueta">link</span> <span class="atrib">rel</span><span class="igual">=</span><span class="delim">"</span><span class="valor">stylesheet</span><span class="delim">"</span> <span class="atrib">type</span><span class="igual">=</span><span class="delim">"</span><span class="valor">text/css</span><span class="delim">"</span> <span class="atrib">href</span><span class="igual">=</span><span class="delim">"</span><span class="valor">https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css</span><span class="delim">"></span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="delim"><</span><span class="nombreEtiqueta">title</span><span class="delim">></span><span class="texto">Mi página</span><span class="delim"><&#47;</span><span class="nombreEtiqueta">title</span><span class="delim">></span><br>
+					&nbsp;&nbsp;<span class="delim"><&#47;</span><span class="nombreEtiqueta">head</span><span class="delim">></span><br>
+					&nbsp;&nbsp;<span class="delim"><</span><span class="nombreEtiqueta">body</span> <span class="atrib">class</span><span class="igual">=</span><span class="delim">"</span><span class="valor">bg-warning</span><span class="delim">"</span><span class="delim">></span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="delim"><</span><span class="nombreEtiqueta">div</span> <span class="atrib">class</span><span class="igual">=</span><span class="delim">"</span><span class="valor">jumbotron text-center bg-success rounded</span><span class="delim">"</span><span class="delim">></span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="delim"><</span><span class="nombreEtiqueta">h1</span><span class="delim">></span><span class="texto">Bienvenid@ a mi página web</span><span class="delim"><&#47;</span><span class="nombreEtiqueta">h1</span><span class="delim">></span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="delim"><</span><span class="nombreEtiqueta">p</span><span class="delim">></span><span class="texto">Subtitulo de mi página web</span><span class="delim"><&#47;</span><span class="nombreEtiqueta">p</span><span class="delim">></span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="delim"><&#47;</span><span class="nombreEtiqueta">div</span><span class="delim">></span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="delim"><</span><span class="nombreEtiqueta">div</span> <span class="atrib">class</span><span class="igual">=</span><span class="delim">"</span><span class="valor">container bg-light pb-2</span><span class="delim">"</span><span class="delim">></span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="texto">Contenido de mi página web...</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><</span><span>!-- Contenido de mi página --></span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="delim"><&#47;</span><span class="nombreEtiqueta">div</span><span class="delim">></span><br>
+					&nbsp;&nbsp;<span class="delim"><&#47;</span><span class="nombreEtiqueta">body</span><span class="delim">></span><br>
+					<span class="delim"><&#47;</span><span class="nombreEtiqueta">html</span><span class="delim">></span>
+				</div><br>
+				<div class="alert alert-success border border-success">
+					Copia el texto en un archivo con extensión .html y ejecútalo con tu navegador para ver el resultado!
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

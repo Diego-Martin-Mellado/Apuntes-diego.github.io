@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Product">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta itemprop="description" content="Manejo general de colores en CSS">
+        <meta itemprop="name" content="Colores - CSS">
+        <meta itemprop="image" content="../../img/leng/CSS.png">
+        <meta name="twitter:description" content="Manejo general de colores en CSS">
+        <meta name="twitter:title" content="Colores - CSS">
+        <meta name="twitter:image" content="../../img/leng/CSS.png">
+        <meta property="og:description" content="Manejo general de colores en CSS">
+        <meta property="og:title" content="Colores - CSS">
+        <meta property="og:image" content="../../img/leng/CSS.png">
+        <link rel="shortcut icon" type="image/png" href="../../img/leng/CSS.png">
+        <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap-grid.css">
+        <link rel="stylesheet" type="text/css" href="../../index.css">
+        <title>Colores - CSS</title>
+    </head>
+    <body class="bg-css-suave css">
+        <nav class="navbar navbar-expand-sm bg-css text-light mb-0 p-4 bordeInf">
+            <a href="#" class="navbar-brand">
+                <img src="../../img/leng/CSS.png" class="logo rounded-circle float-right">
+            </a>
+            <h1>CSS</h1>
+        </nav>
+        <div class="container bg-light p-0 mb-5">
+            <div class="ruta bg-light p-3">
+                <a href="../../">Menu</a> / 
+			    <a href="../">CSS</a> / 
+			    <a href="./">Lecciones</a> / 
+			    Colores
+            </div>
+            <div class="seccion">
+                <div class="seccion-titulo p-2 bg-css text-light rounded sticky-top bordeInf rounded-0">
+                    <h1>Colores - CSS.</h1>
+                </div>
+                <div class="seccion-contenido p-4">
+                    Los colores en CSS se pueden especificar de distintas maneras, en concreto:<br>
+                    <ul>
+                        <li>Nombre</li>
+                        <li>En valor RGB.</li>
+                        <li>
+                            Valor <span class="propiedad">rgb</span> ()
+                        </li>
+                        <li>
+                            Valor <span class="propiedad">hsl</span> ()
+                        </li>
+                        <li>
+                            Valor <span class="propiedad">rgba</span> ()
+                        </li>
+                        <li>
+                            Valor <span class="propiedad">hsla</span> ()
+                        </li>
+                    </ul>
+                    <br>
+                    <h3>Nombre</h3>
+                    En CSS el color puede ser especificado con un nombre específico que se le ha asignado, existen 140 nombres de colores predefinidos. <br>
+                    <br>
+                    <h3>Valor RGB.</h3>
+                    Un valor de 3 ó 6 dígitos en los que el primer tercio de dígitos (el primero en el valor de 3 dígitos o los dos primeros en el valor de 6 dígitos) indican el valor del color rojo (Red), el segundo tercio indican el valor del color verde (Green) y el tercer tercio indican el valor del color azul (Blue).<br>
+                    <br>
+                    <h3>
+                        Valor <span class="propiedad">rgb</span> ()
+                    </h3>
+                    Se trata de una función con 3 parámetros. El primero corresponde al rojo (Red), el segundo al verde (Green) y el tercero al azul (Blue).<br>
+                    <br>
+                    <h3>
+                        Valor <span class="propiedad">hsl</span> ()
+                    </h3>
+                    Es una manera de conseguir un color a partir de una rueda de colores estándar (Hue), además de especificar la saturación (Saturation) y el brillo (Lightness). De estos 3 parámetros, el primero es un número entre 0 y 360, y el segundo y tercer número son porcentajes. <br>
+                    <br>
+                    <h3>
+                        Valor <span class="propiedad">rgba</span> ()
+                    </h3>
+                    Es como el valor <span class="propiedad">rgb</span> (), con la diferencia de que tiene un parámetro más, el <em>alpha</em>
+                    , que hace referencia a la opacidad, y es un valor entre 0 y 1. <br>
+                    <br>
+                    <h3>
+                        Valor <span class="propiedad">hsla</span> ()
+                    </h3>
+                    Es como el valor <span class="propiedad">hsl</span> (), con la diferencia de que tiene un parámetro más, el <em>alpha</em>
+                    , que hace referencia a la opacidad, y es un valor entre 0 y 1.
+			
+                </div>
+            </div>
+            <div class="seccion">
+                <div class="seccion-titulo p-2 bg-css text-light rounded sticky-top bordeInf rounded-0">
+                    <h1>Nombres de colores - CSS.</h1>
+                </div>
+                <div class="seccion-contenido p-4">
+                    Estos son todos los nombres de los colores en CSS y su valor rgb:<br>
+                    <br>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #F0F8FF; color: #000000;' align='center'>
+                            <h3>AliceBlue</h3>
+                            <br>
+                            <p>#F0F8FF</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #FAEBD7; color: #000000;' align='center'>
+                            <h3>AntiqueWhite</h3>
+                            <br>
+                            <p>#FAEBD7</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #00FFFF; color: #000000;' align='center'>
+                            <h3>Aqua</h3>
+                            <br>
+                            <p>#00FFFF</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #7FFFD4; color: #000000;' align='center'>
+                            <h3>Aquamarine</h3>
+                            <br>
+                            <p>#7FFFD4</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #F0FFFF; color: #000000;' align='center'>
+                            <h3>Azure</h3>
+                            <br>
+                            <p>#F0FFFF</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #F5F5DC; color: #000000;' align='center'>
+                            <h3>Beige</h3>
+                            <br>
+                            <p>#F5F5DC</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #FFE4C4; color: #000000;' align='center'>
+                            <h3>Bisque</h3>
+                            <br>
+                            <p>#FFE4C4</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #000000; color: #FFFFFF;' align='center'>
+                            <h3>Black</h3>
+                            <br>
+                            <p>#000000</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #FFEBCD; color: #000000;' align='center'>
+                            <h3>BlanchedAlmond</h3>
+                            <br>
+                            <p>#FFEBCD</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #0000FF; color: #FFFFFF;' align='center'>
+                            <h3>Blue</h3>
+                            <br>
+                            <p>#0000FF</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #8A2BE2; color: #000000;' align='center'>
+                            <h3>BlueViolet</h3>
+                            <br>
+                            <p>#8A2BE2</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #A52A2A; color: #000000;' align='center'>
+                            <h3>Brown</h3>
+                            <br>
+                            <p>#A52A2A</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #DEB887; color: #000000;' align='center'>
+                            <h3>BurlyWood</h3>
+                            <br>
+                            <p>#DEB887</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #5F9EA0; color: #000000;' align='center'>
+                            <h3>CadetBlue</h3>
+                            <br>
+                            <p>#5F9EA0</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #7FFF00; color: #000000;' align='center'>
+                            <h3>Chartreuse</h3>
+                            <br>
+                            <p>#7FFF00</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #D2691E; color: #FFFFFF;' align='center'>
+                            <h3>Chocolate</h3>
+                            <br>
+                            <p>#D2691E</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #FF7F50; color: #000000;' align='center'>
+                            <h3>Coral</h3>
+                            <br>
+                            <p>#FF7F50</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #6495ED; color: #000000;' align='center'>
+                            <h3>CornflowerBlue</h3>
+                            <br>
+                            <p>#6495ED</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #FFF8DC; color: #000000;' align='center'>
+                            <h3>Cornsilk</h3>
+                            <br>
+                            <p>#FFF8DC</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #DC143C; color: #FFFFFF;' align='center'>
+                            <h3>Crimson</h3>
+                            <br>
+                            <p>#DC143C</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #00FFFF; color: #000000;' align='center'>
+                            <h3>Cyan</h3>
+                            <br>
+                            <p>#00FFFF</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #00008B; color: #FFFFFF;' align='center'>
+                            <h3>DarkBlue</h3>
+                            <br>
+                            <p>#00008B</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #008B8B; color: #FFFFFF;' align='center'>
+                            <h3>DarkCyan</h3>
+                            <br>
+                            <p>#008B8B</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #B8860B; color: #FFFFFF;' align='center'>
+                            <h3>DarkGoldenRod</h3>
+                            <br>
+                            <p>#B8860B</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #A9A9A9; color: #000000;' align='center'>
+                            <h3>DarkGray</h3>
+                            <br>
+                            <p>#A9A9A9</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #A9A9A9; color: #000000;' align='center'>
+                            <h3>DarkGrey</h3>
+                            <br>
+                            <p>#A9A9A9</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #006400; color: #FFFFFF;' align='center'>
+                            <h3>DarkGreen</h3>
+                            <br>
+                            <p>#006400</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #BDB76B; color: #000000;' align='center'>
+                            <h3>DarkKhaki</h3>
+                            <br>
+                            <p>#BDB76B</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #8B008B; color: #FFFFFF;' align='center'>
+                            <h3>DarkMagenta</h3>
+                            <br>
+                            <p>#8B008B</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #556B2F; color: #FFFFFF;' align='center'>
+                            <h3>DarkOliveGreen</h3>
+                            <br>
+                            <p>#556B2F</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #FF8C00; color: #000000;' align='center'>
+                            <h3>DarkOrange</h3>
+                            <br>
+                            <p>#FF8C00</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #9932CC; color: #FFFFFF;' align='center'>
+                            <h3>DarkOrchid</h3>
+                            <br>
+                            <p>#9932CC</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #8B0000; color: #FFFFFF;' align='center'>
+                            <h3>DarkRed</h3>
+                            <br>
+                            <p>#8B0000</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #E9967A; color: #000000;' align='center'>
+                            <h3>DarkSalmon</h3>
+                            <br>
+                            <p>#E9967A</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #8FBC8F; color: #000000;' align='center'>
+                            <h3>DarkSeaGreen</h3>
+                            <br>
+                            <p>#8FBC8F</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #483D8B; color: #FFFFFF;' align='center'>
+                            <h3>DarkSlateBlue</h3>
+                            <br>
+                            <p>#483D8B</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #2F4F4F; color: #FFFFFF;' align='center'>
+                            <h3>DarkSlateGray</h3>
+                            <br>
+                            <p>#2F4F4F</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #2F4F4F; color: #FFFFFF;' align='center'>
+                            <h3>DarkSlateGrey</h3>
+                            <br>
+                            <p>#2F4F4F</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #00CED1; color: #000000;' align='center'>
+                            <h3>DarkTurquoise</h3>
+                            <br>
+                            <p>#00CED1</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #9400D3; color: #FFFFFF;' align='center'>
+                            <h3>DarkViolet</h3>
+                            <br>
+                            <p>#9400D3</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #FF1493; color: #FFFFFF;' align='center'>
+                            <h3>DeepPink</h3>
+                            <br>
+                            <p>#FF1493</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #00BFFF; color: #000000;' align='center'>
+                            <h3>DeepSkyBlue</h3>
+                            <br>
+                            <p>#00BFFF</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #696969; color: #FFFFFF;' align='center'>
+                            <h3>DimGray</h3>
+                            <br>
+                            <p>#696969</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #696969; color: #FFFFFF;' align='center'>
+                            <h3>DimGrey</h3>
+                            <br>
+                            <p>#696969</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #1E90FF; color: #FFFFFF;' align='center'>
+                            <h3>DodgerBlue</h3>
+                            <br>
+                            <p>#1E90FF</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #B22222; color: #FFFFFF;' align='center'>
+                            <h3>FireBrick</h3>
+                            <br>
+                            <p>#B22222</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #FFFAF0; color: #000000;' align='center'>
+                            <h3>FloralWhite</h3>
+                            <br>
+                            <p>#FFFAF0</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #228B22; color: #FFFFFF;' align='center'>
+                            <h3>ForestGreen</h3>
+                            <br>
+                            <p>#228B22</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #FF00FF; color: #FFFFFF;' align='center'>
+                            <h3>Fuchsia</h3>
+                            <br>
+                            <p>#FF00FF</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #DCDCDC; color: #000000;' align='center'>
+                            <h3>Gainsboro</h3>
+                            <br>
+                            <p>#DCDCDC</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #F8F8FF; color: #000000;' align='center'>
+                            <h3>GhostWhite</h3>
+                            <br>
+                            <p>#F8F8FF</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #FFD700; color: #000000;' align='center'>
+                            <h3>Gold</h3>
+                            <br>
+                            <p>#FFD700</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #DAA520; color: #000000;' align='center'>
+                            <h3>GoldenRod</h3>
+                            <br>
+                            <p>#DAA520</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #808080; color: #FFFFFF;' align='center'>
+                            <h3>Gray</h3>
+                            <br>
+                            <p>#808080</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #808080; color: #FFFFFF;' align='center'>
+                            <h3>Grey</h3>
+                            <br>
+                            <p>#808080</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #008000; color: #FFFFFF;' align='center'>
+                            <h3>Green</h3>
+                            <br>
+                            <p>#008000</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #ADFF2F; color: #000000;' align='center'>
+                            <h3>GreenYellow</h3>
+                            <br>
+                            <p>#ADFF2F</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #F0FFF0; color: #000000;' align='center'>
+                            <h3>HoneyDew</h3>
+                            <br>
+                            <p>#F0FFF0</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #FF69B4; color: #000000;' align='center'>
+                            <h3>HotPink</h3>
+                            <br>
+                            <p>#FF69B4</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #CD5C5C; color: #FFFFFF;' align='center'>
+                            <h3>IndianRed</h3>
+                            <br>
+                            <p>#CD5C5C</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #4B0082; color: #FFFFFF;' align='center'>
+                            <h3>Indigo</h3>
+                            <br>
+                            <p>#4B0082</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #FFFFF0; color: #000000;' align='center'>
+                            <h3>Ivory</h3>
+                            <br>
+                            <p>#FFFFF0</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #F0E68C; color: #000000;' align='center'>
+                            <h3>Khaki</h3>
+                            <br>
+                            <p>#F0E68C</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #E6E6FA; color: #000000;' align='center'>
+                            <h3>Lavender</h3>
+                            <br>
+                            <p>#E6E6FA</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #FFF0F5; color: #000000;' align='center'>
+                            <h3>LavenderBlush</h3>
+                            <br>
+                            <p>#FFF0F5</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #7CFC00; color: #000000;' align='center'>
+                            <h3>LawnGreen</h3>
+                            <br>
+                            <p>#7CFC00</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #FFFACD; color: #000000;' align='center'>
+                            <h3>LemonChiffon</h3>
+                            <br>
+                            <p>#FFFACD</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #ADD8E6; color: #000000;' align='center'>
+                            <h3>LightBlue</h3>
+                            <br>
+                            <p>#ADD8E6</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #F08080; color: #000000;' align='center'>
+                            <h3>LightCoral</h3>
+                            <br>
+                            <p>#F08080</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #E0FFFF; color: #000000;' align='center'>
+                            <h3>LightCyan</h3>
+                            <br>
+                            <p>#E0FFFF</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #FAFAD2; color: #000000;' align='center'>
+                            <h3>LightGoldenRodYellow</h3>
+                            <br>
+                            <p>#FAFAD2</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #D3D3D3; color: #000000;' align='center'>
+                            <h3>LightGray</h3>
+                            <br>
+                            <p>#D3D3D3</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #D3D3D3; color: #000000;' align='center'>
+                            <h3>LightGrey</h3>
+                            <br>
+                            <p>#D3D3D3</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #90EE90; color: #000000;' align='center'>
+                            <h3>LightGreen</h3>
+                            <br>
+                            <p>#90EE90</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #FFB6C1; color: #000000;' align='center'>
+                            <h3>LightPink</h3>
+                            <br>
+                            <p>#FFB6C1</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #FFA07A; color: #000000;' align='center'>
+                            <h3>LightSalmon</h3>
+                            <br>
+                            <p>#FFA07A</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #20B2AA; color: #000000;' align='center'>
+                            <h3>LightSeaGreen</h3>
+                            <br>
+                            <p>#20B2AA</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #87CEFA; color: #000000;' align='center'>
+                            <h3>LightSkyBlue</h3>
+                            <br>
+                            <p>#87CEFA</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #778899; color: #FFFFFF;' align='center'>
+                            <h3>LightSlateGray</h3>
+                            <br>
+                            <p>#778899</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #778899; color: #FFFFFF;' align='center'>
+                            <h3>LightSlateGrey</h3>
+                            <br>
+                            <p>#778899</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #B0C4DE; color: #000000;' align='center'>
+                            <h3>LightSteelBlue</h3>
+                            <br>
+                            <p>#B0C4DE</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #FFFFE0; color: #000000;' align='center'>
+                            <h3>LightYellow</h3>
+                            <br>
+                            <p>#FFFFE0</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #00FF00; color: #000000;' align='center'>
+                            <h3>Lime</h3>
+                            <br>
+                            <p>#00FF00</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #32CD32; color: #000000;' align='center'>
+                            <h3>LimeGreen</h3>
+                            <br>
+                            <p>#32CD32</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #FAF0E6; color: #000000;' align='center'>
+                            <h3>Linen</h3>
+                            <br>
+                            <p>#FAF0E6</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #FF00FF; color: #FFFFFF;' align='center'>
+                            <h3>Magenta</h3>
+                            <br>
+                            <p>#FF00FF</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #800000; color: #FFFFFF;' align='center'>
+                            <h3>Maroon</h3>
+                            <br>
+                            <p>#800000</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #66CDAA; color: #000000;' align='center'>
+                            <h3>MediumAquaMarine</h3>
+                            <br>
+                            <p>#66CDAA</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #0000CD; color: #FFFFFF;' align='center'>
+                            <h3>MediumBlue</h3>
+                            <br>
+                            <p>#0000CD</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #BA55D3; color: #000000;' align='center'>
+                            <h3>MediumOrchid</h3>
+                            <br>
+                            <p>#BA55D3</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #9370DB; color: #FFFFFF;' align='center'>
+                            <h3>MediumPurple</h3>
+                            <br>
+                            <p>#9370DB</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #3CB371; color: #000000;' align='center'>
+                            <h3>MediumSeaGreen</h3>
+                            <br>
+                            <p>#3CB371</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #7B68EE; color: #FFFFFF;' align='center'>
+                            <h3>MediumSlateBlue</h3>
+                            <br>
+                            <p>#7B68EE</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #00FA9A; color: #000000;' align='center'>
+                            <h3>MediumSpringGreen</h3>
+                            <br>
+                            <p>#00FA9A</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #48D1CC; color: #000000;' align='center'>
+                            <h3>MediumTurquoise</h3>
+                            <br>
+                            <p>#48D1CC</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #C71585; color: #FFFFFF;' align='center'>
+                            <h3>MediumVioletRed</h3>
+                            <br>
+                            <p>#C71585</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #191970; color: #FFFFFF;' align='center'>
+                            <h3>MidnightBlue</h3>
+                            <br>
+                            <p>#191970</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #F5FFFA; color: #000000;' align='center'>
+                            <h3>MintCream</h3>
+                            <br>
+                            <p>#F5FFFA</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #FFE4E1; color: #000000;' align='center'>
+                            <h3>MistyRose</h3>
+                            <br>
+                            <p>#FFE4E1</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #FFE4B5; color: #000000;' align='center'>
+                            <h3>Moccasin</h3>
+                            <br>
+                            <p>#FFE4B5</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #FFDEAD; color: #000000;' align='center'>
+                            <h3>NavajoWhite</h3>
+                            <br>
+                            <p>#FFDEAD</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #000080; color: #FFFFFF;' align='center'>
+                            <h3>Navy</h3>
+                            <br>
+                            <p>#000080</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #FDF5E6; color: #000000;' align='center'>
+                            <h3>OldLace</h3>
+                            <br>
+                            <p>#FDF5E6</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #808000; color: #FFFFFF;' align='center'>
+                            <h3>Olive</h3>
+                            <br>
+                            <p>#808000</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #6B8E23; color: #FFFFFF;' align='center'>
+                            <h3>OliveDrab</h3>
+                            <br>
+                            <p>#6B8E23</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #FFA500; color: #000000;' align='center'>
+                            <h3>Orange</h3>
+                            <br>
+                            <p>#FFA500</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #FF4500; color: #FFFFFF;' align='center'>
+                            <h3>OrangeRed</h3>
+                            <br>
+                            <p>#FF4500</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #DA70D6; color: #000000;' align='center'>
+                            <h3>Orchid</h3>
+                            <br>
+                            <p>#DA70D6</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #EEE8AA; color: #000000;' align='center'>
+                            <h3>PaleGoldenRod</h3>
+                            <br>
+                            <p>#EEE8AA</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #98FB98; color: #000000;' align='center'>
+                            <h3>PaleGreen</h3>
+                            <br>
+                            <p>#98FB98</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #AFEEEE; color: #000000;' align='center'>
+                            <h3>PaleTurquoise</h3>
+                            <br>
+                            <p>#AFEEEE</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #DB7093; color: #000000;' align='center'>
+                            <h3>PaleVioletRed</h3>
+                            <br>
+                            <p>#DB7093</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #FFEFD5; color: #000000;' align='center'>
+                            <h3>PapayaWhip</h3>
+                            <br>
+                            <p>#FFEFD5</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #FFDAB9; color: #000000;' align='center'>
+                            <h3>PeachPuff</h3>
+                            <br>
+                            <p>#FFDAB9</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #CD853F; color: #000000;' align='center'>
+                            <h3>Peru</h3>
+                            <br>
+                            <p>#CD853F</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #FFC0CB; color: #000000;' align='center'>
+                            <h3>Pink</h3>
+                            <br>
+                            <p>#FFC0CB</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #DDA0DD; color: #000000;' align='center'>
+                            <h3>Plum</h3>
+                            <br>
+                            <p>#DDA0DD</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #B0E0E6; color: #000000;' align='center'>
+                            <h3>PowderBlue</h3>
+                            <br>
+                            <p>#B0E0E6</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #800080; color: #FFFFFF;' align='center'>
+                            <h3>Purple</h3>
+                            <br>
+                            <p>#800080</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #663399; color: #FFFFFF;' align='center'>
+                            <h3>RebeccaPurple</h3>
+                            <br>
+                            <p>#663399</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #FF0000; color: #000000;' align='center'>
+                            <h3>Red</h3>
+                            <br>
+                            <p>#FF0000</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #BC8F8F; color: #000000;' align='center'>
+                            <h3>RosyBrown</h3>
+                            <br>
+                            <p>#BC8F8F</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #4169E1; color: #FFFFFF;' align='center'>
+                            <h3>RoyalBlue</h3>
+                            <br>
+                            <p>#4169E1</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #8B4513; color: #FFFFFF;' align='center'>
+                            <h3>SaddleBrown</h3>
+                            <br>
+                            <p>#8B4513</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #FA8072; color: #000000;' align='center'>
+                            <h3>Salmon</h3>
+                            <br>
+                            <p>#FA8072</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #F4A460; color: #000000;' align='center'>
+                            <h3>SandyBrown</h3>
+                            <br>
+                            <p>#F4A460</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #2E8B57; color: #FFFFFF;' align='center'>
+                            <h3>SeaGreen</h3>
+                            <br>
+                            <p>#2E8B57</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #FFF5EE; color: #000000;' align='center'>
+                            <h3>SeaShell</h3>
+                            <br>
+                            <p>#FFF5EE</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #A0522D; color: #FFFFFF;' align='center'>
+                            <h3>Sienna</h3>
+                            <br>
+                            <p>#A0522D</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #C0C0C0; color: #000000;' align='center'>
+                            <h3>Silver</h3>
+                            <br>
+                            <p>#C0C0C0</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #87CEEB; color: #000000;' align='center'>
+                            <h3>SkyBlue</h3>
+                            <br>
+                            <p>#87CEEB</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #6A5ACD; color: #FFFFFF;' align='center'>
+                            <h3>SlateBlue</h3>
+                            <br>
+                            <p>#6A5ACD</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #708090; color: #FFFFFF;' align='center'>
+                            <h3>SlateGray</h3>
+                            <br>
+                            <p>#708090</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #708090; color: #FFFFFF;' align='center'>
+                            <h3>SlateGrey</h3>
+                            <br>
+                            <p>#708090</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #FFFAFA; color: #000000;' align='center'>
+                            <h3>Snow</h3>
+                            <br>
+                            <p>#FFFAFA</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #00FF7F; color: #000000;' align='center'>
+                            <h3>SpringGreen</h3>
+                            <br>
+                            <p>#00FF7F</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #4682B4; color: #FFFFFF;' align='center'>
+                            <h3>SteelBlue</h3>
+                            <br>
+                            <p>#4682B4</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #D2B48C; color: #000000;' align='center'>
+                            <h3>Tan</h3>
+                            <br>
+                            <p>#D2B48C</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #008080; color: #FFFFFF;' align='center'>
+                            <h3>Teal</h3>
+                            <br>
+                            <p>#008080</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #D8BFD8; color: #000000;' align='center'>
+                            <h3>Thistle</h3>
+                            <br>
+                            <p>#D8BFD8</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #FF6347; color: #000000;' align='center'>
+                            <h3>Tomato</h3>
+                            <br>
+                            <p>#FF6347</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #40E0D0; color: #000000;' align='center'>
+                            <h3>Turquoise</h3>
+                            <br>
+                            <p>#40E0D0</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #EE82EE; color: #000000;' align='center'>
+                            <h3>Violet</h3>
+                            <br>
+                            <p>#EE82EE</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #F5DEB3; color: #000000;' align='center'>
+                            <h3>Wheat</h3>
+                            <br>
+                            <p>#F5DEB3</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #FFFFFF; color: #000000;' align='center'>
+                            <h3>White</h3>
+                            <br>
+                            <p>#FFFFFF</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #F5F5F5; color: #000000;' align='center'>
+                            <h3>WhiteSmoke</h3>
+                            <br>
+                            <p>#F5F5F5</p>
+                        </div>
+                        <div class='col-sm' style='background-color: #FFFF00; color: #000000;' align='center'>
+                            <h3>Yellow</h3>
+                            <br>
+                            <p>#FFFF00</p>
+                        </div>
+                    </div>
+                    <div class='row w-100 m-0'>
+                        <div class='col-sm' style='background-color: #9ACD32; color: #000000;' align='center'>
+                            <h3>YellowGreen</h3>
+                            <br>
+                            <p>#9ACD32</p>
+                        </div>
+                        <div class='col-sm'>
+                            <h3></h3>
+                            <br>
+                            <p></p>
+                        </div>
+                        <div class='col-sm'>
+                            <h3></h3>
+                            <br>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

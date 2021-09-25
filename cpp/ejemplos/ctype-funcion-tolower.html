@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="../../img/leng/C++.png">
+	<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../index.css">
+	<title>Ejemplo de tolower - C++</title>
+</head>
+<body class="bg-cpp-suave cpp">
+	<nav class="navbar navbar-expand-sm bg-cpp text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../img/leng/C++.png" class="logo rounded float-right">
+		</a>
+		<h1>C++</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../">Menu</a> / 
+			<a href="../">C++</a> / 
+			<a href="./">Ejemplos</a> / 
+			&#60;ctype.h&#62; Funcion tolower().
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Ejemplo de tolower - C++.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Este código recoje con la función <a href="../Librerias/{stdio.h}/Funcion scanf().php"><span class="funNombre">scanf</span> <span class="caracterEspecial">()</span></a> un solo caracter y evalúa si es una 'r', una 'g' o una 'b' <u>independientemente de si se ha introducido en mayúsculas o minúsculas</u>. <br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="include">#include</span> <span class="libreria">&#60;stdio.h&#62;</span><br>
+					<span class="include">#include</span> <span class="libreria">&#60;stdlib.h&#62;</span><br>
+					<span class="include">#include</span> <span class="libreria">&#60;ctype.h&#62;</span><br><br>
+					<span class="tipoDato">int</span> <span class="caracterEspecial">main (</span><span class="tipoDato">int</span> <span class="caracterEspecial">argc, </span><span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">argv[]) {</span><br>
+					&nbsp;&nbsp;<span class="tipoDato">char</span> <span class="caracterEspecial">color = </span><span class="ampAstBool">NULL</span><span class="caracterEspecial">;</span><br>
+					&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(</span><span class="comilla">"</span><span class="string">Introduce la inicial de un color (r, g, b): </span><span class="comilla">"</span><span class="caracterEspecial">);</span><br>
+					&nbsp;&nbsp;<span class="funNombre">scanf</span> <span class="caracterEspecial">(</span><span class="comilla">"</span> <span class="cespecial">%c</span><span class="comilla">"</span><span class="caracterEspecial">, <span class="ampAstBool">&</span>color);</span><br><br>
+					&nbsp;&nbsp;<span class="ampAstBool">switch</span> <span class="caracterEspecial">(<span class="funNombre">tolower</span> (color)) {</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="ampAstBool">case</span><span class="comilla">'</span><span class="string">r</span><span class="comilla">'</span><span class="caracterEspecial">:</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="ampAstBool">case</span><span class="comilla">'</span><span class="string">g</span><span class="comilla">'</span><span class="caracterEspecial">:</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="ampAstBool">case</span><span class="comilla">'</span><span class="string">b</span><span class="comilla">'</span><span class="caracterEspecial">:</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(<span class="comilla">"</span><span class="cespecial">%c\n</span><span class="comilla">"</span>, color);</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="include">break</span><span class="caracterEspecial">;</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="ampAstBool">default</span><span class="caracterEspecial">:</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(<span class="comilla">"</span><span class="string">Ese no es ningún color de los esperados</span><span class="comilla">"</span>);</span><br>
+					&nbsp;&nbsp;<span class="caracterEspecial">}</span><br><br>
+					&nbsp;&nbsp;<span class="tipoDato">return</span> <span class="include">EXIT_SUCCESS</span><span class="caracterEspecial">;</span><br>
+					<span class="caracterEspecial">}</span>
+				</div>
+				<div class="alert alert-primary border-primary ov-auto">
+					Copia y ejecuta éste código para ver qué hace!
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

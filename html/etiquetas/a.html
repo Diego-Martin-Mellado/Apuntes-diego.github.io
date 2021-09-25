@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="../../img/leng/HTML 5.png">
+        <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../../index.css">
+        <title>&#60;a&#62;- HTML 5</title>
+    </head>
+    <body class="bg-html-suave html">
+        <nav class="navbar navbar-expand-sm bg-html text-light mb-0 p-4 bordeInf">
+            <a href="#" class="navbar-brand">
+                <img src="../../img/leng/HTML 5.png" class="logo rounded float-right">
+            </a>
+            <h1>HTML 5</h1>
+        </nav>
+        <div class="container bg-light p-0 mb-5">
+            <div class="ruta bg-light p-3">
+                <a href="../../">Menu</a>
+                / 
+			<a href="../">HTML 5</a>
+                / 
+			<a href="./">Etiquetas</a>
+                / 
+			&#60;a&#62;.
+		
+            </div>
+            <div class="seccion">
+                <div class="seccion-titulo p-2 bg-html text-light rounded sticky-top bordeInf rounded-0">
+                    <h1>Etiqueta &#60;a&#62;.</h1>
+                </div>
+                <div class="seccion-contenido p-4">
+                    Las etiquetas 
+                    <span class="delim">
+                        <</span><span class="nombreEtiqueta">a</span>
+                        <span class="delim">></span>
+                        y 
+                        <span class="delim">
+                            <</span><span class="delim">/</span>
+                            <span class="nombreEtiqueta">a</span>
+                            <span class="delim">></span>
+                            es la etiqueta de HTML en la que se especificará una imágen y sus parámetros para incluirla en tu página web, ésta etiqueta sólo puede situarse en el apartado 
+                            <span class="delim">
+                                <</span><span class="nombreEtiqueta">body</span>
+                                <span class="delim">></span>
+                                . <br>
+                                <br>
+                                <div class="alert alert-success ov-auto">
+                                    Ejemplo: <br>
+                                    <br>
+                                    <div class="alert alert-light border ov-auto">
+                                        <span class="delim">
+                                            <</span><span class="nombreEtiqueta">a</span>
+                                            <span class="atrib">href</span>
+                                            <span class="igual">=</span>
+                                            <span class="delim">"</span>
+                                            <span class="valor">valor</span>
+                                            <span class="delim">"</span>
+                                            <span class="delim">></span>
+                                    </div>
+                                </div>
+                                <h4>Valor.</h4>
+                                El valor que se escribe entre las comillas del atributo <span class="atrib">href</span>
+                                puede ser de 3 índoles, a saber: <br>
+                                <br>
+                                <ul>
+                                    <li>
+                                        <h5>Link a una página externa:</h5>
+                                        En este caso, el contenido del atributo <span class="atrib">href</span>
+                                        puede ser una URI (URL + URN) (Protocolo + :// + Ruta + ? + paramteros + # + hash)
+					
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <h5>Link a un lugar dentro de la página:</h5>
+                                        En este caso, el contenido del atributo <span class="atrib">href</span>
+                                        debe ser el valor de algún atributo <span class="atrib">id</span>
+                                        perteneciente a algún elemento dentro de la misma página. Siempre ha de estar precedido de el caracter (<em>#</em>
+                                        ).
+					
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <h5>Link a envío de un correo:</h5>
+                                        En este caso, el contenido del atributo <span class="atrib">href</span>
+                                        debe estar formado por la palabra <span class="valor">mailto:</span>
+                                        seguido de la dirección de correo a quien se quiera enviar el mensaje. Opcionalmente se pueden añadir el asunto (subject), cuerpo del correo (body), correos con copia (cc:) y con copia oculta (bcc:). <br>
+                                        <span class="text-danger">
+                                            Todos los espacios en los atributos del correo deben ser sustituidos por el caracter <span class="text-dark">%20</span>
+                                            y en caso de que se quiera añadir más de un valor a un atributo se deberán separar por puntos y coma (;)
+                                        </span>
+                                    </li>
+                                </ul>
+                                <br>
+                                <div class="alert alert-success ov-auto">
+                                    Ejemplos mas concretos: <br>
+                                    <br>
+                                    <div class="alert alert-light border ov-auto">
+                                        <span class="delim">
+                                            <</span><span class="nombreEtiqueta">a</span>
+                                            <span class="atrib">href</span>
+                                            <span class="igual">=</span>
+                                            <span class="delim">"</span>
+                                            <span class="valor">https://www.codecademy.com/</span>
+                                            <span class="delim">"</span>
+                                            <span class="delim">></span>
+                                    </div>
+                                    <div class="alert alert-light border ov-auto">
+                                        <span class="delim">
+                                            <</span><span class="nombreEtiqueta">a</span>
+                                            <span class="atrib">href</span>
+                                            <span class="igual">=</span>
+                                            <span class="delim">"</span>
+                                            <span class="valor">#cabecera</span>
+                                            <span class="delim">"</span>
+                                            <span class="delim">></span>
+                                    </div>
+                                    <div class="alert alert-light border ov-auto">
+                                        <span class="delim">
+                                            <</span><span class="nombreEtiqueta">a</span>
+                                            <span class="atrib">href</span>
+                                            <span class="igual">=</span>
+                                            <span class="delim">"</span>
+                                            <span class="valor">mailto:nombre@organizacion.com;nombre2@organizacion.com?cc=nombreconcopia@organizacion.com &bcc =concopiaoculta@organizacion.com &subject =Mensaje &body =Este%20es%20el%20cuerpo%20del%20correo</span>
+                                            <span class="delim">"</span>
+                                            <span class="delim">></span>
+                                    </div>
+                                </div>
+                </div>
+            </div>
+            <div class="seccion">
+                <div class="seccion-titulo p-2 bg-html text-light rounded sticky-top bordeInf rounded-0">
+                    <h1>Atributos - &#60;a&#62;</h1>
+                </div>
+                <div class="seccion-contenido p-4">
+                    Estos son los posibles atributos que puede tener la etiqueta &#60;a&#62;. <br>
+                    <br>
+                    <div class="alert alert-secondary">
+                        <ul style="list-style-type: none; padding: 0;">
+                            <li class="m-1">
+                                <a href="../../Atributos/atributos/Align.html" class="btn btn-light w-100">
+                                    <span class="delim">
+                                        <</span><span class="nombreEtiqueta">a</span>
+                                        <span class="atrib">align</span>
+                                        <span class="igual">=</span>
+                                        <span class="delim">""></span>
+                                </a>
+                            </li>
+                            <li class="m-1">
+                                <a href="../../Atributos/atributos/Class.html" class="btn btn-light w-100">
+                                    <span class="delim">
+                                        <</span><span class="nombreEtiqueta">a</span>
+                                        <span class="atrib">class</span>
+                                        <span class="igual">=</span>
+                                        <span class="delim">""></span>
+                                </a>
+                            </li>
+                            <li class="m-1">
+                                <a href="../../Atributos/atributos/Contenteditable.html" class="btn btn-light w-100">
+                                    <span class="delim">
+                                        <</span><span class="nombreEtiqueta">a</span>
+                                        <span class="atrib">contenteditable</span>
+                                        <span class="igual">=</span>
+                                        <span class="delim">""></span>
+                                </a>
+                            </li>
+                            <li class="m-1">
+                                <a href="../../Atributos/atributos/Dir.html" class="btn btn-light w-100">
+                                    <span class="delim">
+                                        <</span><span class="nombreEtiqueta">a</span>
+                                        <span class="atrib">dir</span>
+                                        <span class="igual">=</span>
+                                        <span class="delim">""></span>
+                                </a>
+                            </li>
+                            <li class="m-1">
+                                <a href="../../Atributos/atributos/Draggable.html" class="btn btn-light w-100">
+                                    <span class="delim">
+                                        <</span><span class="nombreEtiqueta">a</span>
+                                        <span class="atrib">draggable</span>
+                                        <span class="igual">=</span>
+                                        <span class="delim">""></span>
+                                </a>
+                            </li>
+                            <li class="m-1">
+                                <a href="../../Atributos/atributos/Dropzone.html" class="btn btn-light w-100">
+                                    <span class="delim">
+                                        <</span><span class="nombreEtiqueta">a</span>
+                                        <span class="atrib">dropzone</span>
+                                        <span class="igual">=</span>
+                                        <span class="delim">""></span>
+                                </a>
+                            </li>
+                            <li class="m-1">
+                                <a href="../../Atributos/atributos/Hidden.html" class="btn btn-light w-100">
+                                    <span class="delim">
+                                        <</span><span class="nombreEtiqueta">a</span>
+                                        <span class="atrib">hidden</span>
+                                        <span class="igual">=</span>
+                                        <span class="delim">""></span>
+                                </a>
+                            </li>
+                            <li class="m-1">
+                                <a href="../../Atributos/atributos/Id.html" class="btn btn-light w-100">
+                                    <span class="delim">
+                                        <</span><span class="nombreEtiqueta">a</span>
+                                        <span class="atrib">id</span>
+                                        <span class="igual">=</span>
+                                        <span class="delim">""></span>
+                                </a>
+                            </li>
+                            <li class="m-1">
+                                <a href="../../Atributos/atributos/Lang.html" class="btn btn-light w-100">
+                                    <span class="delim">
+                                        <</span><span class="nombreEtiqueta">a</span>
+                                        <span class="atrib">lang</span>
+                                        <span class="igual">=</span>
+                                        <span class="delim">""></span>
+                                </a>
+                            </li>
+                            <li class="m-1">
+                                <a href="../../Atributos/atributos/Spellcheck.html" class="btn btn-light w-100">
+                                    <span class="delim">
+                                        <</span><span class="nombreEtiqueta">a</span>
+                                        <span class="atrib">spellcheck</span>
+                                        <span class="igual">=</span>
+                                        <span class="delim">""></span>
+                                </a>
+                            </li>
+                            <li class="m-1">
+                                <a href="../../Atributos/atributos/Src.html" class="btn btn-light w-100">
+                                    <span class="delim">
+                                        <</span><span class="nombreEtiqueta">a</span>
+                                        <span class="atrib">src</span>
+                                        <span class="igual">=</span>
+                                        <span class="delim">""></span>
+                                </a>
+                            </li>
+                            <li class="m-1">
+                                <a href="../../Atributos/atributos/Style.html" class="btn btn-light w-100">
+                                    <span class="delim">
+                                        <</span><span class="nombreEtiqueta">a</span>
+                                        <span class="atrib">style</span>
+                                        <span class="igual">=</span>
+                                        <span class="delim">""></span>
+                                </a>
+                            </li>
+                            <li class="m-1">
+                                <a href="../../Atributos/atributos/Tabindex.html" class="btn btn-light w-100">
+                                    <span class="delim">
+                                        <</span><span class="nombreEtiqueta">a</span>
+                                        <span class="atrib">tabindex</span>
+                                        <span class="igual">=</span>
+                                        <span class="delim">""></span>
+                                </a>
+                            </li>
+                            <li class="m-1">
+                                <a href="../../Atributos/atributos/Title.html" class="btn btn-light w-100">
+                                    <span class="delim">
+                                        <</span><span class="nombreEtiqueta">a</span>
+                                        <span class="atrib">title</span>
+                                        <span class="igual">=</span>
+                                        <span class="delim">""></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

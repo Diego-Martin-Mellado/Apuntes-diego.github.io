@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="../../../../img/leng/Python.png">
+	<link rel="stylesheet" type="text/css" href="../../../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../../../index.css">
+	<title>Función system - Python</title>
+</head>
+<body class="bg-py-suave py">
+	<nav class="navbar navbar-expand-sm bg-py text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../../../img/leng/Python.png" class="logo rounded float-right">
+		</a>
+		<h1>Python</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../../../">Menu</a> / 
+			<a href="../../../">Python</a> / 
+			<a href="../../">Librerías</a> / 
+			<a href="../">Librería estándar</a> / 
+			<a href="./">Módulo os</a> / 
+			Función system
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-py text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Función system - Python</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				La función os.<span class="funNombre">system</span> () ejecuta un comando en la consola de comandos del sistema operativo del cliente.<br><br>
+				<div class="alert alert-warning border-warning ov-auto">
+					Ésta función se corresponde con la función de <u><em>C/C++</em></u> <a href="javascript:alert ('no implementado')"><span class="funNombre">system</span> <span class="caracterEspecial">()</span></a> de la librería <span class="numero">&#60;stdlib.h&#62;</span>.
+				</div>
+				<div class="alert alert-success ov-auto">
+					Sintaxis:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="funNombre">os</span><span class="caracterEspecial">.</span><span class="funNombre">system</span><span class="caracterEspecial">(<span class="tipoDato">str</span> comando)</span>
+					</div>
+				</div>
+				Referencia:<br><br>
+				<ul>
+					<li>
+						<h5>Comando: </h5>Es un string (<span class="tipoDato">str</span>) que se va a ejecutar directamente en la consola de comandos del cliente.
+					</li>
+				</ul><br>
+				<div class="alert alert-success ov-auto">
+					Retorno:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="tipoDato">None</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-py text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Uso de system</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Ejemplos de uso de <span class="funNombre">system</span> ():<br><br>
+				<div class="alert alert-light border ov-auto">
+					// Limpia la consola de Linux <br>
+					<span class="funNombre">os</span><span class="caracterEspecial">.</span><span class="funNombre">system</span> <span class="caracterEspecial">(<span class="comilla">'</span><span class="string">clear</span><span class="comilla">'</span>)</span><br><br>
+					// Limpia la consola de Windows <br>
+					<span class="funNombre">os</span><span class="caracterEspecial">.</span><span class="funNombre">system</span> <span class="caracterEspecial">(<span class="comilla">'</span><span class="string">cls</span><span class="comilla">'</span>)</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

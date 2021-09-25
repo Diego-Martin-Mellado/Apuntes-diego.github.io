@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta itemprop="name" content="Estructura de control if">
+	<meta itemprop="description" content="Condicional if en C++.">
+	<meta itemprop="image" content="../../img/leng/C++.png">
+	<meta name="twitter:description" content="Condicional if en C++.">
+	<meta name="twitter:image" content="../../img/leng/C++.png">
+	<meta name="twitter:title" content="Estructura de control if">
+	<meta property="og:description" content="Condicional if en C++.">
+	<meta property="og:image" content="../../img/leng/C++.png">
+	<meta property="og:title" content="Estructura de control if">
+	<link rel="shortcut icon" type="image/png" href="../../img/leng/C++.png">
+	<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../index.css">
+	<title>Estructura if - C++</title>
+</head>
+<body class="bg-cpp-suave cpp">
+	<nav class="navbar navbar-expand-sm bg-cpp text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../img/leng/C++.png" class="logo rounded float-right">
+		</a>
+		<h1>C++</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../">Menu</a> / 
+			<a href="../">C++</a> / 
+			<a href="./">Lecciones</a> / 
+			Estructura de control if.
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Estructura if.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Muchos programas requieren que se efectúe una comprobación lógica en algún punto del programa, para ejecutar o no una parte concreta del mismo, las estructuras de <em><u>C/C++</u></em> que se encargan de gestionar esto, son las llamadas <em>estructuras de control</em>.<br><br>
+				La <em>estructura de control</em> <span class="include">if</span> evalúa una condición o sentencia, y si ésta resulta verdadera (Distinta de <span class="numero">0</span>), ejecuta <u>una sola línea de código</u>.<br><br>
+				<div class="alert alert-primary border-primary ov-auto">
+					Los <a href="./conceptos-basicos.html#scope">scopes <span class="caracterEspecial">o</span> ámbitos</a> comprimen todo lo que esté escrito entre los caracteres '{' y '}' para que el compilador lo comprima en "una sola línea".
+				</div>
+				<div class="alert alert-success border border-success ov-auto">
+					Sintaxis:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="include">if</span> <span class="caracterEspecial">( condicion )</span><br> // Sentencia a ejecutar
+					</div>
+					<div class="alert alert-light border ov-auto">
+						<span class="include">if</span> <span class="caracterEspecial">( condicion ) {</span><br>
+						&nbsp;&nbsp;// Sentencias <br>
+						&nbsp;&nbsp;// a <br>
+						&nbsp;&nbsp;// ejecutar <br>
+						<span class="caracterEspecial">}</span>
+					</div>
+				</div>
+				Referencia:<br><br>
+				<ul>
+					<li>
+						<h5>Condición: </h5>Es una comparación o un dato.
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Ejemplos de uso de if.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Ejemplos de uso de <span class="include">if</span>:<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="tipoDato">int</span> <span class="caracterEspecial">numero = </span><span class="numero">5</span><span class="caracterEspecial">;</span><br>
+					<span class="tipoDato">bool</span> <span class="caracterEspecial">booleano = </span><span class="include">false</span><span class="caracterEspecial">;</span><br><br>
+					<span class="include">if</span> <span class="caracterEspecial">( numero </span><span class="include"><</span> <span class="numero">10</span><span class="caracterEspecial">) {</span><br>
+					&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(</span><span class="comilla">"</span><span class="string">Enhorabuena! Es menor que 10</span><span class="cespecial">\n</span><span class="comilla">"</span><span class="caracterEspecial">);</span> // Aqui hay varias instrucciones (sentencias) por lo que se ponen llaves<br>
+					&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(</span><span class="comilla">"</span><span class="string">Tu número es </span><span class="cespecial">%i</span><span class="comilla">"</span><span class="caracterEspecial">, numero);</span><br>
+					<span class="caracterEspecial">}</span><br>
+					<span class="include">if</span> <span class="caracterEspecial">( booleano )</span> // Esto no se ejecutaría porque booleano es <span class="include">false</span><br>
+					&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(</span><span class="comilla">"</span><span class="string">La variable booleano es true</span><span class="cespecial">\n</span><span class="comilla">"</span><span class="caracterEspecial">);</span> // Aqui hay una instruccion (sentencia) por lo que no hace falta poner llaves<br>
+				</div>
+			</div>
+		</div>
+		<div class="ruta bg-light p-3 clearfix">
+			<a href="./bucles-do-while.html" class="float-left btn btn-danger">Anterior.</a>
+			<a href="./estructuras-de-datos.html" class="float-right btn btn-success">Siguiente.</a>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="../../../../img/leng/Python.png">
+	<link rel="stylesheet" type="text/css" href="../../../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../../../index.css">
+	<title>Función sys.exit() - Python</title>
+</head>
+<body class="bg-py-suave py">
+	<nav class="navbar navbar-expand-sm bg-py text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../../../img/leng/Python.png" class="logo rounded float-right">
+		</a>
+		<h1>Python</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../../../">Menu</a> / 
+			<a href="../../../">Python</a> / 
+			<a href="../../">Librerías</a> / 
+			<a href="../">Librería estándar</a> / 
+			<a href="./">Módulo sys</a> / 
+			Función sys.exit()
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-py text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Función sys.exit() - Python</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				La función <span class="funNombre">sys</span>.<span class="funNombre">exit</span> () se encuentra en el módulo <span class="funNombre">sys</span> de la librería estándar de Python. <br><br>
+				La función <span class="funNombre">sys</span>.<span class="funNombre">exit</span> () sirve para detener el programa de python que se está ejecutando, desde cualquier ámbito, vease, desde cualquier lugar del programa, ya sea en el ámbito global, en cualquier condición, bucles e incluso funciones o métodos en clases.<br><br>
+				El argumento es un número entero entre el <span class="numero">0</span> y el <span class="numero">127</span>. Aunque si dejas vacío el parámetro, se sobreentiende <span class="numero">0</span> o salida exitosa. Si se pasa <span class="tipoDato">None</span>, tambien se sobreentienede como <span class="numero">0</span>.<br><br>
+				En caso de que se pase un dato de tipo <span class="tipoDato">str</span>, se pasará como mensaje de error al sistema. <br><br>
+				<div class="alert alert-success ov-auto">
+					Sintaxis:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="funNombre">sys</span><span class="caracterEspecial">.</span><span class="funNombre">exit</span><span class="caracterEspecial">()</span>
+					</div>
+				</div><hr>
+				<div class="alert alert-success ov-auto">
+					Sintaxis:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="funNombre">sys</span><span class="caracterEspecial">.</span><span class="funNombre">exit</span><span class="caracterEspecial">(<span class="tipoDato">int</span> exito)</span>
+					</div>
+				</div>
+				Referencia:<br><br>
+				<ul>
+					<li>
+						<h5>Éxito:</h5> El código de retorno que debe dar el programa al finalizar.
+					</li>
+				</ul><hr>
+				<div class="alert alert-success border border-success ov-auto">
+					Sintaxis:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="funNombre">sys</span><span class="caracterEspecial">.</span><span class="funNombre">exit</span><span class="caracterEspecial">(<span class="tipoDato">str</span> mensaje)</span>
+					</div>
+				</div>
+				Referencia:<br><br>
+				<ul>
+					<li>
+						<h5>Mensaje:</h5> Mensaje que se dará al sistema escrito en el canal <span class="funNombre">sys</span>.<span class="tipoDato">stderr</span>.
+					</li>
+				</ul><hr>
+				<div class="alert alert-success border border-success ov-auto">
+					Retorno:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="caracterEspecial">Ninguno</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-py text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Uso de sys.exit() - Python</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				<div class="alert alert-light border ov-auto">
+					// Función para parar el programa <br>
+					<span class="tipoDato">def</span> <span class="caracterEspecial">parar (arg):</span><br>
+					&nbsp;&nbsp;// [...]<br>
+					&nbsp;&nbsp;<span class="funNombre">sys</span><span class="caracterEspecial">.</span><span class="funNombre">exit</span> <span class="caracterEspecial">(arg)</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

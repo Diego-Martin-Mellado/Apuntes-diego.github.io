@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta itemprop="name" content="java.util.Scanner - Java">
+	<meta itemprop="description" content="Un escáner de texto simple que puede analizar tipos primitivos y cadenas usando expresiones regulares.">
+	<meta itemprop="image" content="../../../../../../img/leng/Java.png">
+	<meta name="twitter:title" content="java.util.Scanner - Java">
+	<meta name="twitter:description" content="Un escáner de texto simple que puede analizar tipos primitivos y cadenas usando expresiones regulares.">
+	<meta name="twitter:image" content="../../../../../../img/leng/Java.png">
+	<meta property="og:title" content="java.util.Scanner - Java">
+	<meta property="og:description" content="Un escáner de texto simple que puede analizar tipos primitivos y cadenas usando expresiones regulares.">
+	<meta property="og:image" content="../../../../../../img/leng/Java.png">
+	<link rel="shortcut icon" type="image/png" href="../../../../../../img/leng/Java.png">
+	<link rel="stylesheet" type="text/css" href="../../../../../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../../../../../index.css">
+	<title>Clase Scanner - Java</title>
+</head>
+<body class="bg-java-suave java">
+	<nav class="navbar navbar-expand-sm bg-java text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../../../../../img/leng/Java.png" class="logo rounded-circle float-right">
+		</a>
+		<h1>Java</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../../../../../">Menu</a> / 
+			<a href="../../../../../">Java</a> / 
+			<a href="../../../../">Librerías</a> / 
+			<a href="../../../">JDK</a> / 
+			<a href="../../">java.base</a> / 
+			<a href="../">java.util</a> / 
+			Clase Scanner
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-java text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Clase Scanner - Java.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				La clase <span class="funNombre">Scanner</span> se usa para obtener datos de entrada desde el usuario. <br><br>
+				<div class="alert alert-danger border-danger ov-auto">
+					Cada vez que se instancia la clase <span class="funNombre">Scanner</span>, se debe cerrar con el método <span class="funNombre">close</span> ().
+				</div>
+				<div class="alert alert-success border border-success ov-auto">
+					Sintaxis:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="tipoDato">Scanner</span> <span class="caracterEspecial">miTeclado = </span><span class="import">new</span> <span class="funNombre">Scanner</span><span class="caracterEspecial">(</span><span class="tipoDato">InputStream</span> <span class="caracterEspecial">canal);</span>
+					</div>
+				</div>
+				Referencia:
+				<ul>
+					<li>Canal: </li>Archivo o fuente de información de la cual se va a extraer información.
+				</ul>
+				Si se está obteniendo información del input de una consola, que es donde normalmente se ejecuta ésta instrucción, el <span class="tipoDato">InputStream</span> será <span class="funNombre">System</span>.<span class="tipoDato">in</span>.
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-java text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Clases y métodos de Scanner</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				<div class='row p-0 border'>	
+					<div class='col p-0'>
+						<a href='../../java-io/interfaz-closeable/metodo-close.html' class='btn btn-light w-100 rounded-0 p-3 ov-auto'>
+							<h3 class='float-left'>Método close ()</h3>
+							<br><br>
+							<p class='float-left text-secondary mb-0'>Método para cerrar el uso de un objeto de la clase Scanner, proviene de la interfaz 'Closeable'.</p>
+						</a>
+					</div>
+				</div>
+				<div class='row p-0 border'>
+					<div class='col p-0'>
+						<a href='./metodo-nextdouble.html' class='btn btn-light w-100 rounded-0 p-3 ov-auto'>
+							<h3 class='float-left'>Método nextDouble ()</h3>
+							<br><br>
+							<p class='float-left text-secondary mb-0'>Método de Scanner para leer números decimales.</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-java text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Ejemplos de Scanner - Java.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Ejemplos de <span class="funNombre">Scanner</span>. <br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="import">import</span> <span class="caracterEspecial">java.util.Scanner;</span><br><br>
+					<span class="import">public</span> <span class="tipoDato">class</span> <span class="caracterEspecial">Programa {</span><br>
+					&nbsp;&nbsp;<span class="import">public static</span> <span class="tipoDato">void</span> <span class="caracterEspecial">main (</span><span class="tipoDato">String</span> <span class="caracterEspecial">[] args) {</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="tipoDato">Scanner</span> <span class="caracterEspecial">teclado = </span><span class="import">new</span> <span class="funNombre">Scanner</span> <span class="caracterEspecial">(<span class="funNombre">System</span>.<span class="tipoDato">in</span>);<br></span>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="tipoDato">String</span> <span class="caracterEspecial">cadena;</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="tipoDato">double</span> <span class="caracterEspecial">doble;</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="tipoDato">int</span> <span class="caracterEspecial">ent;</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="funNombre">System</span><span class="caracterEspecial">.</span><span class="funNombre">out</span><span class="caracterEspecial">.</span><span class="funNombre">print</span> <span class="caracterEspecial">(</span><span class="comilla">"</span><span class="string">Introduce una cadena de texto: </span><span class="comilla">"</span><span class="caracterEspecial">);</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">cadena = </span><span class="caracterEspecial">teclado.</span><span class="funNombre">nextLine</span> <span class="caracterEspecial">();</span> // Recoje un String<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="funNombre">System</span><span class="caracterEspecial">.</span><span class="funNombre">out</span><span class="caracterEspecial">.</span><span class="funNombre">print</span> <span class="caracterEspecial">(</span><span class="comilla">"</span><span class="string">Introduce un double: </span><span class="comilla">"</span><span class="caracterEspecial">);</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">doble = </span><span class="caracterEspecial">teclado.</span><span class="funNombre">nextDouble</span> <span class="caracterEspecial">();</span> // Recoje un double<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="funNombre">System</span><span class="caracterEspecial">.</span><span class="funNombre">out</span><span class="caracterEspecial">.</span><span class="funNombre">print</span> <span class="caracterEspecial">(</span><span class="comilla">"</span><span class="string">Introduce un entero: </span><span class="comilla">"</span><span class="caracterEspecial">);</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">ent = </span><span class="caracterEspecial">teclado.</span><span class="funNombre">nextInt</span> <span class="caracterEspecial">();</span> // Recoje un int<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">teclado.<span class="funNombre">close</span> ()</span><br>
+					&nbsp;&nbsp;<span class="caracterEspecial">}</span><br>
+					<span class="caracterEspecial">}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="../../../../../../img/leng/Java.png">
+	<link rel="stylesheet" type="text/css" href="../../../../../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../../../../../index.css">
+	<title>Método exit - Java</title>
+</head>
+<body class="bg-java-suave java">
+	<nav class="navbar navbar-expand-sm bg-java text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../../../../../img/leng/Java.png" class="logo rounded-circle float-right">
+		</a>
+		<h1>Java</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../../../../../">Menu</a> / 
+			<a href="../../../../../">Java</a> / 
+			<a href="../../../../">Librerías</a> / 
+			<a href="../../../">JDK</a> / 
+			<a href="../../">java.base</a> / 
+			<a href="../">java.lang</a> / 
+			<a href="./">Clase final System</a> / 
+			Método exit
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-java text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Método exit - Java.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				<span class="funNombre">exit</span> () es un método que se encuentra en la librería <span class="include">java.lang</span> que es la librería estándar de Java.<br><br>
+				<span class="funNombre">getProperty</span> () es un método que se encuentra en la clase <span class="funNombre">System</span>. <br><br>
+				Éste método indica que el programa debe finalizar, y su parámtero es un número que sólo puede ser <span class="numero">0</span> en caso exitoso, <span class="numero">1 <span class="caracterEspecial">-</span> 127</span> errores definidos por el programador y <span class="numero">128 <span class="caracterEspecial">-</span> 255</span> son los definidos por el sistema. <br><br>
+				<div class="alert alert-success border border-success ov-auto">
+					Sintaxis:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="funNombre">System</span><span class="caracterEspecial">.</span><span class="funNombre">exit</span> <span class="caracterEspecial">( <span class="tipoDato">int</span> Éxito );</span>
+					</div>
+				</div><br>
+				Referencia:<br><br>
+				<ul>
+					<li>
+						<h5>Éxito: </h5>Indica si la ejecución del programa se ha realizado con éxito o no al llegar a ese punto.
+					</li>
+				</ul><br>
+				<div class="alert alert-success border border-success ov-auto">
+					Retorno:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="tipoDato">void</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 text-light bg-java rounded sticky-top bordeInf rounded-0">
+				<h1>Ejemplos de uso de exit</h1>
+			</div>
+			<div class="seccion-content p-4">
+				Uso del método <span class="funNombre">System</span>.<span class="funNombre">exit</span> ():<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="import">public</span> <span class="tipoDato">class</span> <span class="caracterEspecial">Programa {</span><br>
+					&nbsp;&nbsp;<span class="import">public static</span> <span class="tipoDato">void</span> <span class="caracterEspecial">main (</span><span class="tipoDato">String</span> <span class="caracterEspecial">[] args) {</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="funNombre">System</span><span class="caracterEspecial">.</span><span class="funNombre">exit</span> <span class="caracterEspecial">( <span class="numero">0</span> );</span> // Termina el programa con éxito<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="funNombre">System</span><span class="caracterEspecial">.</span><span class="funNombre">out</span><span class="caracterEspecial">.</span><span class="funNombre">println</span> <span class="caracterEspecial">(</span><span class="comilla">"</span><span class="string">Esto no se ejecuta</span><span class="comilla">"</span><span class="caracterEspecial">);</span> // Ésta línea no se ejecuta porque el programa ha acabado en la línea de arriba<br>
+					&nbsp;&nbsp;<span class="caracterEspecial">}</span><br>
+					<span class="caracterEspecial">}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

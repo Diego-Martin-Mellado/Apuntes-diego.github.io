@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta itemprop="name" content="Función islower ()">
+	<meta itemprop="description" content="Función islower () indica si el parámetro recibido (char) es un caracter en minúscula">
+	<meta itemprop="image" content="../../../img/leng/C++.png">
+	<meta name="twitter:title" content="Función islower ()">
+	<meta name="twitter:description" content="Función islower () indica si el parámetro recibido (char) es un caracter en minúscula">
+	<meta name="twitter:image" content="../../../img/leng/C++.png">
+	<meta property="og:title" content="Función islower ()">
+	<meta property="og:description" content="Función islower () indica si el parámetro recibido (char) es un caracter en minúscula">
+	<meta property="og:image" content="../../../img/leng/C++.png">
+	<link rel="shortcut icon" type="image/png" href="../../../img/leng/C++.png">
+	<link rel="stylesheet" type="text/css" href="../../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../../index.css">
+	<title>Función islower - C++</title>
+</head>
+<body class="bg-cpp-suave cpp">
+	<nav class="navbar navbar-expand-sm bg-cpp text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../../img/leng/C++.png" class="logo rounded float-right">
+		</a>
+		<h1>C++</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../../">Menu</a> / 
+			<a href="../../">C++</a> / 
+			<a href="../">Librerías</a> / 
+			<a href="./">&#60;ctypes.h&#62;</a> / 
+			Función islower().
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Función islower.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				<span class="funNombre">islower</span> <span class="caracterEspecial">()</span> es una función que se encuentra en la librería <span class="libreria">&#60;ctypes.h&#62;</span>. <br><br>
+				<span class="funNombre">islower</span> <span class="caracterEspecial">()</span> indica si el parámetro recibido (<span class="tipoDato">char</span>) es un caracter en minúscula, éste caracter también puede ser un entero (<span class="tipoDato">int</span>) que será pasado a caracter antes de evaluar. <br><br>
+				<div class="alert alert-warning border border-warning ov-auto">
+					<span class="funNombre">islower</span> <span class="caracterEspecial">()</span> es la función con el efecto contrario a <a href="./Funcion isupper().php"><span class="funNombre">isupper</span> <span class="caracterEspecial">()</span></a>.
+				</div>
+				<div class="alert alert-success border border-success ov-auto">
+					Sintaxis:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="funNombre">islower</span> <span class="caracterEspecial">( </span><span class="tipoDato">char</span><span class="caracterEspecial">/</span><span class="tipoDato">int</span> <span class="caracterEspecial">caracter);</span>
+					</div>
+				</div><br>
+				Referencia:<br><br>
+				<ul>
+					<li>
+						<h5>Caracter:</h5> Caracter a evaluar si es minúsuculas.
+					</li>
+				</ul><br>
+				<div class="alert alert-success border border-success ov-auto">
+					Retorno de <span class="funNombre">islower</span> <span class="caracterEspecial">()</span>.<br><br>
+					<div class="alert alert-light">
+						<span class="tipoDato">bool</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Ejemplo de uso de islower.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Uso de <span class="funNombre">islower</span> ():<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="tipoDato">char</span> <span class="caracterEspecial">caracter = </span><span class="comilla">'</span><span class="string">F</span><span class="comilla">'</span><span class="caracterEspecial">;</span><br>
+					<span class="tipoDato">int</span> <span class="caracterEspecial">caracter2 = </span><span class="numero">100</span>;</span><br><br>
+					<span class="tipoDato">bool</span> <span class="caracterEspecial">esMinusculas1 = </span><span class="funNombre">islower</span> <span class="caracterEspecial">(caracter);</span> // Retorna <span class="include">false</span><br>
+					<span class="tipoDato">bool</span> <span class="caracterEspecial">esMinusculas2 = </span><span class="funNombre">islower</span> <span class="caracterEspecial">(caracter2);</span> // Retorna <span class="include">true</span> (porque es el codigo de la <span class="comilla">'</span><span class="string">d</span><span class="comilla">'</span>)
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

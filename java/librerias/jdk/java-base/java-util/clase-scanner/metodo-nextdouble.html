@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta itemprop="name" content="java.util.Scanner.nextDouble - Java">
+	<meta itemprop="description" content="Escanea el siguiente token de la entrada como un doble.">
+	<meta itemprop="image" content="../../../../../../img/leng/Java.png">
+	<meta name="twitter:title" content="java.util.Scanner.nextDouble - Java">
+	<meta name="twitter:description" content="Escanea el siguiente token de la entrada como un doble.">
+	<meta name="twitter:image" content="../../../../../../img/leng/Java.png">
+	<meta property="og:title" content="java.util.Scanner.nextDouble - Java">
+	<meta property="og:description" content="Escanea el siguiente token de la entrada como un doble.">
+	<meta property="og:image" content="../../../../../../img/leng/Java.png">
+	<link rel="shortcut icon" type="image/png" href="../../../../../../img/leng/Java.png">
+	<link rel="stylesheet" type="text/css" href="../../../../../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../../../../../index.css">
+	<title>Método nextDouble - Java</title>
+</head>
+<body class="bg-java-suave java">
+	<nav class="navbar navbar-expand-sm bg-java text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../../../../../img/leng/Java.png" class="logo rounded-circle float-right">
+		</a>
+		<h1>Java</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../../../../../">Menu</a> / 
+			<a href="../../../../../">Java</a> / 
+			<a href="../../../../">Librerías</a> / 
+			<a href="../../../">JDK</a> / 
+			<a href="../../">java.base</a> / 
+			<a href="../">java.util</a> / 
+			<a href="./">Clase Scanner</a> / 
+			Método nextDouble.
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-java text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Método nextDouble - Java.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				<span class="funNombre">nextDouble</span> () es un método que está en la clase <span class="funNombre">Scanner</span> que se encuentra en la librería <span class="include">java.util</span> de Java.<br><br>
+				<span class="funNombre">nextDouble</span> () indica al objeto de clase <span class="funNombre">Scanner</span> que lo siguiente que introduzca el usuario será convertido a datos de tipo <span class="tipoDato">double</span>. <br><br>
+				<div class="alert alert-danger border-danger ov-auto">
+					Si el usuario introduce un dato que no es <span class="tipoDato">double</span>, <span class="funNombre">nextDouble</span> <span class="caracterEspecial">()</span> resultará un error que finalizará el programa.
+				</div>
+				<div class="alert alert-success ov-auto">
+					Sintaxis:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="funNombre">Scanner</span><span class="caracterEspecial">.</span><span class="funNombre">nextDouble</span> <span class="caracterEspecial">();</span>
+					</div>
+				</div>
+				<div class="alert alert-success ov-auto">
+					Retorno:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="tipoDato">double</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 text-light bg-java rounded sticky-top bordeInf rounded-0">
+				<h1>Ejemplos de uso de nextDouble</h1>
+			</div>
+			<div class="seccion-content p-4">
+				Uso del método <span class="funNombre">Scanner</span>.<span class="funNombre">nextDouble</span> ():<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="import">public</span> <span class="tipoDato">class</span> <span class="caracterEspecial">Programa {</span><br>
+					&nbsp;&nbsp;<span class="import">public static</span> <span class="tipoDato">void</span> <span class="caracterEspecial">main (</span><span class="tipoDato">String</span> <span class="caracterEspecial">[] args) {</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="tipoDato">double</span> <span class="caracterEspecial">numero;</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="tipoDato">Scanner</span> <span class="caracterEspecial">teclado = </span><span class="import">new</span> <span class="funNombre">Scanner</span><span class="caracterEspecial">(<span class="funNombre">System</span>.<span class="tipoDato">in</span>);</span> // Creo el teclado<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="funNombre">System</span><span class="caracterEspecial">.</span><span class="funNombre">out</span><span class="caracterEspecial">.</span><span class="funNombre">println</span> <span class="caracterEspecial">(</span><span class="comilla">"</span><span class="string">Introduce un double: </span><span class="comilla">"</span><span class="caracterEspecial">);</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">numero = teclado.</span><span class="funNombre">nextDouble</span><span class="caracterEspecial">();</span> // Recoje un <span class="tipoDato">double</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">teclado.</span><span class="funNombre">close</span><span class="caracterEspecial">();</span><br>
+					&nbsp;&nbsp;<span class="caracterEspecial">}</span><br>
+					<span class="caracterEspecial">}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta itemprop="name" content="Estructuras de datos">
+	<meta itemprop="description" content="Cómo crear tipos de datos compuestos en C/C++.">
+	<meta itemprop="image" content="../../img/leng/C++.png">
+	<meta name="twitter:description" content="Cómo crear tipos de datos compuestos en C/C++.">
+	<meta name="twitter:image" content="../../img/leng/C++.png">
+	<meta name="twitter:title" content="Estructuras de datos">
+	<meta property="og:description" content="Cómo crear tipos de datos compuestos en C/C++.">
+	<meta property="og:image" content="../../img/leng/C++.png">
+	<meta property="og:title" content="Estructuras de datos">
+	<link rel="shortcut icon" type="image/png" href="../../img/leng/C++.png">
+	<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../index.css">
+	<title>Estructuras de datos - C++</title>
+</head>
+<body class="bg-cpp-suave cpp">
+	<nav class="navbar navbar-expand-sm bg-cpp text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../img/leng/C++.png" class="logo rounded float-right">
+		</a>
+		<h1>C++</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../">Menu</a> / 
+			<a href="../">C++</a> / 
+			<a href="./">Lecciones</a> / 
+			Estructuras de datos.
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Estructuras de datos.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Las estructuras en <em>C/C++</em> son tipos de datos compuestos, a saber, datos que están formados por el conjuto de varios tipos de datos llamados propiedades.<br><br>
+				Dentro de una estructura puede haber cualquier número de datos, y de cualquier tipo, incluyendo tipos de datos creados con <span class="tipoDato">typedef</span> o con clases (<span class="tipoDato">class</span>).<br><br>
+				Las estructuras se tienen que definir, para que el compilador sepa cómo reservar memoria para instanciar variables. <br><br>
+				La definición de una estructura tiene la siguiente sintaxis. <br><br>
+				<div class="alert alert-success border border-success ov-auto">
+					Sintaxis de la definición:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="tipoDato">struct</span> <span class="caracterEspecial">Nombre {</span><br>
+						// Definición de propiedades <br>
+						<span class="caracterEspecial">}</span>
+					</div>
+				</div>
+				Referencia:<br><br>
+				<ul>
+					<li>
+						<h5>Nombre: </h5>El nombre del tipo de dato compuesto que se quiere crear.
+					</li>
+				</ul><br>
+				<div class="alert alert-success border border-success ov-auto">
+					Sintaxis de la declaración:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="tipoDato">struct</span> <span class="caracterEspecial">Nombre NombreVariable = { [Valor de la propidedad 1], [Valor de la propidedad 2] ... [Valor de la propidedad N] };</span><br>
+					</div>
+				</div>
+				Referencia:<br><br>
+				<ul>
+					<li>
+						<h5>NombreVariable: </h5>El nombre de la variable que se quiere instanciar.
+					</li><br>
+					<li>
+						<h5>Valor de la propiedad N: </h5>El valor inicial del subtipo del objeto que se quiere instanciar.
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Ejemplos de uso de struct.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				<p>Ejemplos de uso de <span class="tipoDato">struct</span>.</p>
+				<div class="alert alert-light border">
+					<span class="tipoDato">struct</span> <span class="caracterEspecial">Punto {</span><br>
+					&nbsp;&nbsp;<span class="tipoDato">double</span> <span class="caracterEspecial">x,</span><br>
+					&nbsp;&nbsp;<span class="tipoDato">double</span> <span class="caracterEspecial">y,</span><br>
+					<span class="caracterEspecial">}</span><br>
+					<span class="tipoDato">struct</span> <span class="caracterEspecial">Punto miPunto = { <span class="numero">3.</span>, <span class="numero">4.</span> };</span><br>
+					<span class="tipoDato">struct</span> <span class="caracterEspecial">Punto <span class="include">*</span>pPunto = <span class="include">&</span>miPunto;</span><br>
+					<span class="caracterEspecial">miPunto.x;</span> // Propiedad x de miPunto <br>
+					<span class="caracterEspecial">(<span class="include">*</span>pPunto).x;</span> // Propiedad x de miPunto <br>
+					<span class="caracterEspecial">pPunto<span class="include">-></span>x;</span> // Propiedad x de miPunto
+				</div>
+			</div>
+		</div>
+		<div class="ruta bg-light p-3 clearfix">
+			<a href="./estructura-de-control-if.html" class="float-left btn btn-danger">Anterior.</a>
+			<!-- <a href="./07_Bucles%20do%20while.php" class="float-right btn btn-success">Siguiente.</a> -->
+		</div>
+	</div>
+</body>
+</html>

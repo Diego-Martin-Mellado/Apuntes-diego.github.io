@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="../../img/leng/C++.png">
+	<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../index.css">
+	<title>Dar la vuelta a un string - C++</title>
+</head>
+<body class="bg-cpp-suave cpp">
+	<nav class="navbar navbar-expand-sm bg-cpp text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../img/leng/C++.png" class="logo rounded float-right">
+		</a>
+		<h1>C++</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../">Menu</a> / 
+			<a href="../">C++</a> / 
+			<a href="./">Ejemplos</a> / 
+			Dar la vuleta a un string.
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Dar la vuelta a un string - C++.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Este código imprime por consola "Hola mundo!" al revés ("!odnum aloH"), se utilizan las librerías <a href="../Librerias/{stdio.h}/">&#60;stdio.h&#62;</a>, <a href="../Librerias/{stdlib.h}/">&#60;stdlib.h&#62;</a> y <a href="../Librerias/{string.h}/">&#60;string.h&#62;</a>.<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="include">#include</span> <span class="libreria">&#60;stdio.h&#62;</span><br>
+					<span class="include">#include</span> <span class="libreria">&#60;stdlib.h&#62;</span><br>
+					<span class="include">#include</span> <span class="libreria">&#60;string.h&#62;</span><br><br>
+					<span class="tipoDato">int</span> <span class="caracterEspecial">main (</span><span class="tipoDato">int</span> <span class="caracterEspecial">argc,</span> <span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">argv[]) {</span><br>
+					&nbsp;&nbsp;<span class="tipoDato">char</span> <span class="caracterEspecial">cadena[] =</span> <span class="comilla">"</span><span class="string">Hola mundo!</span><span class="comilla">"</span><span class="caracterEspecial">;</span><br>
+					&nbsp;&nbsp;<span class="tipoDato">char</span> <span class="caracterEspecial">aux_cadena[<span class="funNombre">strlen</span> ( cadena )];</span><br>
+					&nbsp;&nbsp;<span class="tipoDato">int</span> <span class="caracterEspecial">flag = <span class="numero">0</span>;</span><br><br>
+					&nbsp;&nbsp;<span class="include">for</span> <span class="caracterEspecial">( <span class="tipoDato">int</span> i = <span class="funNombre">strlen</span> ( cadena ) <span class="include">-</span> <span class="numero">1</span>; i <span class="include">>=</span> <span class="numero">0</span>; i<span class="include">--</span> ) {</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">flag = <span class="funNombre">strlen</span> ( cadena ) <span class="include">-</span> i <span class="include">-</span> <span class="numero">1</span>;</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">aux_cadena [ flag ] = cadena[ i ];</span><br>
+					&nbsp;&nbsp;<span class="caracterEspecial">}</span><br><br>
+					&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(<span class="comilla">"</span><span class="string">El texto normal es: </span><span class="cespecial">%s\n</span><span class="comilla">"</span>, cadena);</span><br>
+					&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(<span class="comilla">"</span><span class="string">El texto invertido es: </span><span class="cespecial">%s\n</span><span class="comilla">"</span>, aux_cadena);</span><br>
+					&nbsp;&nbsp;<span class="tipoDato">return</span> <span class="include">EXIT_SUCCESS</span><span class="caracterEspecial">;</span><br>
+					<span class="caracterEspecial">}</span>
+				</div>
+				<div class="alert alert-primary border-primary ov-auto">
+					Copia y ejecuta éste código para ver qué hace!
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

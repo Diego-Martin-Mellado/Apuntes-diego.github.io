@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="../../../../img/imglib/Python/Covid.png">
+	<link rel="stylesheet" type="text/css" href="../../../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../../../bootstrap/css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="../../../../index.css">
+	<title>Covid - Python</title>
+</head>
+<body class="bg-covid-suave py">
+	<nav class="navbar navbar-expand-sm bg-covid text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../../../img/imglib/Python/Covid.png" class="logo rounded float-right">
+		</a>
+		<h1>Covid</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../../../">Menu</a> / 
+			<a href="../../../">Python</a> / 
+			<a href="../../">Librerías</a> / 
+			<a href="../">Covid</a> / 
+			Clase Covid
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-covid text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Covid - Python</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				La clase <span class="caracterEspecial">covid.</span><span class="funNombre">Covid</span> <span class="caracterEspecial">()</span> está en la librería <em>covid</em>.<br><br>
+				La clase <span class="caracterEspecial">covid.</span><span class="funNombre">Covid</span> <span class="caracterEspecial">()</span> recoge los datos sobre la pandemia de 2020 de coronavirus (Covid-19) en el momento en que es instanciada, para poder manejar dicha información, se utilizarán los métodos que proporciona. <br><br>
+				<div class="alert alert-success border border-success ov-auto">
+					Instancia:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="caracterEspecial">cov_info = covid.</span><span class="funNombre">Covid</span> <span class="caracterEspecial">(<span class="nombreParametro">source</span> = <span class="comilla">'</span><span class="string">john_hopkins</span><span class="comilla">'</span>)</span>
+					</div>
+				</div>
+				Referencia: <br><br>
+				<ul>
+					<li>
+						<h5>Source: </h5>Es la fuente de la queremos sacar información. Puede ser uno de estos 2 valores: <br><br>
+						<ul>
+							<li>
+								<span class="caracterEspecial border border-dark rounded px-2 ml-2">cov_info = covid.<span class="funNombre">Covid</span> ()</span> / <span class="border border-dark rounded px-2 mr-2"><span class="caracterEspecial">cov_info = covid.</span><span class="funNombre">Covid</span> <span class="caracterEspecial">(<span class="nombreParametro">source</span> = <span class="comilla">'</span><span class="string">john_hopkins</span><span class="comilla">'</span>)</span></span> Recoje datos de la Universidad Johns Hopkins.
+							</li>
+							<li>
+								<span class="caracterEspecial border border-dark rounded px-2 ml-2">cov_info = covid.<span class="funNombre">Covid</span> (<span class="nombreParametro">source</span> = <span class="comilla">'</span><span class="string">worldometers</span><span class="comilla">'</span>)</span> Recoje datos de la página web <a href="https://www.worldometers.info/" target="_blank">https://www.worldometers.info/</a>.
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-covid text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Metodos de Covid - Python</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				<div class='row p-0 border'>
+					<div class='col p-0'>
+						<a href='./metodo-get-total-active-cases.html' class='btn btn-light w-100 rounded-0 p-3 ov-auto'>
+							<h3 class='float-left'>Metodo get_total_active_cases ()</h3>
+							<br><br>
+							<p class='float-left text-secondary mb-0'>El método <span class="caracterEspecial">covid.</span><span class="funNombre">Covid</span> <span class="caracterEspecial">().</span><span class="funNombre">get_total_active_cases</span> <span class="caracterEspecial">()</span> devuelve el número de personas del mundo que tienen la enfermedad <em>Covid-19</em> en el mundo. </p>
+						</a>
+					</div>
+				</div>
+				<div class='row p-0 border'>
+					<div class='col p-0'>
+						<a href='./metodo-get-total-confirmed-cases.html' class='btn btn-light w-100 rounded-0 p-3 ov-auto'>
+							<h3 class='float-left'>Metodo get_total_confirmed_cases ()</h3>
+							<br><br>
+							<p class='float-left text-secondary mb-0'>El método <span class="caracterEspecial">covid.</span><span class="funNombre">Covid</span> <span class="caracterEspecial">().</span><span class="funNombre">get_total_confirmed_cases</span> <span class="caracterEspecial">()</span> devuelve el número de personas del mundo confirmadas que tienen la enfermedad <em>Covid-19</em> en el mundo. </p>
+						</a>
+					</div>
+				</div>
+				<div class='row p-0 border'>
+					<div class='col p-0'>
+						<a href='./metodo-get-total-deaths.html' class='btn btn-light w-100 rounded-0 p-3 ov-auto'>
+							<h3 class='float-left'>Metodo get_total_deaths ()</h3>
+							<br><br>
+							<p class='float-left text-secondary mb-0'>El método <span class="caracterEspecial">covid.</span><span class="funNombre">Covid</span> <span class="caracterEspecial">().</span><span class="funNombre">get_total_deaths</span> <span class="caracterEspecial">()</span> devuelve el número de personas del mundo que han muerto por la enfermedad <em>Covid-19</em> en el mundo. </p>
+						</a>
+					</div>
+				</div>
+				<div class='row p-0 border'>
+					<div class='col p-0'>
+						<a href='./metodo-get-total-recovered.html' class='btn btn-light w-100 rounded-0 p-3 ov-auto'>
+							<h3 class='float-left'>Metodo get_total_recovered ()</h3>
+							<br><br>
+							<p class='float-left text-secondary mb-0'>El método covid.<span class="funNombre">Covid</span> ().<span class="funNombre">get_total_recovered</span> <span class="caracterEspecial">()</span> devuelve el número de personas que se han recuperado de la enfermedad <em>Covid-19</em> en el mundo.</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-covid text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Ejemplos de Covid - Python</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Uso de <span class="funNombre">Covid</span> <span class="caracterEspecial">()</span>:<br><br>
+				<div class="alert alert-light border ov-auto">
+					// Uso estándar <br>
+					<span class="import">import</span> <span class="caracterEspecial">covid</span><br><br>
+					<span class="caracterEspecial">cov_info = covid.</span><span class="funNombre">Covid</span> <span class="caracterEspecial">()</span>
+				</div>
+				<div class="alert alert-light border ov-auto">
+					// Uso importando clase <span class="funNombre">Covid</span> <span class="caracterEspecial">()</span><br>
+					<span class="import">from</span> <span class="caracterEspecial">covid</span> <span class="import">import</span> <span class="caracterEspecial">Covid</span><br><br>
+					<span class="caracterEspecial">cov_info = </span><span class="funNombre">Covid</span> <span class="caracterEspecial">()</span>
+				</div>
+				<div class="alert alert-light border ov-auto">
+					// Usando worldometers <br>
+					<span class="import">import</span> <span class="caracterEspecial">covid</span><br><br>
+					<span class="caracterEspecial">cov_info = covid.</span><span class="funNombre">Covid</span> <span class="caracterEspecial">(<span class="nombreParametro">source</span> = <span class="comilla">'</span><span class="string">worldometers</span><span class="comilla">'</span>)</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

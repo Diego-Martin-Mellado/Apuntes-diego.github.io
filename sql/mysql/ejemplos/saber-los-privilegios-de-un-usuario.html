@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="../../../img/imglib/SQL/MySQL.png">
+	<link rel="stylesheet" type="text/css" href="../../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../../index.css">
+	<title>Saber los privilegios de un usuario - MySQL</title>
+</head>
+<body class="bg-mysql-suave mysql">
+	<nav class="navbar navbar-expand-sm bg-mysql text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../../img/imglib/SQL/MySQL.png" class="logo rounded float-right">
+		</a>
+		<h1>MySQL</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../../">Menu</a> / 
+			<a href="../../">SQL</a> / 
+			<a href="../">MySQL</a> / 
+			<a href="./">Ejemplos</a> / 
+			Saber los privilegios de un usuario
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-mysql text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Ejemplos - MySQL</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Saber los privilegios de todos los usuarios. <br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="ins">SHOW GRANTS</span><span class="caracterEspecial">;</span>
+				</div>
+				Saber los privilegios de un usuario. <br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="ins">SHOW GRANTS FOR <span class="comilla">'</span><span class="string">nombre</span><span class="comilla">'</span></span><span class="caracterEspecial">;</span>
+				</div>
+				Saber los privilegios de un usuario en un host. <br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="ins">SHOW GRANTS FOR <span class="comilla">'</span><span class="string">nombre</span><span class="comilla">'</span></span><span class="caracterEspecial">@</span><span class="comilla">'</span><span class="string">host</span><span class="comilla">'</span><span class="caracterEspecial">;</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta itemprop="name" content="Tipos de datos">
+	<meta itemprop="description" content="Breve explicación de los tipos de datos con sus modificadores en C++.">
+	<meta itemprop="image" content="../../img/leng/C++.png">
+	<meta name="twitter:description" content="Breve explicación de los tipos de datos con sus modificadores en C++.">
+	<meta name="twitter:image" content="../../img/leng/C++.png">
+	<meta name="twitter:title" content="Tipos de datos">
+	<meta property="og:description" content="Breve explicación de los tipos de datos con sus modificadores en C++.">
+	<meta property="og:image" content="../../img/leng/C++.png">
+	<meta property="og:title" content="Tipos de datos">
+	<link rel="shortcut icon" type="image/png" href="../../img/leng/C++.png">
+	<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="../../index.css">
+	<title>Tipos de datos - C++</title>
+</head>
+<body class="bg-cpp-suave cpp">
+	<nav class="navbar navbar-expand-sm bg-cpp text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../img/leng/C++.png" class="logo rounded float-right">
+		</a>
+		<h1>C++</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../">Menu</a> / 
+			<a href="../">C++</a> / 
+			<a href="./">Lecciones</a> / 
+			Tipos de datos.
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Tipos de datos - C++.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Las variables en <em>C/C++</em> siempre deben tener un tipo especificado, que deteminará cómo será almacenado ese valor en memoria y cómo se podrá tratar dicho valor a lo largo del programa. <br><br>Los tamaños predeterminados en memoria están especificados en <a href="./01_Conceptos%20básicos.php">Conceptos básicos</a>, aunque serán tratados con mayor detalle aquí. <br><br>
+				<div class="alert alert-success border border-success">
+					Se tratarán los datos de <em><u>C++</u></em>, que son los mismos que en <em><u>C</u></em> más el tipo <span class="tipoDato">bool</span> y los tipos de datos con modificadores.
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Tipo entero (int o signed int).</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Se utiliza para guardar números sin decimales (enteros) con signo. <br><br>
+				Los compiladores de <em><u>C/C++</u></em> guardan en memoria 4 bytes de almacenamiento para guardar este tipo de dato, por lo que en él caben un total de 4.294.967.296 posibles valores. <br><br>
+				<div class="alert alert-success border border-success text-center">
+					2<sup>8</sup> * 2<sup>8</sup> * 2<sup>8</sup> * 2<sup>8</sup> = 2<sup>32</sup> = 4.294.967.296
+				</div>
+				<div class="alert alert-success border border-success">
+					El rango de valores de una variable de tipo <span class="tipoDato">int</span> o <span class="tipoDato">signed int</span> va desde -2.147.483.648 hasta 2.147.483.647. (El 0 está incluido)
+				</div>
+				<div class="alert alert-warning border border-warning ov-auto">
+					Su caracter de formateo en cadena es <span class="cespecial">%i</span>.
+				</div>
+				Declaración:<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="tipoDato">int</span> <span class="caracterEspecial">var =</span> <span class="numero">1</span><span class="caracterEspecial">;</span><br>
+					<span class="tipoDato">signed int</span> <span class="caracterEspecial">var =</span> <span class="numero">3</span><span class="caracterEspecial">;</span>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Tipo entero corto (short int o signed short int).</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Se utiliza para guardar números sin decimales (enteros) utilizando la mitad de memoria que un entero con signo. <br><br>
+				Los compiladores de <em><u>C/C++</u></em> guardan en memoria 2 bytes de almacenamiento para guardar este tipo de dato, por lo que en él caben un total de 65.536 posibles valores. <br><br>
+				<div class="alert alert-success border border-success text-center">
+					2<sup>8</sup> * 2<sup>8</sup> = 2<sup>16</sup> = 65.536
+				</div>
+				<div class="alert alert-success border border-success">
+					El rango de valores de una variable de tipo <span class="tipoDato">short int</span> o <span class="tipoDato">signed short int</span> va desde -32.768 hasta 32.767. (El 0 está incluido)
+				</div>
+				<div class="alert alert-warning border border-warning ov-auto">
+					Su caracter de formateo en cadena es <span class="cespecial">%hi</span>.
+				</div>
+				Declaración:<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="tipoDato">short int</span> <span class="caracterEspecial">var =</span> <span class="numero">1</span><span class="caracterEspecial">;</span><br>
+					<span class="tipoDato">signed short int</span> <span class="caracterEspecial">var =</span> <span class="numero">3</span><span class="caracterEspecial">;</span>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Tipo entero sin signo (unsigned int).</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Se utiliza para guardar números sin decimales (enteros) sin signo. <br><br>
+				Los compiladores de <em><u>C/C++</u></em> guardan en memoria 4 bytes de almacenamiento para guardar este tipo de dato, por lo que en él caben un total de 4.294.967.296 posibles valores. <br><br>
+				<div class="alert alert-success border border-success text-center">
+					2<sup>8</sup> * 2<sup>8</sup> * 2<sup>8</sup> * 2<sup>8</sup> = 2<sup>32</sup> = 4.294.967.296
+				</div>
+				<div class="alert alert-success border border-success">
+					El rango de valores de una variable de tipo <span class="tipoDato">unsigned int</span> va desde 0 hasta 4.294.967.295. (El 0 está incluido)
+				</div>
+				<div class="alert alert-warning border border-warning ov-auto">
+					Su caracter de formateo en cadena es <span class="cespecial">%u</span>.
+				</div>
+				Declaración:<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="tipoDato">unsigned int</span> <span class="caracterEspecial">var =</span> <span class="numero">4</span><span class="caracterEspecial">;</span>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Tipo entero corto (unsigned short int).</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Se utiliza para guardar números sin decimales (enteros) utilizando la mitad de memoria que un entero sin signo. <br><br>
+				Los compiladores de <em><u>C/C++</u></em> guardan en memoria 4 bytes de almacenamiento para guardar este tipo de dato, por lo que en él caben un total de 65.536 posibles valores. <br><br>
+				<div class="alert alert-success border border-success text-center">
+					2<sup>8</sup> * 2<sup>8</sup> = 2<sup>16</sup> = 65.536
+				</div>
+				<div class="alert alert-success border border-success">
+					El rango de valores de una variable de tipo <span class="tipoDato">unsigned short int</span> va desde 0 hasta 65.535. (El 0 está incluido)
+				</div>
+				<div class="alert alert-warning border border-warning ov-auto">
+					Su caracter de formateo en cadena es <span class="cespecial">%hu</span>.
+				</div>
+				Declaración:<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="tipoDato">unsigned int</span> <span class="caracterEspecial">var =</span> <span class="numero">1</span><span class="caracterEspecial">;</span>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Tipo entero largo (long int o signed long int).</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Se utiliza para guardar números sin decimales (enteros) utilizando el doble de memoria que un entero con signo. <br><br>
+				Los compiladores de <em><u>C/C++</u></em> guardan en memoria 4 bytes de almacenamiento para guardar este tipo de dato, por lo que en él caben un total de 4.294.967.296 posibles valores. <br><br>
+				<div class="alert alert-success border border-success text-center">
+					2<sup>8</sup> * 2<sup>8</sup> * 2<sup>8</sup> * 2<sup>8</sup> = 2<sup>32</sup> = 4.294.967.296
+				</div>
+				<div class="alert alert-success border border-success">
+					El rango de valores de una variable de tipo <span class="tipoDato">long int</span> o <span class="tipoDato">signed long int</span> va desde -2.147.483.648 hasta 2.147.483.647. (El 0 está incluido)
+				</div>
+				<div class="alert alert-warning border border-warning ov-auto">
+					Su caracter de formateo en cadena es <span class="cespecial">%li</span>.
+				</div>
+				Declaración:<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="tipoDato">long int</span> <span class="caracterEspecial">var =</span> <span class="numero">1</span><span class="caracterEspecial">;</span><br>
+					<span class="tipoDato">signed long int</span> <span class="caracterEspecial">var =</span> <span class="numero">3</span><span class="caracterEspecial">;</span>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Tipo entero largo sin signo (unsigned long int).</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Se utiliza para guardar números sin decimales (enteros) utilizando el doble de memoria que un entero sin signo. <br><br>
+				Los compiladores de <em><u>C/C++</u></em> guardan en memoria 4 bytes de almacenamiento para guardar este tipo de dato, por lo que en él caben un total de 4.294.967.296 posibles valores. <br><br>
+				<div class="alert alert-success border border-success text-center">
+					2<sup>8</sup> * 2<sup>8</sup> * 2<sup>8</sup> * 2<sup>8</sup> = 2<sup>32</sup> = 4.294.967.296
+				</div>
+				<div class="alert alert-success border border-success">
+					El rango de valores de una variable de tipo <span class="tipoDato">long int</span> o <span class="tipoDato">signed long int</span> va desde 0 hasta 4.294.967.296. (El 0 está incluido)
+				</div>
+				<div class="alert alert-warning border border-warning ov-auto">
+					Su caracter de formateo en cadena es <span class="cespecial">%lu</span>.
+				</div>
+				Declaración:<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="tipoDato">unsigned long int</span> <span class="caracterEspecial">var =</span> <span class="numero">1</span><span class="caracterEspecial">;</span>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Tipo entero muy largo (long long int o signed long long int).</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Se utiliza para guardar números sin decimales (enteros) utilizando el doble de memoria que un entero sin signo. <br><br>
+				Los compiladores de <em><u>C/C++</u></em> guardan en memoria 8 bytes de almacenamiento para guardar este tipo de dato, por lo que en él caben un total de 18.446.744.073.709.551.616 posibles valores. <br><br>
+				<div class="alert alert-success border border-success text-center">
+					2<sup>8</sup> * 2<sup>8</sup> * 2<sup>8</sup> * 2<sup>8</sup> * 2<sup>8</sup> * 2<sup>8</sup> * 2<sup>8</sup> * 2<sup>8</sup> = 2<sup>64</sup> = 18.446.744.073.709.551.616
+				</div>
+				<div class="alert alert-success border border-success">
+					El rango de valores de una variable de tipo <span class="tipoDato">long int</span> o <span class="tipoDato">signed long int</span> va desde -9.223.372.036.854.775.808‬ hasta 9.223.372.036.854.775.807. (El 0 está incluido)
+				</div>
+				<div class="alert alert-warning border border-warning ov-auto">
+					Su caracter de formateo en cadena es <span class="cespecial">%lli</span>.
+				</div>
+				Declaración:<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="tipoDato">long long int</span> <span class="caracterEspecial">var =</span> <span class="numero">1</span><span class="caracterEspecial">;</span><br>
+					<span class="tipoDato">signed long long int</span> <span class="caracterEspecial">var =</span> <span class="numero">3</span><span class="caracterEspecial">;</span>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Tipo entero muy largo sin signo (unsigned long long int).</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Se utiliza para guardar números sin decimales (enteros) utilizando el doble de memoria que un entero sin signo. <br><br>
+				Los compiladores de <em><u>C/C++</u></em> guardan en memoria 8 bytes de almacenamiento para guardar este tipo de dato, por lo que en él caben un total de 18.446.744.073.709.551.616 posibles valores. <br><br>
+				<div class="alert alert-success border border-success text-center">
+					2<sup>8</sup> * 2<sup>8</sup> * 2<sup>8</sup> * 2<sup>8</sup> * 2<sup>8</sup> * 2<sup>8</sup> * 2<sup>8</sup> * 2<sup>8</sup> = 2<sup>64</sup> = 18.446.744.073.709.551.616
+				</div>
+				<div class="alert alert-success border border-success">
+					El rango de valores de una variable de tipo <span class="tipoDato">long int</span> o <span class="tipoDato">signed long int</span> va desde 0 hasta 18.446.744.073.709.551.615. (El 0 está incluido)
+				</div>
+				<div class="alert alert-warning border border-warning ov-auto">
+					Su caracter de formateo en cadena es <span class="cespecial">%llu</span>.
+				</div>
+				Declaración:<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="tipoDato">unsigned long long int</span> <span class="caracterEspecial">var =</span> <span class="numero">1</span><span class="caracterEspecial">;</span>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Tipo flotante (float).</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Se utiliza para guardar números con decimales. <br><br>
+				Los compiladores de <em><u>C/C++</u></em> guardan en memoria 4 bytes de almacenamiento para guardar este tipo de dato. <br><br>
+				<div class="alert alert-success border border-success">
+					No se especifica cuántos valores caben en este tipo de dato porque el rango varía en función de la cantidad de decimales que se apliquen al número.
+				</div>
+				<div class="alert alert-warning border border-warning ov-auto">
+					Su caracter de formateo en cadena es <span class="cespecial">%f</span>, además se puede especificar cuántos decimales se quieren mostrar de la siguiente manera: <span class="cespecial">%</span><span class="caracterEspecial">[dígitos de la parte entera].[dígitos de la parte decimal]</span><span class="cespecial">f</span>. <br><br>Ejemplo con 2 digitos enteros y 2 decimales: <span class="cespecial">%2.2f</span><br>Ejemplo con digitos indeterminados enteros y 3 decimales: <span class="cespecial">%.3f</span><br>Ejemplo con digitos por defecto: <span class="cespecial">%f</span>
+				</div>
+				Declaración:<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="tipoDato">float</span> <span class="caracterEspecial">var =</span> <span class="numero">1.0</span><span class="caracterEspecial">;</span>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Tipo doble (double).</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Se utiliza para guardar números con decimales y con el doble de precisión que con <span class="tipoDato">float</span>. <br><br>
+				Los compiladores de <em><u>C/C++</u></em> guardan en memoria 4 bytes de almacenamiento para guardar este tipo de dato. <br><br>
+				Se podría decir que <span class="tipoDato">double</span> es un <span class="tipoDato">long float</span> y que por eso su caracter de formateo es <span class="cespecial">%lf</span>. <br><br>
+				<div class="alert alert-success border border-success">
+					No se especifica cuántos valores caben en este tipo de dato porque el rango varía en función de la cantidad de decimales que se apliquen al número.
+				</div>
+				<div class="alert alert-warning border border-warning ov-auto">
+					Su caracter de formateo en cadena es <span class="cespecial">%lf</span>, además se puede especificar cuántos decimales se quieren mostrar de la siguiente manera: <span class="cespecial">%</span><span class="caracterEspecial">[dígitos de la parte entera].[dígitos de la parte decimal]</span><span class="cespecial">lf</span>. <br><br>Ejemplo con 2 digitos enteros y 2 decimales: <span class="cespecial">%2.2lf</span>.<br>Ejemplo con digitos indeterminados enteros y 3 decimales: <span class="cespecial">%.3lf</span>.<br>Ejemplo con digitos por defecto: <span class="cespecial">%lf</span>.
+				</div>
+				Declaración:<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="tipoDato">double</span> <span class="caracterEspecial">var =</span> <span class="numero">1.0</span><span class="caracterEspecial">;</span>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Tipo bool (booleano).</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Se utiliza para guardar un valor booleano. <br><br>
+				Los compiladores de <em><u>C/C++</u></em> guardan en memoria 1 bit de almacenamiento para guardar este tipo de dato. <br><br>
+				El tipo de dato <span class="tipoDato">bool</span> solo tiene 2 valores, <span class="ampAstBool">true</span> o <span class="ampAstBool">false</span>, que en realidad mirando niveles de programación más bajos, estos valores tan sólo son alias de los valores <span class="numero">1</span> y <span class="numero">0</span>. <br><br>
+				<div class="alert alert-success border border-success text-center">
+					2<sup>1</sup> = 2.
+				</div>
+				<div class="alert alert-warning border border-warning ov-auto">
+					Para formatear el tipo de dato <span class="tipoDato">bool</span> se utiliza el mismo formateo que los enteros: <span class="cespecial">%i</span>.
+				</div>
+				Declaración:<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="tipoDato">bool</span> <span class="caracterEspecial">var =</span> <span class="ampAstBool">true</span><span class="caracterEspecial">;</span>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Tipo char (carcater).</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Se utiliza para guardar un caracter ASCII. <br><br>
+				Los compiladores de <em><u>C/C++</u></em> guardan en memoria 1 byte de almacenamiento para guardar este tipo de dato. <br><br>
+				De los 255 posibles valores, los <u>legibles</u> del tipo de dato <span class="tipoDato">char</span> son los siguientes: <br><br>
+				<div class="alert alert-success border border-success text-center">
+					<div class="alert alert-dark">
+						<div class='row'>
+							<div class='col border text-center bg-light'>&#32;</div>
+							<div class='col border text-center bg-light'>&#33;</div>
+							<div class='col border text-center bg-light'>&#34;</div>
+							<div class='col border text-center bg-light'>&#35;</div>
+							<div class='col border text-center bg-light'>&#36;</div>
+							<div class='col border text-center bg-light'>&#37;</div>
+							<div class='col border text-center bg-light'>&#38;</div>
+							<div class='col border text-center bg-light'>&#39;</div>
+							<div class='col border text-center bg-light'>&#40;</div>
+							<div class='col border text-center bg-light'>&#41;</div>
+							<div class='col border text-center bg-light'>&#42;</div>
+							<div class='col border text-center bg-light'>&#43;</div>
+							<div class='col border text-center bg-light'>&#44;</div>
+							<div class='col border text-center bg-light'>&#45;</div>
+							<div class='col border text-center bg-light'>&#46;</div>
+							<div class='col border text-center bg-light'>&#47;</div>
+						</div>
+						<div class='row'>
+							<div class='col border text-center bg-light'>&#48;</div>
+							<div class='col border text-center bg-light'>&#49;</div>
+							<div class='col border text-center bg-light'>&#50;</div>
+							<div class='col border text-center bg-light'>&#51;</div>
+							<div class='col border text-center bg-light'>&#52;</div>
+							<div class='col border text-center bg-light'>&#53;</div>
+							<div class='col border text-center bg-light'>&#54;</div>
+							<div class='col border text-center bg-light'>&#55;</div>
+							<div class='col border text-center bg-light'>&#56;</div>
+							<div class='col border text-center bg-light'>&#57;</div>
+							<div class='col border text-center bg-light'>&#58;</div>
+							<div class='col border text-center bg-light'>&#59;</div>
+							<div class='col border text-center bg-light'>&#60;</div>
+							<div class='col border text-center bg-light'>&#61;</div>
+							<div class='col border text-center bg-light'>&#62;</div>
+							<div class='col border text-center bg-light'>&#63;</div>
+						</div>
+						<div class='row'>
+							<div class='col border text-center bg-light'>&#64;</div>
+							<div class='col border text-center bg-light'>&#65;</div>
+							<div class='col border text-center bg-light'>&#66;</div>
+							<div class='col border text-center bg-light'>&#67;</div>
+							<div class='col border text-center bg-light'>&#68;</div>
+							<div class='col border text-center bg-light'>&#69;</div>
+							<div class='col border text-center bg-light'>&#70;</div>
+							<div class='col border text-center bg-light'>&#71;</div>
+							<div class='col border text-center bg-light'>&#72;</div>
+							<div class='col border text-center bg-light'>&#73;</div>
+							<div class='col border text-center bg-light'>&#74;</div>
+							<div class='col border text-center bg-light'>&#75;</div>
+							<div class='col border text-center bg-light'>&#76;</div>
+							<div class='col border text-center bg-light'>&#77;</div>
+							<div class='col border text-center bg-light'>&#78;</div>
+							<div class='col border text-center bg-light'>&#79;</div>
+						</div>
+						<div class='row'>
+							<div class='col border text-center bg-light'>&#80;</div>
+							<div class='col border text-center bg-light'>&#81;</div>
+							<div class='col border text-center bg-light'>&#82;</div>
+							<div class='col border text-center bg-light'>&#83;</div>
+							<div class='col border text-center bg-light'>&#84;</div>
+							<div class='col border text-center bg-light'>&#85;</div>
+							<div class='col border text-center bg-light'>&#86;</div>
+							<div class='col border text-center bg-light'>&#87;</div>
+							<div class='col border text-center bg-light'>&#88;</div>
+							<div class='col border text-center bg-light'>&#89;</div>
+							<div class='col border text-center bg-light'>&#90;</div>
+							<div class='col border text-center bg-light'>&#91;</div>
+							<div class='col border text-center bg-light'>&#92;</div>
+							<div class='col border text-center bg-light'>&#93;</div>
+							<div class='col border text-center bg-light'>&#94;</div>
+							<div class='col border text-center bg-light'>&#95;</div>
+						</div>
+						<div class='row'>
+							<div class='col border text-center bg-light'>&#96;</div>
+							<div class='col border text-center bg-light'>&#97;</div>
+							<div class='col border text-center bg-light'>&#98;</div>
+							<div class='col border text-center bg-light'>&#99;</div>
+							<div class='col border text-center bg-light'>&#100;</div>
+							<div class='col border text-center bg-light'>&#101;</div>
+							<div class='col border text-center bg-light'>&#102;</div>
+							<div class='col border text-center bg-light'>&#103;</div>
+							<div class='col border text-center bg-light'>&#104;</div>
+							<div class='col border text-center bg-light'>&#105;</div>
+							<div class='col border text-center bg-light'>&#106;</div>
+							<div class='col border text-center bg-light'>&#107;</div>
+							<div class='col border text-center bg-light'>&#108;</div>
+							<div class='col border text-center bg-light'>&#109;</div>
+							<div class='col border text-center bg-light'>&#110;</div>
+							<div class='col border text-center bg-light'>&#111;</div>
+						</div>
+						<div class='row'>
+							<div class='col border text-center bg-light'>&#112;</div>
+							<div class='col border text-center bg-light'>&#113;</div>
+							<div class='col border text-center bg-light'>&#114;</div>
+							<div class='col border text-center bg-light'>&#115;</div>
+							<div class='col border text-center bg-light'>&#116;</div>
+							<div class='col border text-center bg-light'>&#117;</div>
+							<div class='col border text-center bg-light'>&#118;</div>
+							<div class='col border text-center bg-light'>&#119;</div>
+							<div class='col border text-center bg-light'>&#120;</div>
+							<div class='col border text-center bg-light'>&#121;</div>
+							<div class='col border text-center bg-light'>&#122;</div>
+							<div class='col border text-center bg-light'>&#123;</div>
+							<div class='col border text-center bg-light'>&#124;</div>
+							<div class='col border text-center bg-light'>&#125;</div>
+							<div class='col border text-center bg-light'>&#126;</div>
+							<div class='col border text-center bg-light'>&#127;</div>
+						</div>
+						<div class='row'>
+							<div class='col border text-center bg-light'>&#128;</div>
+							<div class='col border text-center bg-light'>&#129;</div>
+							<div class='col border text-center bg-light'>&#130;</div>
+							<div class='col border text-center bg-light'>&#131;</div>
+							<div class='col border text-center bg-light'>&#132;</div>
+							<div class='col border text-center bg-light'>&#133;</div>
+							<div class='col border text-center bg-light'>&#134;</div>
+							<div class='col border text-center bg-light'>&#135;</div>
+							<div class='col border text-center bg-light'>&#136;</div>
+							<div class='col border text-center bg-light'>&#137;</div>
+							<div class='col border text-center bg-light'>&#138;</div>
+							<div class='col border text-center bg-light'>&#139;</div>
+							<div class='col border text-center bg-light'>&#140;</div>
+							<div class='col border text-center bg-light'>&#141;</div>
+							<div class='col border text-center bg-light'>&#142;</div>
+							<div class='col border text-center bg-light'>&#143;</div>
+						</div>
+						<div class='row'>
+							<div class='col border text-center bg-light'>&#144;</div>
+							<div class='col border text-center bg-light'>&#145;</div>
+							<div class='col border text-center bg-light'>&#146;</div>
+							<div class='col border text-center bg-light'>&#147;</div>
+							<div class='col border text-center bg-light'>&#148;</div>
+							<div class='col border text-center bg-light'>&#149;</div>
+							<div class='col border text-center bg-light'>&#150;</div>
+							<div class='col border text-center bg-light'>&#151;</div>
+							<div class='col border text-center bg-light'>&#152;</div>
+							<div class='col border text-center bg-light'>&#153;</div>
+							<div class='col border text-center bg-light'>&#154;</div>
+							<div class='col border text-center bg-light'>&#155;</div>
+							<div class='col border text-center bg-light'>&#156;</div>
+							<div class='col border text-center bg-light'>&#157;</div>
+							<div class='col border text-center bg-light'>&#158;</div>
+							<div class='col border text-center bg-light'>&#159;</div>
+						</div>
+						<div class='row'>
+							<div class='col border text-center bg-light'>&#160;</div>
+							<div class='col border text-center bg-light'>&#161;</div>
+							<div class='col border text-center bg-light'>&#162;</div>
+							<div class='col border text-center bg-light'>&#163;</div>
+							<div class='col border text-center bg-light'>&#164;</div>
+							<div class='col border text-center bg-light'>&#165;</div>
+							<div class='col border text-center bg-light'>&#166;</div>
+							<div class='col border text-center bg-light'>&#167;</div>
+							<div class='col border text-center bg-light'>&#168;</div>
+							<div class='col border text-center bg-light'>&#169;</div>
+							<div class='col border text-center bg-light'>&#170;</div>
+							<div class='col border text-center bg-light'>&#171;</div>
+							<div class='col border text-center bg-light'>&#172;</div>
+							<div class='col border text-center bg-light'>&#173;</div>
+							<div class='col border text-center bg-light'>&#174;</div>
+							<div class='col border text-center bg-light'>&#175;</div>
+						</div>
+						<div class='row'>
+							<div class='col border text-center bg-light'>&#176;</div>
+							<div class='col border text-center bg-light'>&#177;</div>
+							<div class='col border text-center bg-light'>&#178;</div>
+							<div class='col border text-center bg-light'>&#179;</div>
+							<div class='col border text-center bg-light'>&#180;</div>
+							<div class='col border text-center bg-light'>&#181;</div>
+							<div class='col border text-center bg-light'>&#182;</div>
+							<div class='col border text-center bg-light'>&#183;</div>
+							<div class='col border text-center bg-light'>&#184;</div>
+							<div class='col border text-center bg-light'>&#185;</div>
+							<div class='col border text-center bg-light'>&#186;</div>
+							<div class='col border text-center bg-light'>&#187;</div>
+							<div class='col border text-center bg-light'>&#188;</div>
+							<div class='col border text-center bg-light'>&#189;</div>
+							<div class='col border text-center bg-light'>&#190;</div>
+							<div class='col border text-center bg-light'>&#191;</div>
+						</div>
+						<div class='row'>
+							<div class='col border text-center bg-light'>&#192;</div>
+							<div class='col border text-center bg-light'>&#193;</div>
+							<div class='col border text-center bg-light'>&#194;</div>
+							<div class='col border text-center bg-light'>&#195;</div>
+							<div class='col border text-center bg-light'>&#196;</div>
+							<div class='col border text-center bg-light'>&#197;</div>
+							<div class='col border text-center bg-light'>&#198;</div>
+							<div class='col border text-center bg-light'>&#199;</div>
+							<div class='col border text-center bg-light'>&#200;</div>
+							<div class='col border text-center bg-light'>&#201;</div>
+							<div class='col border text-center bg-light'>&#202;</div>
+							<div class='col border text-center bg-light'>&#203;</div>
+							<div class='col border text-center bg-light'>&#204;</div>
+							<div class='col border text-center bg-light'>&#205;</div>
+							<div class='col border text-center bg-light'>&#206;</div>
+							<div class='col border text-center bg-light'>&#207;</div>
+						</div>
+						<div class='row'>
+							<div class='col border text-center bg-light'>&#208;</div>
+							<div class='col border text-center bg-light'>&#209;</div>
+							<div class='col border text-center bg-light'>&#210;</div>
+							<div class='col border text-center bg-light'>&#211;</div>
+							<div class='col border text-center bg-light'>&#212;</div>
+							<div class='col border text-center bg-light'>&#213;</div>
+							<div class='col border text-center bg-light'>&#214;</div>
+							<div class='col border text-center bg-light'>&#215;</div>
+							<div class='col border text-center bg-light'>&#216;</div>
+							<div class='col border text-center bg-light'>&#217;</div>
+							<div class='col border text-center bg-light'>&#218;</div>
+							<div class='col border text-center bg-light'>&#219;</div>
+							<div class='col border text-center bg-light'>&#220;</div>
+							<div class='col border text-center bg-light'>&#221;</div>
+							<div class='col border text-center bg-light'>&#222;</div>
+							<div class='col border text-center bg-light'>&#223;</div>
+						</div>
+						<div class='row'>
+							<div class='col border text-center bg-light'>&#224;</div>
+							<div class='col border text-center bg-light'>&#225;</div>
+							<div class='col border text-center bg-light'>&#226;</div>
+							<div class='col border text-center bg-light'>&#227;</div>
+							<div class='col border text-center bg-light'>&#228;</div>
+							<div class='col border text-center bg-light'>&#229;</div>
+							<div class='col border text-center bg-light'>&#230;</div>
+							<div class='col border text-center bg-light'>&#231;</div>
+							<div class='col border text-center bg-light'>&#232;</div>
+							<div class='col border text-center bg-light'>&#233;</div>
+							<div class='col border text-center bg-light'>&#234;</div>
+							<div class='col border text-center bg-light'>&#235;</div>
+							<div class='col border text-center bg-light'>&#236;</div>
+							<div class='col border text-center bg-light'>&#237;</div>
+							<div class='col border text-center bg-light'>&#238;</div>
+							<div class='col border text-center bg-light'>&#239;</div>
+						</div>
+						<div class='row'>
+							<div class='col border text-center bg-light'>&#240;</div>
+							<div class='col border text-center bg-light'>&#241;</div>
+							<div class='col border text-center bg-light'>&#242;</div>
+							<div class='col border text-center bg-light'>&#243;</div>
+							<div class='col border text-center bg-light'>&#244;</div>
+							<div class='col border text-center bg-light'>&#245;</div>
+							<div class='col border text-center bg-light'>&#246;</div>
+							<div class='col border text-center bg-light'>&#247;</div>
+							<div class='col border text-center bg-light'>&#248;</div>
+							<div class='col border text-center bg-light'>&#249;</div>
+							<div class='col border text-center bg-light'>&#250;</div>
+							<div class='col border text-center bg-light'>&#251;</div>
+							<div class='col border text-center bg-light'>&#252;</div>
+							<div class='col border text-center bg-light'>&#253;</div>
+							<div class='col border text-center bg-light'>&#254;</div>
+							<div class='col border text-center bg-light'>&#255;</div>
+						</div>
+					</div>
+				</div>
+				<div class="alert alert-warning border border-warning ov-auto">
+					Para formatear el tipo de dato <span class="tipoDato">char</span> se utiliza el formato <span class="cespecial">%c</span>.
+				</div>
+				Declaración:<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="tipoDato">char</span> <span class="caracterEspecial">var =</span> <span class="comilla">'</span><span class="string">S</span><span class="comilla">'</span><span class="caracterEspecial">;</span>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Tipo auto (Automatico).</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Declara una variable en la que no se especifica tipo, pero sí se le asigna un tipo automáticamente en tiempo de ejecución. <br><br>
+				Declaración:<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="tipoDato">auto</span> <span class="caracterEspecial">var =</span> <span class="comilla">"</span><span class="string">Cadena</span><span class="comilla">"</span><span class="caracterEspecial">;</span> // la variable será de tipo 'const char *'
+				</div>
+			</div>
+		</div>
+		<!-- <div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Tipo char * (Puntero a cadena).</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Se utiliza para guardar una dirección de memoria que apunta a una cadena de caracteres ASCII. <br><br>
+				Los compiladores de <em><u>C/C++</u></em> guardan en memoria una dirección desde la que el compilador lee hasta que se encuentra el caracter de fin de cadena (<span class="comilla">'</span><span class="string">\0</span><span class="comilla">'</span>). <br><br>
+				<div class="alert alert-warning border border-warning ov-auto">
+					Para formatear el tipo de dato al que apunta el puntero de un <span class="tipoDato">char</span> <span class="ampAstBool">*</span> se utiliza el formato <span class="cespecial">%s</span>, para formatear el numero de la dirección se utiliza el formato <span class="cespecial">%p</span> (minúsculas) o <span class="cespecial">%P</span> (mayúsculas).
+				</div>
+				Declaración:<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">var =</span> <span class="comilla">"</span><span class="string">Cadena</span><span class="comilla">"</span><span class="caracterEspecial">;</span>
+				</div>
+			</div>
+		</div> -->
+		<div class="ruta bg-light p-3 clearfix">
+			<a href="./estructura-de-un-programa.html" class="float-left btn btn-danger">Anterior</a>
+			<a href="./arrays.html" class="float-right btn btn-success">Siguiente.</a>
+		</div>
+	</div>
+</body>
+</html>

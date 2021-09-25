@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta itemprop="name" content="Bucles while">
+	<meta itemprop="description" content="Funcionamiento de los bucles while en C++.">
+	<meta itemprop="image" content="../../img/leng/C++.png">
+	<meta name="twitter:description" content="Funcionamiento de los bucles while en C++.">
+	<meta name="twitter:image" content="../../img/leng/C++.png">
+	<meta name="twitter:title" content="Bucles while">
+	<meta property="og:description" content="Funcionamiento de los bucles while en C++.">
+	<meta property="og:image" content="../../img/leng/C++.png">
+	<meta property="og:title" content="Bucles while">
+	<link rel="shortcut icon" type="image/png" href="../../img/leng/C++.png">
+	<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../index.css">
+	<title>Bucles while - C++</title>
+</head>
+<body class="bg-cpp-suave cpp">
+	<nav class="navbar navbar-expand-sm bg-cpp text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../img/leng/C++.png" class="logo rounded float-right">
+		</a>
+		<h1>C++</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../">Menu</a> / 
+			<a href="../">C++</a> / 
+			<a href="./">Lecciones</a> / 
+			Bucles while.
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Bucles while.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Los bucles <span class="tipoDato">while</span> en <em>C/C++</em> se utilizan para repetir una serie de instrucciones un número desconocido de veces.<br><br>
+				No tienen iterador, aunque se pueden crear una o varias variables que actúen como tal declaradas <u>fuera</u> del bucle. <br><br>
+				<div class="alert alert-success border border-success ov-auto">
+					Sintaxis: <br><br>
+					<div class="alert alert-light border">
+						<span class="tipoDato">while</span> <span class="caracterEspecial">( condicion ) {</span><br>
+						// Código a ejecutar en el bucle <br>
+						<span class="caracterEspecial">}</span>
+					</div>
+				</div>
+				Referencia:<br><br>
+				<ul>
+					<li>
+						<h5>Condición:</h5> Se trata de una condición (Ya sea de una comparación o más) que debe devolver un valor booleano, mientras este valor sea verdadero, el bucle seguirá repitiéndose. <br><br>
+					</li>
+				</ul>
+				<div class="alert alert-success border border-success ov-auto">
+					El <u>iterador</u> es la variable o conjunto de ellas que indican qué vuelta es la que se está ejecutando en el bucle.
+				</div>
+				<div class="alert alert-danger border border-danger ov-auto">
+					<h4>Bucles <span class="tipoDato">while</span> infinitos:</h4>
+					<div class="alert alert-light border">
+						<span class="tipoDato">while</span> <span class="caracterEspecial">( <span class="ampAstBool">true</span> ) {</span><br>
+						// Código a ejecutar en el bucle <br>
+						<span class="caracterEspecial">}</span><br><br>
+						<span class="tipoDato">while</span> <span class="caracterEspecial">( <span class="numero">1</span> ) {</span><br>
+						// Código a ejecutar en el bucle <br>
+						<span class="caracterEspecial">}</span>
+					</div>
+					No se aconseja utilizarlo <u>nunca</u>.
+				</div>
+				<div class="alert alert-warning border border-warning ov-auto">
+					Un bucle <span class="tipoDato">while</span> <u>siempre</u> es un scope, por lo que las variables inicializadas dentro del mismo serán inútiles fuera de él.
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Ejemplos de uso del bucle while.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				<h5>Imprime los números del 0 al 10:</h5>
+				<div class="alert alert-light border">
+					<span class="tipoDato">int</span> <span class="caracterEspecial">iterador = </span><span class="numero">0</span><span class="caracterEspecial">;</span><br>
+					<span class="tipoDato">while</span> <span class="caracterEspecial">( iterador <span class="ampAstBool"><</span> <span class="numero">10</span> ) {</span><br>
+					&nbsp;&nbsp;// Código a ejecutar en el bucle <br>
+					&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(<span class="comilla">"</span><span class="cespecial">%i\n</span><span class="comilla">"</span>, iterador);</span><br>
+					&nbsp;&nbsp;<span class="caracterEspecial">iterador</span> <span class="ampAstBool">++</span><span class="caracterEspecial">;</span><br>
+					<span class="caracterEspecial">}</span>
+				</div>
+				<h5>Imprime los números 'i' y 'j' hasta que i sea mayor que 5 y j sea menor que 0:</h5>
+				<div class="alert alert-light border">
+					<span class="tipoDato">int</span> <span class="caracterEspecial">i = </span><span class="numero">0</span><span class="caracterEspecial">, j = </span> <span class="numero">7</span><span class="caracterEspecial">;</span><br>
+					<span class="tipoDato">while</span> <span class="caracterEspecial">( i <span class="ampAstBool"><</span> <span class="numero">5</span> <span class="ampAstBool">&&</span> j <span class="ampAstBool">></span> <span class="numero">0</span> ) {</span><br>
+					&nbsp;&nbsp;// Código a ejecutar en el bucle <br>
+					&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(<span class="comilla">"</span><span class="string">i: </span><span class="cespecial">%i</span> <span class="string">j: </span><span class="cespecial">%i\n</span><span class="comilla">"</span>, i, j);</span><br>
+					&nbsp;&nbsp;<span class="caracterEspecial">i</span> <span class="ampAstBool">++</span><span class="caracterEspecial">;</span><br>
+					&nbsp;&nbsp;<span class="caracterEspecial">j</span> <span class="ampAstBool">--</span><span class="caracterEspecial">;</span><br>
+					<span class="caracterEspecial">}</span>
+				</div>
+			</div>
+		</div>
+		<div class="ruta bg-light p-3 clearfix">
+			<a href="./bucles-for.html" class="float-left btn btn-danger">Anterior.</a>
+			<a href="./bucles-do-while.html" class="float-right btn btn-success">Siguiente.</a>
+		</div>
+	</div>
+</body>
+</html>

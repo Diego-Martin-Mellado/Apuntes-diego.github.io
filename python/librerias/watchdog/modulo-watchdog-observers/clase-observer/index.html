@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="../../../../../img/imglib/Python/WatchDog.png">
+	<link rel="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="../../../../../index.css">
+	<title>Clase watchdog.observers.Observer - Python</title>
+</head>
+<body class="bg-watchdog-suave py">
+	<nav class="navbar navbar-expand-sm bg-watchdog text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../../../../img/imglib/Python/WatchDog.png" class="logo rounded float-right">
+		</a>
+		<h1>WatchDog</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../../../../">Menu</a> / 
+			<a href="../../../../">Python</a> / 
+			<a href="../../../">Librerías</a> / 
+			<a href="../../">WatchDog</a> / 
+			<a href="../">Módulo watchdog.observers</a> / 
+			Clase watchdog.observers.Observer
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-watchdog text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Clase observer - WatchDog</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				La clase <span class="tipoDato">Observer</span> es una clase que representa el motor de la librería <span class="funNombre">watchdog</span>.<br><br>
+				Es una clase que para utilizarla, se debe configurar y a continuación ejecutarla tal y como se haría con un hilo o 'thread'.<br><br>
+				Éste hilo lo que hace es observar el árbol de directorios indicado y ejecuta llamadas al manejador de eventos. <br><br>
+				<div class="alert alert-success ov-auto">
+					Sintaxis (Creación de instancia):<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="caracterEspecial">mi_observador = <span class="funNombre">Observer</span>()</span>
+					</div>
+				</div><br>
+				Posteriormente se deben definir 4 funciones que serán añadidas al objeto para que pueda funcionar de manera adecuada, asignando métodos de <span class="tipoDato">Observer</span> a funciones de nuestro programa. <br><br>
+				Las funciones se deben declarar y definir anteriormente a gusto del programador. Los manejadores de eventos se crean con el módulo <a href="../../../Modulo watchdog.events/">watchdog.events</a>. <br><br>
+				<div class="alert alert-light border ov-auto">
+					# Asignamos funciones a eventos <br>
+					<span class="caracterEspecial">manejador_de_eventos.on_created = mi_funcion_on_created</span><br>
+					<span class="caracterEspecial">manejador_de_eventos.on_deleted = mi_funcion_on_deleted</span><br>
+					<span class="caracterEspecial">manejador_de_eventos.on_modified = mi_funcion_on_modified</span><br>
+					<span class="caracterEspecial">manejador_de_eventos.on_moved = mi_funcion_on_moved</span>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-watchdog text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Métodos y propiedades de Observer - WatchDog</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				<div class='row p-0 border bg-watchdog text-light'>
+					<div class='col p-3 ov-auto'>
+						<h1 class='float-left'>Métodos de Observer.</h1>
+						<br><br><br>
+						<p class='float-left text-secondary mb-0'>Que puedes utilizar en tus programas.</p>
+					</div>
+				</div>
+				<div class='row p-0 border'>
+                    <div class='col p-0'>
+                        <a href='./metodo-schedule.html' class='btn btn-light w-100 rounded-0 p-3 ov-auto'>
+                            <h3 class='float-left'>Metodo schedule ()</h3>
+                            <br><br>
+                            <p class='float-left text-secondary mb-0'>El método <span class="tipoDato">Observer</span>.<span class="funNombre">schedule</span> <span class="caracterEspecial">()</span> es el que une los eventos que se van a ejecutar, con la carpeta de actuación. </p>
+                        </a>
+                    </div>
+                </div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-watchdog text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Uso de Observer - WatchDog</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Uso de Observer, como se ha mencionado anteriormente, se controla como un hilo o "thread".<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="import">import</span> <span class="caracterEspecial">time</span><br>
+					<span class="import">from</span> <span class="caracterEspecial">watchdog.observers</span> <span class="import">import</span> <span class="caracterEspecial">Observer</span><br>
+					<span class="import">from</span> <span class="caracterEspecial">watchdog.events</span> <span class="import">import</span> <span class="caracterEspecial">PatternMatchingEventHandler</span><br><br>
+					# Configuraciones ...<br>
+					# Funciones ...<br>
+					<span class="tipoDato">def</span> <span class="caracterEspecial">mi_funcion_on_created (event):</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="tipoDato">pass</span><br><br>
+					<span class="tipoDato">def</span> <span class="caracterEspecial">mi_funcion_on_deleted (event):</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="tipoDato">pass</span><br><br>
+					<span class="tipoDato">def</span> <span class="caracterEspecial">mi_funcion_on_modified (event):</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="tipoDato">pass</span><br><br>
+					<span class="tipoDato">def</span> <span class="caracterEspecial">mi_funcion_on_moved (event):</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="tipoDato">pass</span><br><br>
+					# Croquetas ...<br><br>
+					# Variables <br>
+					<span class="caracterEspecial">patrones = </span><span class="comilla">'</span><span class="string">*</span><span class="comilla">'</span><br>
+					<span class="caracterEspecial">patrones_a_ignorar = </span><span class="comilla">''</span><br>
+					<span class="caracterEspecial">ignorar_directorios = </span><span class="bool">False</span><br>
+					<span class="caracterEspecial">sensible_al_caso = </span><span class="bool">True</span><br>
+					<span class="caracterEspecial">manejador_de_eventos = </span><span class="funNombre">PatternMatchingEventHandler</span> <span class="caracterEspecial">(patrones, patrones_a_ignorar, ignorar_directorios, sensible_al_caso)</span><br><br>
+					# Asignamos funciones a eventos <br>
+					<span class="caracterEspecial">manejador_de_eventos.on_created = mi_funcion_on_created</span><br>
+					<span class="caracterEspecial">manejador_de_eventos.on_deleted = mi_funcion_on_deleted</span><br>
+					<span class="caracterEspecial">manejador_de_eventos.on_modified = mi_funcion_on_modified</span><br>
+					<span class="caracterEspecial">manejador_de_eventos.on_moved = mi_funcion_on_moved</span><br><br>
+					# Crear el Observador <br>
+					<span class="caracterEspecial">ruta = </span><span class="comilla">'</span><span class="string">./carpeta</span><span class="comilla">'</span><br>
+					# Crear objeto <span class="tipoDato">Observer</span><br>
+					<span class="caracterEspecial">mi_observador = </span><span class="funNombre">Observer</span> <span class="caracterEspecial">()</span><br>
+					# Llamar al método <span class="funNombre">schedule</span> <span class="caracterEspecial">()</span><br>
+					<span class="caracterEspecial">mi_observador.</span><span class="funNombre">schedule</span> <span class="caracterEspecial">(manejador_de_eventos, ruta, <span class="bool">True</span>)</span><br><br>
+					# Iniciamos el hilo "thread" del objeto <br>
+					<span class="caracterEspecial">mi_observador.</span><span class="funNombre">start</span> <span class="caracterEspecial">()</span><br><br>
+					<span class="cond">try</span><span class="caracterEspecial">:</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="cond">while</span> <span class="bool">True</span><span class="caracterEspecial">:</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">time.</span><span class="funNombre">sleep</span><span class="caracterEspecial">(<span class="numero">1</span>)</span><br><br>
+					<span class="cond">except <span class="tipoDato">Exception</span> as</span> <span class="caracterEspecial">e:</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">mi_observador.</span><span class="funNombre">stop</span><span class="caracterEspecial">()</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">mi_observador.</span><span class="funNombre">join</span><span class="caracterEspecial">()</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../000Libreria estandar/Modulo sys/funciones/Funcion sys.exit().php"><span class="caracterEspecial">sys.</span><span class="funNombre">exit</span><span class="caracterEspecial">(<span class="numero">0</span>)</span></a><br>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
