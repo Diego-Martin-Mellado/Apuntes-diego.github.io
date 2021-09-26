@@ -33,10 +33,10 @@
 				La clase <span class="tipoDato">Observer</span> es una clase que representa el motor de la librería <span class="funNombre">watchdog</span>.<br><br>
 				Es una clase que para utilizarla, se debe configurar y a continuación ejecutarla tal y como se haría con un hilo o 'thread'.<br><br>
 				Éste hilo lo que hace es observar el árbol de directorios indicado y ejecuta llamadas al manejador de eventos. <br><br>
-				<div class="alert alert-success ov-auto">
+				<div class="alert alert-success border border-success ov-auto">
 					Sintaxis (Creación de instancia):<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="caracterEspecial">mi_observador = <span class="funNombre">Observer</span>()</span>
+						<span class="caracterEspecial">mi_observador = <span class="funNombre">Observer</span> ()</span>
 					</div>
 				</div><br>
 				Posteriormente se deben definir 4 funciones que serán añadidas al objeto para que pueda funcionar de manera adecuada, asignando métodos de <span class="tipoDato">Observer</span> a funciones de nuestro programa. <br><br>
@@ -115,11 +115,11 @@
 					<span class="caracterEspecial">mi_observador.</span><span class="funNombre">start</span> <span class="caracterEspecial">()</span><br><br>
 					<span class="cond">try</span><span class="caracterEspecial">:</span><br>
 					&nbsp;&nbsp;&nbsp;&nbsp;<span class="cond">while</span> <span class="bool">True</span><span class="caracterEspecial">:</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">time.</span><span class="funNombre">sleep</span><span class="caracterEspecial">(<span class="numero">1</span>)</span><br><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">time.</span><span class="funNombre">sleep</span> <span class="caracterEspecial">(<span class="numero">1</span>)</span><br><br>
 					<span class="cond">except <span class="tipoDato">Exception</span> as</span> <span class="caracterEspecial">e:</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">mi_observador.</span><span class="funNombre">stop</span><span class="caracterEspecial">()</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">mi_observador.</span><span class="funNombre">join</span><span class="caracterEspecial">()</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../000Libreria estandar/Modulo sys/funciones/Funcion sys.exit().php"><span class="caracterEspecial">sys.</span><span class="funNombre">exit</span><span class="caracterEspecial">(<span class="numero">0</span>)</span></a><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">mi_observador.</span><span class="funNombre">stop</span> <span class="caracterEspecial">()</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">mi_observador.</span><span class="funNombre">join</span> <span class="caracterEspecial">()</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../000Libreria estandar/Modulo sys/funciones/Funcion sys.exit().php"><span class="caracterEspecial">sys.</span><span class="funNombre">exit</span> <span class="caracterEspecial">(<span class="numero">0</span>)</span></a><br>
 				</div>
 			</div>
 		</div>
