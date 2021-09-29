@@ -306,11 +306,11 @@ html, body {
 	background-color: #FFE5BD;
 }
 
-.bg-php {
+.bg-php, .bg-r {
 	background-color: #0F54AC;
 }
 
-.bg-php-suave {
+.bg-php-suave, .bg-r-suave {
 	background-color: #4F94EC;
 }
 
