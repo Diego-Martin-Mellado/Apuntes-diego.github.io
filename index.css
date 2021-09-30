@@ -13,9 +13,8 @@ html, body {
 * {
 	word-wrap: break-word;	
 	font-family: "fuente-apuntes";
-	scrollbar-color: #AAAAAA transparent;
-	scrollbar-width: 5px;
-	scrollbar-height: 5px;
+	scrollbar-color: #c0c0c0 #ffffff;
+	scrollbar-width: thin;
 }
 
 .logo {
