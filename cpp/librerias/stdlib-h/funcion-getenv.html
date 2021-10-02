@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="../../../img/leng/C++.png">
+	<link rel="stylesheet" type="text/css" href="../../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../../index.css">
+	<title>Función getenv - C++</title>
+</head>
+<body class="bg-cpp-suave cpp">
+	<nav class="navbar navbar-expand-sm bg-cpp text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../../img/leng/C++.png" class="logo rounded float-right">
+		</a>
+		<h1>C++</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../../">Menu</a> / 
+			<a href="../../">C++</a> / 
+			<a href="../">Librerías</a> / 
+			<a href="./"><?php echo sustituir_llave ("{stdlib.h}"); ?></a> / 
+			Función getenv().
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Función getenv.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				<span class="funNombre">getenv</span> <span class="caracterEspecial">()</span> es una función que se encuentra en la librería <span class="libreria">&#60;stdlib.h&#62;</span>. <br><br>
+				<span class="funNombre">getenv</span> <span class="caracterEspecial">()</span> sirve para obtener el valor de una variable de entorno del sistema operativo del ordenador del cliente. <br><br>
+				Devuelve un puntero a una cadena de caracteres. <span class="caracterEspecial">(</span><span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">)</span><br><br>
+				<div class="alert alert-success border border-success ov-auto">
+					Sintaxis:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="funNombre">getenv</span> <span class="caracterEspecial">( </span><span class="tipoDato">char</span> <span class="include">*</span><span class="caracterEspecial"> variable);</span>
+					</div>
+				</div><br>
+				Referencia:<br><br>
+				<ul>
+					<li>
+						<h5>Variable:</h5> Variable de entorno de la cual se va a obtener información.
+					</li>
+				</ul><br>
+				<div class="alert alert-success border border-success ov-auto">
+					Retorno de <span class="funNombre">getenv</span> <span class="caracterEspecial">()</span>.<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="tipoDato">char</span> <span class="ampAstBool">*</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Ejemplo de uso de getenv.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Uso de <span class="funNombre">getenv</span> ():<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="tipoDato">char</span> <span class="include">*</span><span class="caracterEspecial">path = </span><span class="funNombre">getenv</span> <span class="caracterEspecial">(<span class="comilla">"</span><span class="string">PATH</span><span class="comilla">"</span>)</span> // Recoje la información que contiene la variable PATH del sistema <br><br>
+					<span class="tipoDato">char</span> <span class="include">*</span><span class="caracterEspecial">user = </span><span class="funNombre">getenv</span> <span class="caracterEspecial">(<span class="comilla">"</span><span class="string">USERNAME</span><span class="comilla">"</span>)</span> // Recoje la información que contiene la variable USERNAME del sistema
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

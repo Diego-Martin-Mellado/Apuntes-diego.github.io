@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="../../../img/leng/C++.png">
+	<link rel="stylesheet" type="text/css" href="../../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../../index.css">
+	<title>Función malloc - C++</title>
+</head>
+<body class="bg-cpp-suave cpp">
+	<nav class="navbar navbar-expand-sm bg-cpp text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../../img/leng/C++.png" class="logo rounded float-right">
+		</a>
+		<h1>C++</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../../">Menu</a> / 
+			<a href="../../">C++</a> / 
+			<a href="../">Librerías</a> / 
+			<a href="./">&#60;stdlib.h&#62;</a> / 
+			Función malloc ().
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Función malloc.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				<span class="funNombre">malloc</span> <span class="caracterEspecial">()</span> es una función que se encuentra en la librería <span class="libreria">&#60;stdlib.h&#62;</span>. <br><br>
+				<span class="funNombre">malloc</span> <span class="caracterEspecial">()</span> sirve para solicitar un bloque de memoria del tamaño especificado en su parámetro. En concreto busca un espacio en la memoria del tamaño que el programador quiera. <br><br>
+				Devuelve un puntero que apunta a la zona de memoria concedida. <span class="caracterEspecial">(</span><span class="tipoDato">void</span> <span class="ampAstBool">*</span><span class="caracterEspecial">)</span><br><br>
+				<div class="alert alert-success border border-success ov-auto">
+					La función <span class="funNombre">malloc</span> <span class="caracterEspecial">()</span> devuelve <span class="caracterEspecial">(</span><span class="tipoDato">void</span> <span class="ampAstBool">*</span><span class="caracterEspecial">)</span> precisamente para que los programadores puedan convertir ese dato al que sea preciso.
+				</div>
+				<div class="alert alert-success border border-success ov-auto">
+					Sintaxis:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="caracterEspecial">( molde )</span> <span class="funNombre">malloc</span> <span class="caracterEspecial">( [</span><span class="tipoDato">unsigned long int<span class="caracterEspecial">/</span>int</span> <span class="caracterEspecial">] espacio a reservar);</span>
+					</div>
+				</div><br>
+				Referencia:<br>
+				<ul>
+					<li>
+						<h5>Espacio a reservar:</h5> Indica el número de bytes que se quiere reservar
+					</li>
+				</ul><br>
+				<div class="alert alert-success border border-success ov-auto">
+					Retorno de <span class="funNombre">malloc</span> <span class="caracterEspecial">()</span>.<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="caracterEspecial">(</span><span class="tipoDato">void</span> <span class="ampAstBool">*</span><span class="caracterEspecial">);</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Ejemplo de uso de malloc.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Uso de <span class="funNombre">malloc</span> ():<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="tipoDato">int</span> <span class="ampAstBool">*</span><span class="caracterEspecial">buffer =</span> <span class="caracterEspecial">(</span><span class="tipoDato">int</span> <span class="ampAstBool">*</span><span class="caracterEspecial">)</span> <span class="funNombre">malloc</span> <span class="caracterEspecial">(</span> <span class="funNombre">sizeof</span> <span class="caracterEspecial">(</span><span class="tipoDato">int</span><span class="caracterEspecial">)</span><span class="caracterEspecial"> <span class="ampAstBool">*</span> <span class="numero">40</span>);</span><span class="coment"> // Reserva espacio para 40 <span class="tipoDato">int</span> e introduce el sitio de la memoria en la variable <span class="caracterEspecial">buffer</span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

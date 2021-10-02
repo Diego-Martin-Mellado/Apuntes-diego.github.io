@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="../../../img/leng/C++.png">
+	<link rel="stylesheet" type="text/css" href="../../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../../index.css">
+	<title>Función free - C++</title>
+</head>
+<body class="bg-cpp-suave cpp">
+	<nav class="navbar navbar-expand-sm bg-cpp text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../../img/leng/C++.png" class="logo rounded float-right">
+		</a>
+		<h1>C++</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../../">Menu</a> / 
+			<a href="../../">C++</a> / 
+			<a href="../">Librerías</a> / 
+			<a href="./">&#60;stdlib.h&#62;</a> / 
+			Función free ().
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Función free.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				<span class="funNombre">free</span> <span class="caracterEspecial">()</span> es una función que se encuentra en la librería <span class="libreria">&#60;stdlib.h&#62;</span>. <br><br>
+				<span class="funNombre">free</span> <span class="caracterEspecial">()</span> se utiliza cuando una zona de memoria reservada con <span class="funNombre">malloc</span> <span class="caracterEspecial">()</span> ya no se necesita, y se quiere liberar. <br><br>
+				<div class="alert alert-danger border border-danger ov-auto">
+					Se exige por profesionalidad que <u>cada vez</u> que se haga un <span class="funNombre">malloc</span> <span class="caracterEspecial">()</span> para una variable, se realice un <span class="funNombre">free</span> <span class="caracterEspecial">()</span> para la misma al finalizar la operación.
+				</div>
+				<div class="alert alert-success border border-success ov-auto">
+					Sintaxis: <br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="funNombre">free</span> <span class="caracterEspecial">(<span class="tipoDato">class</span> <span class="include">*</span>puntero)</span>
+					</div>
+				</div>
+				Referencia: <br><br>
+				<ul>
+					<li>
+						<h5>Puntero: </h5>Dirección de memoria que se quiere liberar.
+					</li>
+				</ul><br>
+				<div class="alert alert-success border border-success ov-auto">
+					Retorno: <br><br>
+					<div class="alert alert-light border ov-auto">
+						La función <span class="funNombre">free</span> <span class="caracterEspecial">()</span> es en realidad un procedimiento, lo que significa que no tiene valor de retorno. <span class="caracterEspecial">(<span class="tipoDato">void</span> <span class="include">*</span>)</span>.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Ejemplos de uso de free.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Ejemplos de uso de <span class="funNombre">free</span> <span class="caracterEspecial">()</span>:<br><br>
+				<div class="alert alert-light border">
+					<span class="tipoDato">int</span> <span class="ampAstBool">*</span><span class="caracterEspecial">buffer =</span> <span class="caracterEspecial">(</span><span class="tipoDato">int</span> <span class="ampAstBool">*</span><span class="caracterEspecial">)</span> <span class="funNombre">malloc</span> <span class="caracterEspecial">(</span> <span class="funNombre">sizeof</span> <span class="caracterEspecial">(</span><span class="tipoDato">int</span><span class="caracterEspecial">)</span><span class="caracterEspecial"> <span class="ampAstBool">*</span> <span class="numero">40</span>);</span><span class="coment"> // Reserva espacio para 40 <span class="tipoDato">int</span></span><br>
+					// Hago cosas [...]<br>
+					<span class="funNombre">free</span> <span class="caracterEspecial">(buffer);</span><span class="coment"> // Libero la reserva de 'buffer'</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

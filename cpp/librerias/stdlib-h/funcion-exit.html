@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="../../../img/leng/C++.png">
+	<link rel="stylesheet" type="text/css" href="../../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../../index.css">
+	<title>Función exit - C++</title>
+</head>
+<body class="bg-cpp-suave cpp">
+	<nav class="navbar navbar-expand-sm bg-cpp text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../../img/leng/C++.png" class="logo rounded float-right">
+		</a>
+		<h1>C++</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../../">Menu</a> / 
+			<a href="../../">C++</a> / 
+			<a href="../">Librerías</a> / 
+			<a href="./">&#60;stdlib.h&#62;</a> / 
+			Función exit ().
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Función exit.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				La función <span class="funNombre">exit</span> () termina o mata el programa con el código de salida que se le pase como parámetro. <br><br>
+				<div class="alert alert-success border border-success ov-auto">
+					Los códigos de salida de un programa en <em>C/C++</em> son <span class="numero">0</span> en caso exitoso y <span class="numero">1</span> en caso fallido.
+				</div><br>
+				De esta manera puede resultar <u>inútil</u> utilizar esta función, pero <u>no lo es</u> debido a la posibilidad de que necesites finalizar tu programa desde un ámbito o <a href="../../lecciones/conceptos-basicos.html#scope">scope</a> que no sea la función <span class="funNombre">main</span> (). <br><br>
+				<div class="alert alert-success border border-success ov-auto">
+					Sintaxis:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="funNombre">exit</span> <span class="caracterEspecial">(<span class="tipoDato">int</span> <em>Tipo de salida</em>);</span>
+					</div>
+				</div><br>
+				Referencia:<br><br>
+				<ul>
+					<li>
+						<h5>Tipo de salida:</h5> Puede ser un valor numérico (<span class="numero">0</span> o <span class="numero">1</span>) o una macro de salida de <span class="libreria">&#60;stdlib.h&#62;</span> (<a href="./constante-exit-success.html"><span class="include">EXIT_SUCCESS</span></a> o <a href="./constante-exit-failure.html"><span class="include">EXIT_FAILURE</span></a>).
+					</li>
+				</ul><br>
+				<div class="alert alert-success border border-success ov-auto">
+					Retorno:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="caracterEspecial">Ninguno</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Ejemplos de uso de exit.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Ejemplos de uso de la función <span class="funNombre">exit</span> (). <br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="include">#include</span> <span class="libreria">&#60;stdio.h&#62;</span> <span class="coment">// Encabezados</span><br>
+					<span class="include">#include</span> <span class="libreria">&#60;stdlib.h&#62;</span><br><br>
+					<span class="coment">// Funciones (...)</span><br>
+					<span class="tipoDato">void</span> <span class="caracterEspecial">haz (<span class="tipoDato">bool</span> <span class="caracterEspecial">var =</span> <span class="ampAstBool">true</span>) {</span><br>
+					&nbsp;&nbsp;<span class="include">if</span> <span class="caracterEspecial">( var ) {</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="coment">// Termina el programa entero</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="funNombre">exit</span> <span class="caracterEspecial">(</span><span class="include">EXIT_FAILURE</span><span class="caracterEspecial">);</span><br>
+					&nbsp;&nbsp;<span class="caracterEspecial">}</span><br>
+					<span class="caracterEspecial">}</span><br>
+					<br><span class="coment">// Funcion main</span><br>
+					<span class="tipoDato">int</span> <span class="caracterEspecial">main (</span><span class="tipoDato">int</span> <span class="nombreParametro">argc</span><span class="caracterEspecial">,</span> <span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="nombreParametro">argv</span><span class="caracterEspecial">[]</span><span class="caracterEspecial">) {</span><br><br>
+					&nbsp;&nbsp;<span class="coment">// Código a ejecutar</span><br>
+					&nbsp;&nbsp;<span class="funNombre">haz</span> <span class="caracterEspecial">(<span class="ampAstBool">false</span>);</span><br>
+					&nbsp;&nbsp;<span class="funNombre">haz</span> <span class="caracterEspecial">(<span class="ampAstBool">true</span>);</span><br><br>
+					&nbsp;&nbsp;<span class="tipoDato">return</span> <span class="include">EXIT_SUCCESS</span><span class="caracterEspecial">;</span><br>
+					<span class="caracterEspecial">}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
