@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="../../../img/leng/C++.png">
+	<link rel="stylesheet" type="text/css" href="../../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../../index.css">
+	<title>Función strcpy - C++</title>
+</head>
+<body class="bg-cpp-suave cpp">
+	<nav class="navbar navbar-expand-sm bg-cpp text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../../img/leng/C++.png" class="logo rounded float-right">
+		</a>
+		<h1>C++</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../../">Menu</a> / 
+			<a href="../../">C++</a> / 
+			<a href="../">Librerías</a> / 
+			<a href="./">&#60;string.h&#62;</a> / 
+			Función strcpy ().
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Función strcpy.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				<span class="funNombre">strcpy</span> <span class="caracterEspecial">()</span> es una función que se encuentra en la librería <span class="libreria">&#60;string.h&#62;</span>. <br><br>
+				Sirve para alojar (o copiar) una cadena de caracteres en cierta dirección de memoria. <br><br>
+				Ésta dirección se obtiene con un puntero o reservando memoria con las funciones <span class="funNombre">malloc</span> <span class="caracterEspecial">()</span> y <span class="funNombre">realloc</span> <span class="caracterEspecial">()</span><br><br>
+				<div class="alert alert-success border border-success ov-auto">
+					Sintaxis:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="funNombre">strcpy</span> <span class="caracterEspecial">(</span><span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial"> destino, </span><span class="ampAstBool">const</span> <span class="tipoDato">char</span> <span class="ampAstBool">*</span> <span class="caracterEspecial">string);</span>
+					</div>
+				</div>
+				Referencia: <br><br>
+				<ul>
+					<li>
+						<h5>Destino: </h5>Puntero a la dirección de memoria donde el contenido va a ser copiado.
+					</li><br>
+					<li>
+						<h5>String: </h5>String que se quiere copiar a esa dirección.
+					</li>
+				</ul><br>
+				<div class="alert alert-success border border-success ov-auto">
+					Retorno:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="tipoDato">void</span> <span class="ampAstBool">*</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Uso de strcpy.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Ejemplo de programa utilizando la función <span class="funNombre">strcpy</span> <span class="caracterEspecial">()</span>:<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">palabra = </span><span class="comilla">"</span><span class="string">palabra</span><span class="comilla">"</span><span class="caracterEspecial">;</span><br>
+					<span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">punteroDest = </span><i><span class="ampAstBool">NULL</span></i><span class="caracterEspecial">;</span><br><br>
+					<span class="caracterEspecial">punteroDest =</span> <span class="caracterEspecial">(</span><span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">)</span> <span class="funNombre">malloc</span> <span class="caracterEspecial">(</span> <span class="funNombre">strlen</span> <span class="caracterEspecial">(palabra)</span> <span class="ampAstBool">*</span> <span class="funNombre">sizeof</span> <span class="caracterEspecial">(</span><span class="tipoDato">char</span><span class="caracterEspecial">));</span><span class="coment"> // Reserva espacio para (longitud de la palabra) + <span class="comilla">'</span><span class="string">\0</span><span class="comilla">'</span> multiplicado por el tamaño de un <span class="tipoDato">char</span> <span class="ampAstBool">*</span></span><br><br>
+					<span class="funNombre">strcpy</span> <span class="caracterEspecial">(punteroDest, palabra);</span><span class="coment"> // Introduce la palabra en el espacio en memoria reservado por <span class="funNombre">malloc</span> <span class="caracterEspecial">()</span></span><br><br>
+					<span class="funNombre">free</span> <span class="caracterEspecial">(punteroDest);</span><span class="coment"> // Libero el espacio sobrante reservado</span>
+				</div>
+				<a href="../stdlib-h/funcion-malloc.html">Uso de <span class="funNombre">malloc</span> <span class="caracterEspecial">();</span></a><br>
+				<a href="../stdlib-h/funcion-free.html">Uso de <span class="funNombre">free</span> <span class="caracterEspecial">();</span></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

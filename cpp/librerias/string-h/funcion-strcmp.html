@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="../../../img/leng/C++.png">
+	<link rel="stylesheet" type="text/css" href="../../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../../index.css">
+	<title>Función strcmp - C++</title>
+</head>
+<body class="bg-cpp-suave cpp">
+	<nav class="navbar navbar-expand-sm bg-cpp text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../../img/leng/C++.png" class="logo rounded float-right">
+		</a>
+		<h1>C++</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../../">Menu</a> / 
+			<a href="../../">C++</a> / 
+			<a href="../">Librerías</a> / 
+			<a href="./">&#60;string.h&#62;</a> / 
+			Función strcmp ().
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Función strcmp.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				<span class="funNombre">strcmp</span> <span class="caracterEspecial">()</span> es una función que se encuentra en la librería <span class="libreria">&#60;string.h&#62;</span>. <br><br>
+				Compara los dos strings pasados como parámetros. <br><br>
+				Tiene tres grupos de posibles retornos:<br><br>
+				<ul>
+					<li>numero <span class="include"><</span> <span class="numero">0</span>: El primer <span class="tipoDato">string</span> tiene menos valor ASCII que el segundo.</li>
+					<li>numero <span class="include">></span> <span class="numero">0</span>: El primer <span class="tipoDato">string</span> tiene más valor ASCII que el segundo.</li>
+					<li>numero <span class="include">=</span> <span class="numero">0</span>: Ambos <span class="tipoDato">string</span> tienen el mismo valor.</li>
+				</ul>
+				<div class="alert alert-warning border border-warning ov-auto">
+					Ésta función se suele utilizar dentro de la condición de una sentencia <span class="include">if</span>.
+				</div>
+				<div class="alert alert-success border border-success ov-auto">
+					Sintaxis:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="funNombre">strcmp</span> <span class="caracterEspecial">(</span><span class="ampAstBool">const</span> <span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial"> operador 1, </span><span class="ampAstBool">const</span> <span class="tipoDato">char</span> <span class="ampAstBool">*</span> <span class="caracterEspecial">operador 2);</span>
+					</div>
+				</div>
+				Referencia: <br><br>
+				<ul>
+					<li>
+						<h5>Operador 1: </h5>Primer string a comparar.
+					</li><br>
+					<li>
+						<h5>Operador 2: </h5>Segundo string a comparar.
+					</li>
+				</ul><br>
+				<div class="alert alert-success border border-success ov-auto">
+					Retorno:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="tipoDato">int</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Uso de strcmp.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Ejemplo de programa utilizando la función <span class="funNombre">strcmp</span> <span class="caracterEspecial">()</span>:<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">palabra1 = </span><span class="comilla">"</span><span class="string">palabra1</span><span class="comilla">"</span><span class="caracterEspecial">;</span><br>
+					<span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">palabra2 = </span><span class="comilla">"</span><span class="string">palabra2</span><span class="comilla">"</span><span class="caracterEspecial">;</span><br><br>
+					<span class="tipoDato">int</span> <span class="caracterEspecial">compareRes =</span> <span class="funNombre">strcmp</span> <span class="caracterEspecial">( palabra1, palabra2 );</span><span class="coment"> // Compara los <span class="tipoDato">char</span> <span class="include">*</span> e introduce el resultado en <span class="caracterEspecial">compareRes</span> este valor se suele usar para hacer condicionales.<br><br>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
