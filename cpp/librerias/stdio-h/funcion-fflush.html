@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="../../../img/leng/C++.png">
+	<link rel="stylesheet" type="text/css" href="../../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../../index.css">
+	<title>Función fflush - C++</title>
+</head>
+<body class="bg-cpp-suave cpp">
+	<nav class="navbar navbar-expand-sm bg-cpp text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../../img/leng/C++.png" class="logo rounded float-right">
+		</a>
+		<h1>C++</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../../">Menu</a> / 
+			<a href="../../">C++</a> / 
+			<a href="../">Librerías</a> / 
+			<a href="./">&#60;stdio.h&#62;</a> / 
+			Función fflush ().
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Función fflush.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				<span class="funNombre">fflush</span> <span class="caracterEspecial">()</span> es una función que libera información residual o sobrente del bus de datos que se le indica en el parámetro, en versiones antiguas de <u><em>C/C++</em></u>, la función <span class="funNombre">fflush</span> () sólo servía para liberar el canal <span class="tipoDato">stdout</span>, pero en versiones más modernas libera todos los canales.<br><br>
+				Los canales que pueden ser indicados en su parámetro son:<br><br>
+				<ul>
+					<li>
+						<span class="tipoDato">stdin</span> : Canal de entrada de datos. <span class="text-danger">No funciona en ciertos compiladores o versiones de <u><em>C/C++</em></u></span>
+					</li>
+					<li>
+						<span class="tipoDato">stdout</span> : Canal de salida de datos.
+					</li>
+					<li>
+						<span class="tipoDato">stderr</span> : Canal de manejo de errores. <span class="text-danger">No funciona en ciertos compiladores o versiones de <u><em>C/C++</em></u></span>
+					</li>
+				</ul><br>
+				<div class="alert alert-success border border-success ov-auto">
+					Sintaxis:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="funNombre">fflush</span> <span class="caracterEspecial">( canal );</span>
+					</div>
+				</div>
+				Referencia:<br><br>
+				<ul>
+					<li>
+						<h5>Canal:</h5> Es el bus de datos que se va a liberar, es una constante simbólica. <br><br>
+					</li>
+				</ul>
+				<div class="alert alert-success border border-success ov-auto">
+					Retorno:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="tipoDato">void</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-cpp text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Ejemplos de uso de fflush.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Ejemplos de uso de <span class="funNombre">fflush</span> <span class="caracterEspecial">()</span>:<br><br>
+				<div class="alert alert-light border">
+					<span class="funNombre">fflush</span> <span class="caracterEspecial">(<span class="tipoDato">stdin</span>);</span> <span class="coment">// Libera stdin</span><br><br>
+					<span class="funNombre">fflush</span> <span class="caracterEspecial">(<span class="tipoDato">stdout</span>);</span> <span class="coment">// Libera stdout</span><br><br>
+					<span class="funNombre">fflush</span> <span class="caracterEspecial">(<span class="tipoDato">stderr</span>);</span> <span class="coment">// Libera stderr</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
