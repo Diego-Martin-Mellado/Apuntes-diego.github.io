@@ -28,24 +28,24 @@
 				<h1>Función srand.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				La función <span class="funNombre">srand</span> () es una función que está en la librería <span class="libreria">&#60;stdlib.h&#62;</span>.<br><br>
-				La función <span class="funNombre">srand</span> () inicializa los posibles valores que pueda tener la función <span class="funNombre">rand</span> (). Si el valor pasado como parámetro es <sapn class="numero">1</sapn>, a partir de esa línea, la función <span class="funNombre">rand</span> () siempre devolverá la misma secuencia de números. <br><br>
+				La función <span class="fun-nombre">srand</span> () es una función que está en la librería <span class="libreria">&#60;stdlib.h&#62;</span>.<br><br>
+				La función <span class="fun-nombre">srand</span> () inicializa los posibles valores que pueda tener la función <span class="fun-nombre">rand</span> (). Si el valor pasado como parámetro es <sapn class="numero">1</sapn>, a partir de esa línea, la función <span class="fun-nombre">rand</span> () siempre devolverá la misma secuencia de números. <br><br>
 				<div class="alert alert-success border border-success ov-auto">
 					Sintaxis:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="funNombre">srand</span> <span class="caracterEspecial">(<span class="tipoDato">int</span>/<span class="tipoDato">time_t</span> semilla);</span>
+						<span class="fun-nombre">srand</span> <span class="puntuacion">(<span class="tipo-dato">int</span>/<span class="tipo-dato">time_t</span> semilla);</span>
 					</div>
 				</div><br>
 				Referencia:<br><br>
 				<ul>
 					<li>
-						<h5>Semilla:</h5> Es el número que indica los posibles valores que puede obtener la función <span class="funNombre">rand</span> ().
+						<h5>Semilla:</h5> Es el número que indica los posibles valores que puede obtener la función <span class="fun-nombre">rand</span> ().
 					</li>
 				</ul><br>
 				<div class="alert alert-success border border-success ov-auto">
 					Retorno:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="tipoDato">int</span>
+						<span class="tipo-dato">int</span>
 					</div>
 				</div>
 			</div>
@@ -55,18 +55,18 @@
 				<h1>Ejemplos de uso de srand.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				Ejemplos de uso de la función <span class="funNombre">srand</span> (). <br><br>
+				Ejemplos de uso de la función <span class="fun-nombre">srand</span> (). <br><br>
 				<div class="alert alert-light border ov-auto">
 					<span class="include">#include</span> <span class="libreria"><span><</span>stdio.h></span> <span class="coment">// Encabezados</span><br>
 					<span class="include">#include</span> <span class="libreria"><span><</span>stdlib.h></span><br>
 					<span class="include">#include</span> <span class="libreria"><span><</span>time.h></span><br>
 					<br><span class="coment">// Funcion main</span><br>
-					<span class="tipoDato">int</span> <span class="caracterEspecial">main (</span><span class="tipoDato">int</span> <span class="nombreParametro">argc</span><span class="caracterEspecial">,</span> <span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="nombreParametro">argv</span><span class="caracterEspecial">[]</span><span class="caracterEspecial">) {</span><br>
-					&nbsp;&nbsp;<span class="funNombre">srand</span> <span class="caracterEspecial">(<span class="funNombre">time</span> (<span class="tipoDato">NULL</span>));</span><br>
-					&nbsp;&nbsp;<span class="tipoDato">int</span> <span class="caracterEspecial">num = <span class="funNombre">rand</span> () <span class="include">%</span> <span class="numero">10</span>;</span><br><br>
-					&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(<span class="comilla">"</span><span class="string">El número es: </span><span class="cespecial">%i\n</span><span class="comilla">"</span>, num);</span> // Sale un número del 0 al 10 <br>
-					&nbsp;&nbsp;<span class="tipoDato">return</span> <span class="include">EXIT_SUCCESS</span><span class="caracterEspecial">;</span><br>
-					<span class="caracterEspecial">}</span>
+					<span class="tipo-dato">int</span> <span class="puntuacion">main (</span><span class="tipo-dato">int</span> <span class="nombreParametro">argc</span><span class="puntuacion">,</span> <span class="tipo-dato">char</span> <span class="ampAstBool">*</span><span class="nombreParametro">argv</span><span class="puntuacion">[]</span><span class="puntuacion">) {</span><br>
+					&nbsp;&nbsp;<span class="fun-nombre">srand</span> <span class="puntuacion">(<span class="fun-nombre">time</span> (<span class="tipo-dato">NULL</span>));</span><br>
+					&nbsp;&nbsp;<span class="tipo-dato">int</span> <span class="puntuacion">num = <span class="fun-nombre">rand</span> () <span class="include">%</span> <span class="numero">10</span>;</span><br><br>
+					&nbsp;&nbsp;<span class="fun-nombre">printf</span> <span class="puntuacion">(<span class="comilla">"</span><span class="string">El número es: </span><span class="cespecial">%i\n</span><span class="comilla">"</span>, num);</span> // Sale un número del 0 al 10 <br>
+					&nbsp;&nbsp;<span class="tipo-dato">return</span> <span class="include">EXIT_SUCCESS</span><span class="puntuacion">;</span><br>
+					<span class="puntuacion">}</span>
 				</div>
 				<div class="alert alert-primary border border-primary ov-auto">
 					Copia, compila y ejecuta éste código para ver qué hace.

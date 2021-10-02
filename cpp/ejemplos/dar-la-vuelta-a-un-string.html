@@ -32,18 +32,18 @@
 					<span class="include">#include</span> <span class="libreria">&#60;stdio.h&#62;</span><br>
 					<span class="include">#include</span> <span class="libreria">&#60;stdlib.h&#62;</span><br>
 					<span class="include">#include</span> <span class="libreria">&#60;string.h&#62;</span><br><br>
-					<span class="tipoDato">int</span> <span class="caracterEspecial">main (</span><span class="tipoDato">int</span> <span class="caracterEspecial">argc,</span> <span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">argv[]) {</span><br>
-					&nbsp;&nbsp;<span class="tipoDato">char</span> <span class="caracterEspecial">cadena[] =</span> <span class="comilla">"</span><span class="string">Hola mundo!</span><span class="comilla">"</span><span class="caracterEspecial">;</span><br>
-					&nbsp;&nbsp;<span class="tipoDato">char</span> <span class="caracterEspecial">aux_cadena[<span class="funNombre">strlen</span> ( cadena )];</span><br>
-					&nbsp;&nbsp;<span class="tipoDato">int</span> <span class="caracterEspecial">flag = <span class="numero">0</span>;</span><br><br>
-					&nbsp;&nbsp;<span class="include">for</span> <span class="caracterEspecial">( <span class="tipoDato">int</span> i = <span class="funNombre">strlen</span> ( cadena ) <span class="include">-</span> <span class="numero">1</span>; i <span class="include">>=</span> <span class="numero">0</span>; i<span class="include">--</span> ) {</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">flag = <span class="funNombre">strlen</span> ( cadena ) <span class="include">-</span> i <span class="include">-</span> <span class="numero">1</span>;</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">aux_cadena [ flag ] = cadena[ i ];</span><br>
-					&nbsp;&nbsp;<span class="caracterEspecial">}</span><br><br>
-					&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(<span class="comilla">"</span><span class="string">El texto normal es: </span><span class="cespecial">%s\n</span><span class="comilla">"</span>, cadena);</span><br>
-					&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(<span class="comilla">"</span><span class="string">El texto invertido es: </span><span class="cespecial">%s\n</span><span class="comilla">"</span>, aux_cadena);</span><br>
-					&nbsp;&nbsp;<span class="tipoDato">return</span> <span class="include">EXIT_SUCCESS</span><span class="caracterEspecial">;</span><br>
-					<span class="caracterEspecial">}</span>
+					<span class="tipo-dato">int</span> <span class="puntuacion">main (</span><span class="tipo-dato">int</span> <span class="puntuacion">argc,</span> <span class="tipo-dato">char</span> <span class="ampAstBool">*</span><span class="puntuacion">argv[]) {</span><br>
+					&nbsp;&nbsp;<span class="tipo-dato">char</span> <span class="puntuacion">cadena[] =</span> <span class="comilla">"</span><span class="string">Hola mundo!</span><span class="comilla">"</span><span class="puntuacion">;</span><br>
+					&nbsp;&nbsp;<span class="tipo-dato">char</span> <span class="puntuacion">aux_cadena[<span class="fun-nombre">strlen</span> ( cadena )];</span><br>
+					&nbsp;&nbsp;<span class="tipo-dato">int</span> <span class="puntuacion">flag = <span class="numero">0</span>;</span><br><br>
+					&nbsp;&nbsp;<span class="include">for</span> <span class="puntuacion">( <span class="tipo-dato">int</span> i = <span class="fun-nombre">strlen</span> ( cadena ) <span class="include">-</span> <span class="numero">1</span>; i <span class="include">>=</span> <span class="numero">0</span>; i<span class="include">--</span> ) {</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="puntuacion">flag = <span class="fun-nombre">strlen</span> ( cadena ) <span class="include">-</span> i <span class="include">-</span> <span class="numero">1</span>;</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="puntuacion">aux_cadena [ flag ] = cadena[ i ];</span><br>
+					&nbsp;&nbsp;<span class="puntuacion">}</span><br><br>
+					&nbsp;&nbsp;<span class="fun-nombre">printf</span> <span class="puntuacion">(<span class="comilla">"</span><span class="string">El texto normal es: </span><span class="cespecial">%s\n</span><span class="comilla">"</span>, cadena);</span><br>
+					&nbsp;&nbsp;<span class="fun-nombre">printf</span> <span class="puntuacion">(<span class="comilla">"</span><span class="string">El texto invertido es: </span><span class="cespecial">%s\n</span><span class="comilla">"</span>, aux_cadena);</span><br>
+					&nbsp;&nbsp;<span class="tipo-dato">return</span> <span class="include">EXIT_SUCCESS</span><span class="puntuacion">;</span><br>
+					<span class="puntuacion">}</span>
 				</div>
 				<div class="alert alert-primary border-primary ov-auto">
 					Copia y ejecuta éste código para ver qué hace!

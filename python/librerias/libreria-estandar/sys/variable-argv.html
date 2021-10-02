@@ -29,16 +29,16 @@
 				<h1>Variable sys.argv - Python</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				La variable <span class="funNombre">sys</span>.<span class="tipoDato">argv</span> se encuentra en el módulo <span class="funNombre">sys</span> de la librería estándar de Python. <br><br>
-				La variable <span class="funNombre">sys</span>.<span class="tipoDato">argv</span> es una variable de tipo <span class="tipoDato">list</span> que contiene los argumentos pasados a la ejecución de un programa en Python. <br><br>
+				La variable <span class="fun-nombre">sys</span>.<span class="tipo-dato">argv</span> se encuentra en el módulo <span class="fun-nombre">sys</span> de la librería estándar de Python. <br><br>
+				La variable <span class="fun-nombre">sys</span>.<span class="tipo-dato">argv</span> es una variable de tipo <span class="tipo-dato">list</span> que contiene los argumentos pasados a la ejecución de un programa en Python. <br><br>
 				<div class="alert alert-warning border-warning ov-auto">
-					Para poder utilizar ésta variable como <span class="funNombre">sys</span>.<span class="tipoDato">argv</span> se debe importar el módulo <span class="funNombre">sys</span> de la siguiente manera:<br>
+					Para poder utilizar ésta variable como <span class="fun-nombre">sys</span>.<span class="tipo-dato">argv</span> se debe importar el módulo <span class="fun-nombre">sys</span> de la siguiente manera:<br>
 					<div class="alert alert-light border ov-auto">
-						<span class="tipoDato">import</span> <span class="caracterEspecial">sys</span>
+						<span class="tipo-dato">import</span> <span class="puntuacion">sys</span>
 					</div><br>
-					Para poder utilizar ésta variable como <span class="tipoDato">argv</span> se debe importar la variable <span class="funNombre">sys</span>.<span class="tipoDato">argv</span> de la siguiente manera:<br>
+					Para poder utilizar ésta variable como <span class="tipo-dato">argv</span> se debe importar la variable <span class="fun-nombre">sys</span>.<span class="tipo-dato">argv</span> de la siguiente manera:<br>
 					<div class="alert alert-light border ov-auto">
-						<span class="tipoDato">import</span> <span class="caracterEspecial">sys.argv</span>
+						<span class="tipo-dato">import</span> <span class="puntuacion">sys.argv</span>
 					</div>
 				</div>
 				<div class="alert alert-danger border-danger ov-auto">
@@ -47,7 +47,7 @@
 				<div class="alert alert-success border border-success ov-auto">
 					Contenido:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="tipoDato">list</span>
+						<span class="tipo-dato">list</span>
 					</div>
 				</div>
 			</div>
@@ -63,9 +63,9 @@
 					<div class="alert border border-dark ov-auto" style="background-color: #000000;">
 						<span class="text-success">~$:</span> <span class="text-warning">python</span> <span class="text-light">miPrograma.py</span>
 					</div>
-					La información que se almacenará en <span class="funNombre">sys</span>.<span class="tipoDato">argv</span> será la siguiente:<br><br>
+					La información que se almacenará en <span class="fun-nombre">sys</span>.<span class="tipo-dato">argv</span> será la siguiente:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="caracterEspecial">[</span><span class="comilla">"</span><span class="string">miPrograma.py</span><span class="comilla">"</span><span class="caracterEspecial">]</span>
+						<span class="puntuacion">[</span><span class="comilla">"</span><span class="string">miPrograma.py</span><span class="comilla">"</span><span class="puntuacion">]</span>
 					</div>
 				</div>
 				<div class="alert alert-success border border-success ov-auto">
@@ -73,9 +73,9 @@
 					<div class="alert border border-dark ov-auto" style="background-color: #000000;">
 						<span class="text-success">~$:</span> <span class="text-warning">python</span> <span class="text-light">miPrograma.py arg1</span>
 					</div>
-					La información que se almacenará en <span class="funNombre">sys</span>.<span class="tipoDato">argv</span> será la siguiente:<br><br>
+					La información que se almacenará en <span class="fun-nombre">sys</span>.<span class="tipo-dato">argv</span> será la siguiente:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="caracterEspecial">[</span><span class="comilla">"</span><span class="string">miPrograma.py</span><span class="comilla">"</span><span class="caracterEspecial">,</span> <span class="comilla">"</span><span class="string">arg1</span><span class="comilla">"</span><span class="caracterEspecial">]</span>
+						<span class="puntuacion">[</span><span class="comilla">"</span><span class="string">miPrograma.py</span><span class="comilla">"</span><span class="puntuacion">,</span> <span class="comilla">"</span><span class="string">arg1</span><span class="comilla">"</span><span class="puntuacion">]</span>
 					</div>
 				</div>
 			</div>
@@ -86,10 +86,10 @@
 			</div>
 			<div class="seccion-contenido p-4">
 				<h3>¿Cómo saber cuántos argumentos se han pasado al programa?</h3>
-				Sencillamente se calcula la longitud de <span class="funNombre">sys</span>.<span class="tipoDato">argv</span> y, como el primer argumento es el nombre del programa, se <u>resta 1</u> a dicha longitud. <br><br>
+				Sencillamente se calcula la longitud de <span class="fun-nombre">sys</span>.<span class="tipo-dato">argv</span> y, como el primer argumento es el nombre del programa, se <u>resta 1</u> a dicha longitud. <br><br>
 				<div class="alert alert-light border ov-auto">
 					// Número de argumentos pasados a un programa hecho en Python:<br>
-					<span class="caracterEspecial">(</span><span class="funNombre">len</span> <span class="caracterEspecial">(</span><span class="funNombre">sys</span><span class="caracterEspecial">.</span><span class="tipoDato">argv</span><span class="caracterEspecial">) - </span><span class="numero">1</span><span class="caracterEspecial">)</span>
+					<span class="puntuacion">(</span><span class="fun-nombre">len</span> <span class="puntuacion">(</span><span class="fun-nombre">sys</span><span class="puntuacion">.</span><span class="tipo-dato">argv</span><span class="puntuacion">) - </span><span class="numero">1</span><span class="puntuacion">)</span>
 				</div>
 			</div>
 		</div>

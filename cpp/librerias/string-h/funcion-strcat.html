@@ -28,12 +28,12 @@
 				<h1>Función strcat.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				<span class="funNombre">strcat</span> <span class="caracterEspecial">()</span> es una función que se encuentra en la librería <span class="libreria">&#60;string.h&#62;</span>. <br><br>
-				La función <span class="funNombre">strcat</span> () sirve para concatenar (Añadir uno detrás del otro) dos strings (<span class="tipoDato">char</span> <span class="include">*</span>) en una dirección de memoria que apunta a un caracter (<span class="tipoDato">char</span> <span class="include">*</span>).<br><br>
+				<span class="fun-nombre">strcat</span> <span class="puntuacion">()</span> es una función que se encuentra en la librería <span class="libreria">&#60;string.h&#62;</span>. <br><br>
+				La función <span class="fun-nombre">strcat</span> () sirve para concatenar (Añadir uno detrás del otro) dos strings (<span class="tipo-dato">char</span> <span class="include">*</span>) en una dirección de memoria que apunta a un caracter (<span class="tipo-dato">char</span> <span class="include">*</span>).<br><br>
 				<div class="alert alert-success border border-success ov-auto">
 					Sintaxis:<br><br>
 					<div class="alert alert-light">
-						<span class="funNombre">strcat</span> <span class="caracterEspecial">(</span><span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial"> destino, </span><span class="ampAstBool">const</span> <span class="tipoDato">char</span> <span class="ampAstBool">*</span> <span class="caracterEspecial">string);</span>
+						<span class="fun-nombre">strcat</span> <span class="puntuacion">(</span><span class="tipo-dato">char</span> <span class="ampAstBool">*</span><span class="puntuacion"> destino, </span><span class="ampAstBool">const</span> <span class="tipo-dato">char</span> <span class="ampAstBool">*</span> <span class="puntuacion">string);</span>
 					</div>
 				</div>
 				Referencia: <br><br>
@@ -48,7 +48,7 @@
 				<div class="alert alert-success border border-success ov-auto">
 					Retorno:<br><br>
 					<div class="alert alert-light">
-						<span class="tipoDato">char</span> <span class="ampAstBool">*</span>
+						<span class="tipo-dato">char</span> <span class="ampAstBool">*</span>
 					</div>
 				</div>
 			</div>
@@ -58,15 +58,15 @@
 				<h1>Uso de strcat.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				Ejemplo de programa utilizando la función <span class="funNombre">strcat</span> <span class="caracterEspecial">()</span>:<br><br>
+				Ejemplo de programa utilizando la función <span class="fun-nombre">strcat</span> <span class="puntuacion">()</span>:<br><br>
 				<div class="alert alert-light border ov-auto">
-					<span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">palabra = </span><span class="comilla">"</span><span class="string">Hola </span><span class="comilla">"</span><span class="caracterEspecial">;</span><br>
-					<span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">palabra2 = </span><span class="comilla">"</span><span class="string">guapo</span><span class="comilla">"</span><span class="caracterEspecial">;</span><br>
-					<span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">destino = </span><i><span class="ampAstBool">NULL</span></i><span class="caracterEspecial">;</span><br><br>
-					<span class="caracterEspecial">destino =</span> <span class="caracterEspecial">(</span><span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">)</span> <span class="funNombre">malloc</span> <span class="caracterEspecial">((</span> <span class="funNombre">strlen</span> <span class="caracterEspecial">(palabra)</span> <span class="ampAstBool">+</span> <span class="funNombre">strlen</span> <span class="caracterEspecial">(palabra2))</span> <span class="ampAstBool">*</span> <span class="funNombre">sizeof</span> <span class="caracterEspecial">(</span><span class="tipoDato">char</span><span class="caracterEspecial">));</span><span class="coment"> // Reserva espacio para (longitud de la palabra) multiplicado por el tamaño de un <span class="tipoDato">char</span></span><br><br>
-					<span class="funNombre">strcpy</span> <span class="caracterEspecial">(destino, palabra);</span><span class="coment"> // Introduce la palabra en el espacio en memoria reservado por <span class="funNombre">malloc</span> <span class="caracterEspecial">()</span></span><br>
-					<span class="funNombre">strcat</span> <span class="caracterEspecial">(destino, palabra2);</span><span class="coment"> // Concatena <span class="caracterEspecial">destino</span> con <span class="caracterEspecial">palabra2</span></span><br><br>
-					<span class="funNombre">free</span> <span class="caracterEspecial">(destino);</span><span class="coment"> // Libero el espacio sobrante reservado</span>
+					<span class="tipo-dato">char</span> <span class="ampAstBool">*</span><span class="puntuacion">palabra = </span><span class="comilla">"</span><span class="string">Hola </span><span class="comilla">"</span><span class="puntuacion">;</span><br>
+					<span class="tipo-dato">char</span> <span class="ampAstBool">*</span><span class="puntuacion">palabra2 = </span><span class="comilla">"</span><span class="string">guapo</span><span class="comilla">"</span><span class="puntuacion">;</span><br>
+					<span class="tipo-dato">char</span> <span class="ampAstBool">*</span><span class="puntuacion">destino = </span><i><span class="ampAstBool">NULL</span></i><span class="puntuacion">;</span><br><br>
+					<span class="puntuacion">destino =</span> <span class="puntuacion">(</span><span class="tipo-dato">char</span> <span class="ampAstBool">*</span><span class="puntuacion">)</span> <span class="fun-nombre">malloc</span> <span class="puntuacion">((</span> <span class="fun-nombre">strlen</span> <span class="puntuacion">(palabra)</span> <span class="ampAstBool">+</span> <span class="fun-nombre">strlen</span> <span class="puntuacion">(palabra2))</span> <span class="ampAstBool">*</span> <span class="fun-nombre">sizeof</span> <span class="puntuacion">(</span><span class="tipo-dato">char</span><span class="puntuacion">));</span><span class="coment"> // Reserva espacio para (longitud de la palabra) multiplicado por el tamaño de un <span class="tipo-dato">char</span></span><br><br>
+					<span class="fun-nombre">strcpy</span> <span class="puntuacion">(destino, palabra);</span><span class="coment"> // Introduce la palabra en el espacio en memoria reservado por <span class="fun-nombre">malloc</span> <span class="puntuacion">()</span></span><br>
+					<span class="fun-nombre">strcat</span> <span class="puntuacion">(destino, palabra2);</span><span class="coment"> // Concatena <span class="puntuacion">destino</span> con <span class="puntuacion">palabra2</span></span><br><br>
+					<span class="fun-nombre">free</span> <span class="puntuacion">(destino);</span><span class="coment"> // Libero el espacio sobrante reservado</span>
 				</div>
 			</div>
 		</div>

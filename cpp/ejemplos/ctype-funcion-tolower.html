@@ -28,26 +28,26 @@
 				<h1>Ejemplo de tolower - C++.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				Este código recoje con la función <a href="../Librerias/{stdio.h}/Funcion scanf().php"><span class="funNombre">scanf</span> <span class="caracterEspecial">()</span></a> un solo caracter y evalúa si es una 'r', una 'g' o una 'b' <u>independientemente de si se ha introducido en mayúsculas o minúsculas</u>. <br><br>
+				Este código recoje con la función <a href="../Librerias/{stdio.h}/Funcion scanf().php"><span class="fun-nombre">scanf</span> <span class="puntuacion">()</span></a> un solo caracter y evalúa si es una 'r', una 'g' o una 'b' <u>independientemente de si se ha introducido en mayúsculas o minúsculas</u>. <br><br>
 				<div class="alert alert-light border ov-auto">
 					<span class="include">#include</span> <span class="libreria">&#60;stdio.h&#62;</span><br>
 					<span class="include">#include</span> <span class="libreria">&#60;stdlib.h&#62;</span><br>
 					<span class="include">#include</span> <span class="libreria">&#60;ctype.h&#62;</span><br><br>
-					<span class="tipoDato">int</span> <span class="caracterEspecial">main (</span><span class="tipoDato">int</span> <span class="caracterEspecial">argc, </span><span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">argv[]) {</span><br>
-					&nbsp;&nbsp;<span class="tipoDato">char</span> <span class="caracterEspecial">color = </span><span class="ampAstBool">NULL</span><span class="caracterEspecial">;</span><br>
-					&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(</span><span class="comilla">"</span><span class="string">Introduce la inicial de un color (r, g, b): </span><span class="comilla">"</span><span class="caracterEspecial">);</span><br>
-					&nbsp;&nbsp;<span class="funNombre">scanf</span> <span class="caracterEspecial">(</span><span class="comilla">"</span> <span class="cespecial">%c</span><span class="comilla">"</span><span class="caracterEspecial">, <span class="ampAstBool">&</span>color);</span><br><br>
-					&nbsp;&nbsp;<span class="ampAstBool">switch</span> <span class="caracterEspecial">(<span class="funNombre">tolower</span> (color)) {</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="ampAstBool">case</span><span class="comilla">'</span><span class="string">r</span><span class="comilla">'</span><span class="caracterEspecial">:</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="ampAstBool">case</span><span class="comilla">'</span><span class="string">g</span><span class="comilla">'</span><span class="caracterEspecial">:</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="ampAstBool">case</span><span class="comilla">'</span><span class="string">b</span><span class="comilla">'</span><span class="caracterEspecial">:</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(<span class="comilla">"</span><span class="cespecial">%c\n</span><span class="comilla">"</span>, color);</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="include">break</span><span class="caracterEspecial">;</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="ampAstBool">default</span><span class="caracterEspecial">:</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(<span class="comilla">"</span><span class="string">Ese no es ningún color de los esperados</span><span class="comilla">"</span>);</span><br>
-					&nbsp;&nbsp;<span class="caracterEspecial">}</span><br><br>
-					&nbsp;&nbsp;<span class="tipoDato">return</span> <span class="include">EXIT_SUCCESS</span><span class="caracterEspecial">;</span><br>
-					<span class="caracterEspecial">}</span>
+					<span class="tipo-dato">int</span> <span class="puntuacion">main (</span><span class="tipo-dato">int</span> <span class="puntuacion">argc, </span><span class="tipo-dato">char</span> <span class="ampAstBool">*</span><span class="puntuacion">argv[]) {</span><br>
+					&nbsp;&nbsp;<span class="tipo-dato">char</span> <span class="puntuacion">color = </span><span class="ampAstBool">NULL</span><span class="puntuacion">;</span><br>
+					&nbsp;&nbsp;<span class="fun-nombre">printf</span> <span class="puntuacion">(</span><span class="comilla">"</span><span class="string">Introduce la inicial de un color (r, g, b): </span><span class="comilla">"</span><span class="puntuacion">);</span><br>
+					&nbsp;&nbsp;<span class="fun-nombre">scanf</span> <span class="puntuacion">(</span><span class="comilla">"</span> <span class="cespecial">%c</span><span class="comilla">"</span><span class="puntuacion">, <span class="ampAstBool">&</span>color);</span><br><br>
+					&nbsp;&nbsp;<span class="ampAstBool">switch</span> <span class="puntuacion">(<span class="fun-nombre">tolower</span> (color)) {</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="ampAstBool">case</span><span class="comilla">'</span><span class="string">r</span><span class="comilla">'</span><span class="puntuacion">:</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="ampAstBool">case</span><span class="comilla">'</span><span class="string">g</span><span class="comilla">'</span><span class="puntuacion">:</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="ampAstBool">case</span><span class="comilla">'</span><span class="string">b</span><span class="comilla">'</span><span class="puntuacion">:</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fun-nombre">printf</span> <span class="puntuacion">(<span class="comilla">"</span><span class="cespecial">%c\n</span><span class="comilla">"</span>, color);</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="include">break</span><span class="puntuacion">;</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="ampAstBool">default</span><span class="puntuacion">:</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fun-nombre">printf</span> <span class="puntuacion">(<span class="comilla">"</span><span class="string">Ese no es ningún color de los esperados</span><span class="comilla">"</span>);</span><br>
+					&nbsp;&nbsp;<span class="puntuacion">}</span><br><br>
+					&nbsp;&nbsp;<span class="tipo-dato">return</span> <span class="include">EXIT_SUCCESS</span><span class="puntuacion">;</span><br>
+					<span class="puntuacion">}</span>
 				</div>
 				<div class="alert alert-primary border-primary ov-auto">
 					Copia y ejecuta éste código para ver qué hace!

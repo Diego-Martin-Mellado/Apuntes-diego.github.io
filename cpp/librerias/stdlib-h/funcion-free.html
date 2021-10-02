@@ -28,15 +28,15 @@
 				<h1>Función free.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				<span class="funNombre">free</span> <span class="caracterEspecial">()</span> es una función que se encuentra en la librería <span class="libreria">&#60;stdlib.h&#62;</span>. <br><br>
-				<span class="funNombre">free</span> <span class="caracterEspecial">()</span> se utiliza cuando una zona de memoria reservada con <span class="funNombre">malloc</span> <span class="caracterEspecial">()</span> ya no se necesita, y se quiere liberar. <br><br>
+				<span class="fun-nombre">free</span> <span class="puntuacion">()</span> es una función que se encuentra en la librería <span class="libreria">&#60;stdlib.h&#62;</span>. <br><br>
+				<span class="fun-nombre">free</span> <span class="puntuacion">()</span> se utiliza cuando una zona de memoria reservada con <span class="fun-nombre">malloc</span> <span class="puntuacion">()</span> ya no se necesita, y se quiere liberar. <br><br>
 				<div class="alert alert-danger border border-danger ov-auto">
-					Se exige por profesionalidad que <u>cada vez</u> que se haga un <span class="funNombre">malloc</span> <span class="caracterEspecial">()</span> para una variable, se realice un <span class="funNombre">free</span> <span class="caracterEspecial">()</span> para la misma al finalizar la operación.
+					Se exige por profesionalidad que <u>cada vez</u> que se haga un <span class="fun-nombre">malloc</span> <span class="puntuacion">()</span> para una variable, se realice un <span class="fun-nombre">free</span> <span class="puntuacion">()</span> para la misma al finalizar la operación.
 				</div>
 				<div class="alert alert-success border border-success ov-auto">
 					Sintaxis: <br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="funNombre">free</span> <span class="caracterEspecial">(<span class="tipoDato">class</span> <span class="include">*</span>puntero)</span>
+						<span class="fun-nombre">free</span> <span class="puntuacion">(<span class="tipo-dato">class</span> <span class="include">*</span>puntero)</span>
 					</div>
 				</div>
 				Referencia: <br><br>
@@ -48,7 +48,7 @@
 				<div class="alert alert-success border border-success ov-auto">
 					Retorno: <br><br>
 					<div class="alert alert-light border ov-auto">
-						La función <span class="funNombre">free</span> <span class="caracterEspecial">()</span> es en realidad un procedimiento, lo que significa que no tiene valor de retorno. <span class="caracterEspecial">(<span class="tipoDato">void</span> <span class="include">*</span>)</span>.
+						La función <span class="fun-nombre">free</span> <span class="puntuacion">()</span> es en realidad un procedimiento, lo que significa que no tiene valor de retorno. <span class="puntuacion">(<span class="tipo-dato">void</span> <span class="include">*</span>)</span>.
 					</div>
 				</div>
 			</div>
@@ -58,11 +58,11 @@
 				<h1>Ejemplos de uso de free.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				Ejemplos de uso de <span class="funNombre">free</span> <span class="caracterEspecial">()</span>:<br><br>
+				Ejemplos de uso de <span class="fun-nombre">free</span> <span class="puntuacion">()</span>:<br><br>
 				<div class="alert alert-light border">
-					<span class="tipoDato">int</span> <span class="ampAstBool">*</span><span class="caracterEspecial">buffer =</span> <span class="caracterEspecial">(</span><span class="tipoDato">int</span> <span class="ampAstBool">*</span><span class="caracterEspecial">)</span> <span class="funNombre">malloc</span> <span class="caracterEspecial">(</span> <span class="funNombre">sizeof</span> <span class="caracterEspecial">(</span><span class="tipoDato">int</span><span class="caracterEspecial">)</span><span class="caracterEspecial"> <span class="ampAstBool">*</span> <span class="numero">40</span>);</span><span class="coment"> // Reserva espacio para 40 <span class="tipoDato">int</span></span><br>
+					<span class="tipo-dato">int</span> <span class="ampAstBool">*</span><span class="puntuacion">buffer =</span> <span class="puntuacion">(</span><span class="tipo-dato">int</span> <span class="ampAstBool">*</span><span class="puntuacion">)</span> <span class="fun-nombre">malloc</span> <span class="puntuacion">(</span> <span class="fun-nombre">sizeof</span> <span class="puntuacion">(</span><span class="tipo-dato">int</span><span class="puntuacion">)</span><span class="puntuacion"> <span class="ampAstBool">*</span> <span class="numero">40</span>);</span><span class="coment"> // Reserva espacio para 40 <span class="tipo-dato">int</span></span><br>
 					// Hago cosas [...]<br>
-					<span class="funNombre">free</span> <span class="caracterEspecial">(buffer);</span><span class="coment"> // Libero la reserva de 'buffer'</span>
+					<span class="fun-nombre">free</span> <span class="puntuacion">(buffer);</span><span class="coment"> // Libero la reserva de 'buffer'</span>
 				</div>
 			</div>
 		</div>

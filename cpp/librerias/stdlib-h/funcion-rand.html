@@ -28,29 +28,29 @@
 				<h1>Función rand.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				La función <span class="funNombre">rand</span> () es una función que está en la librería <span class="libreria">&#60;stdlib.h&#62;</span>.<br><br>
-				La función <span class="funNombre">rand</span> () devuelve un número aleatorio entre el generado por la función <span class="funNombre">srand</span> () y el 0 <br><br>
+				La función <span class="fun-nombre">rand</span> () es una función que está en la librería <span class="libreria">&#60;stdlib.h&#62;</span>.<br><br>
+				La función <span class="fun-nombre">rand</span> () devuelve un número aleatorio entre el generado por la función <span class="fun-nombre">srand</span> () y el 0 <br><br>
 				<div class="alert alert-success border border-success ov-auto">
 					Sintaxis:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="funNombre">rand</span> <span class="caracterEspecial">();</span>
+						<span class="fun-nombre">rand</span> <span class="puntuacion">();</span>
 					</div>
 				</div>
 				<div class="alert alert-success border border-success ov-auto">
 					Retorno:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="tipoDato">int</span>
+						<span class="tipo-dato">int</span>
 					</div>
 				</div>
 				<div class="alert alert-primary border border-primary ov-auto">
 					<h4>Consejo de uso:</h4>
-					Para generar un número desde el 0 hasta un número en concreto, se le aplica la operación módulo (<span class="include">%</span>) al retorno de <span class="funNombre">rand</span> <span class="caracterEspecial">()</span>, dividiéndolo entre el número máximo más <span class="numero">1</span>.
+					Para generar un número desde el 0 hasta un número en concreto, se le aplica la operación módulo (<span class="include">%</span>) al retorno de <span class="fun-nombre">rand</span> <span class="puntuacion">()</span>, dividiéndolo entre el número máximo más <span class="numero">1</span>.
 					<div class="alert alert-light border ov-auto">
-						<span class="tipoDato">int</span> <span class="caracterEspecial">num = <span class="funNombre">rand</span> () <span class="include">%</span> <span class="numero">11</span>;</span> // Entre <span class="numero">0</span> y <span class="numero">10</span>
+						<span class="tipo-dato">int</span> <span class="puntuacion">num = <span class="fun-nombre">rand</span> () <span class="include">%</span> <span class="numero">11</span>;</span> // Entre <span class="numero">0</span> y <span class="numero">10</span>
 					</div>
 					Para generar un número entre dos que no sean <span class="numero">0</span>, se le aplica la operación módulo a la resta de dichos números, y se le suma el menor.
 					<div class="alert alert-light border ov-auto">
-						<span class="tipoDato">int</span> <span class="caracterEspecial">num = (<span class="funNombre">rand</span> () <span class="include">%</span> (<span class="numero">21</span> - <span class="numero">10</span>)) + <span class="numero">10</span>;</span> // Entre <span class="numero">10</span> y <span class="numero">20</span>
+						<span class="tipo-dato">int</span> <span class="puntuacion">num = (<span class="fun-nombre">rand</span> () <span class="include">%</span> (<span class="numero">21</span> - <span class="numero">10</span>)) + <span class="numero">10</span>;</span> // Entre <span class="numero">10</span> y <span class="numero">20</span>
 					</div>
 				</div>
 			</div>
@@ -60,18 +60,18 @@
 				<h1>Ejemplos de uso de rand.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				Ejemplos de uso de la función <span class="funNombre">rand</span> (). <br><br>
+				Ejemplos de uso de la función <span class="fun-nombre">rand</span> (). <br><br>
 				<div class="alert alert-light border ov-auto">
 					<span class="include">#include</span> <span class="libreria"><span><</span>stdio.h></span> <span class="coment">// Encabezados</span><br>
 					<span class="include">#include</span> <span class="libreria"><span><</span>stdlib.h></span><br>
 					<span class="include">#include</span> <span class="libreria"><span><</span>time.h></span><br>
 					<br><span class="coment">// Funcion main</span><br>
-					<span class="tipoDato">int</span> <span class="caracterEspecial">main (</span><span class="tipoDato">int</span> <span class="nombreParametro">argc</span><span class="caracterEspecial">,</span> <span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="nombreParametro">argv</span><span class="caracterEspecial">[]</span><span class="caracterEspecial">) {</span><br>
-					&nbsp;&nbsp;<span class="funNombre">srand</span> <span class="caracterEspecial">(<span class="funNombre">time</span> (<span class="tipoDato">NULL</span>));</span><br>
-					&nbsp;&nbsp;<span class="tipoDato">int</span> <span class="caracterEspecial">num = <span class="funNombre">rand</span> () <span class="include">%</span> <span class="numero">11</span>;</span><br><br>
-					&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(<span class="comilla">"</span><span class="string">El número es: </span><span class="cespecial">%i\n</span><span class="comilla">"</span>, num);</span> // Sale un número del 0 al 10 <br>
-					&nbsp;&nbsp;<span class="tipoDato">return</span> <span class="include">EXIT_SUCCESS</span><span class="caracterEspecial">;</span><br>
-					<span class="caracterEspecial">}</span>
+					<span class="tipo-dato">int</span> <span class="puntuacion">main (</span><span class="tipo-dato">int</span> <span class="nombreParametro">argc</span><span class="puntuacion">,</span> <span class="tipo-dato">char</span> <span class="ampAstBool">*</span><span class="nombreParametro">argv</span><span class="puntuacion">[]</span><span class="puntuacion">) {</span><br>
+					&nbsp;&nbsp;<span class="fun-nombre">srand</span> <span class="puntuacion">(<span class="fun-nombre">time</span> (<span class="tipo-dato">NULL</span>));</span><br>
+					&nbsp;&nbsp;<span class="tipo-dato">int</span> <span class="puntuacion">num = <span class="fun-nombre">rand</span> () <span class="include">%</span> <span class="numero">11</span>;</span><br><br>
+					&nbsp;&nbsp;<span class="fun-nombre">printf</span> <span class="puntuacion">(<span class="comilla">"</span><span class="string">El número es: </span><span class="cespecial">%i\n</span><span class="comilla">"</span>, num);</span> // Sale un número del 0 al 10 <br>
+					&nbsp;&nbsp;<span class="tipo-dato">return</span> <span class="include">EXIT_SUCCESS</span><span class="puntuacion">;</span><br>
+					<span class="puntuacion">}</span>
 				</div>
 				<div class="alert alert-primary border-primary ov-auto">
 					Copia, compila y ejecuta éste código para ver qué hace.

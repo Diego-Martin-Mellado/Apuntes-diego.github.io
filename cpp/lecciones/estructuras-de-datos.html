@@ -37,15 +37,15 @@
 			</div>
 			<div class="seccion-contenido p-4">
 				Las estructuras en <em>C/C++</em> son tipos de datos compuestos, a saber, datos que están formados por el conjuto de varios tipos de datos llamados propiedades.<br><br>
-				Dentro de una estructura puede haber cualquier número de datos, y de cualquier tipo, incluyendo tipos de datos creados con <span class="tipoDato">typedef</span> o con clases (<span class="tipoDato">class</span>).<br><br>
+				Dentro de una estructura puede haber cualquier número de datos, y de cualquier tipo, incluyendo tipos de datos creados con <span class="tipo-dato">typedef</span> o con clases (<span class="tipo-dato">class</span>).<br><br>
 				Las estructuras se tienen que definir, para que el compilador sepa cómo reservar memoria para instanciar variables. <br><br>
 				La definición de una estructura tiene la siguiente sintaxis. <br><br>
 				<div class="alert alert-success border border-success ov-auto">
 					Sintaxis de la definición:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="tipoDato">struct</span> <span class="caracterEspecial">Nombre {</span><br>
+						<span class="tipo-dato">struct</span> <span class="puntuacion">Nombre {</span><br>
 						// Definición de propiedades <br>
-						<span class="caracterEspecial">}</span>
+						<span class="puntuacion">}</span>
 					</div>
 				</div>
 				Referencia:<br><br>
@@ -57,7 +57,7 @@
 				<div class="alert alert-success border border-success ov-auto">
 					Sintaxis de la declaración:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="tipoDato">struct</span> <span class="caracterEspecial">Nombre NombreVariable = { [Valor de la propidedad 1], [Valor de la propidedad 2] ... [Valor de la propidedad N] };</span><br>
+						<span class="tipo-dato">struct</span> <span class="puntuacion">Nombre NombreVariable = { [Valor de la propidedad 1], [Valor de la propidedad 2] ... [Valor de la propidedad N] };</span><br>
 					</div>
 				</div>
 				Referencia:<br><br>
@@ -76,17 +76,17 @@
 				<h1>Ejemplos de uso de struct.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				<p>Ejemplos de uso de <span class="tipoDato">struct</span>.</p>
+				<p>Ejemplos de uso de <span class="tipo-dato">struct</span>.</p>
 				<div class="alert alert-light border">
-					<span class="tipoDato">struct</span> <span class="caracterEspecial">Punto {</span><br>
-					&nbsp;&nbsp;<span class="tipoDato">double</span> <span class="caracterEspecial">x,</span><br>
-					&nbsp;&nbsp;<span class="tipoDato">double</span> <span class="caracterEspecial">y,</span><br>
-					<span class="caracterEspecial">}</span><br>
-					<span class="tipoDato">struct</span> <span class="caracterEspecial">Punto miPunto = { <span class="numero">3.</span>, <span class="numero">4.</span> };</span><br>
-					<span class="tipoDato">struct</span> <span class="caracterEspecial">Punto <span class="include">*</span>pPunto = <span class="include">&</span>miPunto;</span><br>
-					<span class="caracterEspecial">miPunto.x;</span> // Propiedad x de miPunto <br>
-					<span class="caracterEspecial">(<span class="include">*</span>pPunto).x;</span> // Propiedad x de miPunto <br>
-					<span class="caracterEspecial">pPunto<span class="include">-></span>x;</span> // Propiedad x de miPunto
+					<span class="tipo-dato">struct</span> <span class="puntuacion">Punto {</span><br>
+					&nbsp;&nbsp;<span class="tipo-dato">double</span> <span class="puntuacion">x,</span><br>
+					&nbsp;&nbsp;<span class="tipo-dato">double</span> <span class="puntuacion">y,</span><br>
+					<span class="puntuacion">}</span><br>
+					<span class="tipo-dato">struct</span> <span class="puntuacion">Punto miPunto = { <span class="numero">3.</span>, <span class="numero">4.</span> };</span><br>
+					<span class="tipo-dato">struct</span> <span class="puntuacion">Punto <span class="include">*</span>pPunto = <span class="include">&</span>miPunto;</span><br>
+					<span class="puntuacion">miPunto.x;</span> // Propiedad x de miPunto <br>
+					<span class="puntuacion">(<span class="include">*</span>pPunto).x;</span> // Propiedad x de miPunto <br>
+					<span class="puntuacion">pPunto<span class="include">-></span>x;</span> // Propiedad x de miPunto
 				</div>
 			</div>
 		</div>

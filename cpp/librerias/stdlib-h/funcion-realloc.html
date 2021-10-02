@@ -28,30 +28,30 @@
 				<h1>Función realloc.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				<span class="funNombre">realloc</span> <span class="caracterEspecial">()</span> es una función que se encuentra en la librería <span class="libreria">&#60;stdlib.h&#62;</span>. <br><br>
-				<span class="funNombre">realloc</span> <span class="caracterEspecial">()</span> se utiliza cuando una zona de memoria reservada con <span class="funNombre">malloc</span> <span class="caracterEspecial">()</span> es muy pequeña o muy grande y se quiere modificar. <br><br>
+				<span class="fun-nombre">realloc</span> <span class="puntuacion">()</span> es una función que se encuentra en la librería <span class="libreria">&#60;stdlib.h&#62;</span>. <br><br>
+				<span class="fun-nombre">realloc</span> <span class="puntuacion">()</span> se utiliza cuando una zona de memoria reservada con <span class="fun-nombre">malloc</span> <span class="puntuacion">()</span> es muy pequeña o muy grande y se quiere modificar. <br><br>
 				<div class="alert alert-danger border border-danger ov-auto">
-					Se exige por profesionalidad que <u>cada vez</u> que se haga un <span class="funNombre">malloc</span> <span class="caracterEspecial">()</span> para una variable, se realice un <span class="funNombre">free</span> <span class="caracterEspecial">()</span> para la misma al finalizar la operación, independientemente de la cantidad de <span class="funNombre">realloc</span> <span class="caracterEspecial">()</span> que se realicen.
+					Se exige por profesionalidad que <u>cada vez</u> que se haga un <span class="fun-nombre">malloc</span> <span class="puntuacion">()</span> para una variable, se realice un <span class="fun-nombre">free</span> <span class="puntuacion">()</span> para la misma al finalizar la operación, independientemente de la cantidad de <span class="fun-nombre">realloc</span> <span class="puntuacion">()</span> que se realicen.
 				</div>
 				<div class="alert alert-success border border-success ov-auto">
-					Sintaxis de <span class="funNombre">realloc</span> <span class="caracterEspecial">()</span>.<br><br>
+					Sintaxis de <span class="fun-nombre">realloc</span> <span class="puntuacion">()</span>.<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="funNombre">realloc</span> <span class="caracterEspecial">(</span><span class="tipoDato">class</span> <span class="include">*</span><span class="caracterEspecial">dirección, </span><span class="tipoDato">unsigned long int<span class="caracterEspecial">/</span>int</span> <span class="caracterEspecial">tamaño a reservar);</span>
+						<span class="fun-nombre">realloc</span> <span class="puntuacion">(</span><span class="tipo-dato">class</span> <span class="include">*</span><span class="puntuacion">dirección, </span><span class="tipo-dato">unsigned long int<span class="puntuacion">/</span>int</span> <span class="puntuacion">tamaño a reservar);</span>
 					</div>
 				</div>
 				Referencia:<br><br>
 				<ul>
 					<li>
-						<h5>Dirección: </h5>Es del tipo de dato que se haya reservado con <span class="funNombre">malloc</span> () y es la variable donde se haya guardado la dirección de retorno de <span class="funNombre">malloc</span> ().
+						<h5>Dirección: </h5>Es del tipo de dato que se haya reservado con <span class="fun-nombre">malloc</span> () y es la variable donde se haya guardado la dirección de retorno de <span class="fun-nombre">malloc</span> ().
 					</li><br>
 					<li>
 						<h5>Tamaño a reservar: </h5>Cantidad de memoria que se quiere reservar.
 					</li>
 				</ul><br>
 				<div class="alert alert-success border border-success ov-auto">
-					Retorno de <span class="funNombre">realloc</span> <span class="caracterEspecial">()</span>.<br><br>
+					Retorno de <span class="fun-nombre">realloc</span> <span class="puntuacion">()</span>.<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="caracterEspecial">(</span><span class="tipoDato">void</span> <span class="ampAstBool">*</span><span class="caracterEspecial">);</span>
+						<span class="puntuacion">(</span><span class="tipo-dato">void</span> <span class="ampAstBool">*</span><span class="puntuacion">);</span>
 					</div>
 				</div>
 			</div>
@@ -61,12 +61,12 @@
 				<h1>Ejemplos de uso de realloc.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				Ejemplos de uso de <span class="funNombre">realloc</span> <span class="caracterEspecial">()</span>:<br><br>
+				Ejemplos de uso de <span class="fun-nombre">realloc</span> <span class="puntuacion">()</span>:<br><br>
 				<div class="alert alert-light border border">
-					<span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">buffer =</span> <span class="caracterEspecial">(</span><span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">)</span> <span class="funNombre">malloc</span> <span class="caracterEspecial">(</span> <span class="funNombre">sizeof</span> <span class="caracterEspecial">(</span><span class="tipoDato">int</span><span class="caracterEspecial">)</span><span class="caracterEspecial"> <span class="ampAstBool">*</span> <span class="numero">40</span>);</span><span class="coment"> // Reserva espacio para 40 <span class="tipoDato">int</span></span><br><br>
-					<span class="coment"> // Necesito espacio para 50 <span class="tipoDato">int</span> así que hago un <span class="funNombre">realloc</span><span class="caracterEspecial">()</span></span><br><br>
-					<span class="caracterEspecial">buffer =</span> <span class="caracterEspecial">(</span><span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">)</span> <span class="funNombre">realloc</span> <span class="caracterEspecial">(buffer,</span> <span class="funNombre">sizeof</span> <span class="caracterEspecial">(</span><span class="tipoDato">int</span><span class="caracterEspecial">)</span><span class="caracterEspecial"> <span class="ampAstBool">*</span> <span class="numero">50</span>);</span><span class="coment"> // Modifica espacio para 50 <span class="tipoDato">int</span></span><br><br>
-					<span class="funNombre">free</span> <span class="caracterEspecial">(buffer);</span><span class="coment"> // Libero la reserva de 'buffer'</span>
+					<span class="tipo-dato">char</span> <span class="ampAstBool">*</span><span class="puntuacion">buffer =</span> <span class="puntuacion">(</span><span class="tipo-dato">char</span> <span class="ampAstBool">*</span><span class="puntuacion">)</span> <span class="fun-nombre">malloc</span> <span class="puntuacion">(</span> <span class="fun-nombre">sizeof</span> <span class="puntuacion">(</span><span class="tipo-dato">int</span><span class="puntuacion">)</span><span class="puntuacion"> <span class="ampAstBool">*</span> <span class="numero">40</span>);</span><span class="coment"> // Reserva espacio para 40 <span class="tipo-dato">int</span></span><br><br>
+					<span class="coment"> // Necesito espacio para 50 <span class="tipo-dato">int</span> así que hago un <span class="fun-nombre">realloc</span><span class="puntuacion">()</span></span><br><br>
+					<span class="puntuacion">buffer =</span> <span class="puntuacion">(</span><span class="tipo-dato">char</span> <span class="ampAstBool">*</span><span class="puntuacion">)</span> <span class="fun-nombre">realloc</span> <span class="puntuacion">(buffer,</span> <span class="fun-nombre">sizeof</span> <span class="puntuacion">(</span><span class="tipo-dato">int</span><span class="puntuacion">)</span><span class="puntuacion"> <span class="ampAstBool">*</span> <span class="numero">50</span>);</span><span class="coment"> // Modifica espacio para 50 <span class="tipo-dato">int</span></span><br><br>
+					<span class="fun-nombre">free</span> <span class="puntuacion">(buffer);</span><span class="coment"> // Libero la reserva de 'buffer'</span>
 				</div>
 			</div>
 		</div>

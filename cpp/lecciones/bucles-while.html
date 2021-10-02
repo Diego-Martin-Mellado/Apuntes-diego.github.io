@@ -36,14 +36,14 @@
 				<h1>Bucles while.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				Los bucles <span class="tipoDato">while</span> en <em>C/C++</em> se utilizan para repetir una serie de instrucciones un número desconocido de veces.<br><br>
+				Los bucles <span class="tipo-dato">while</span> en <em>C/C++</em> se utilizan para repetir una serie de instrucciones un número desconocido de veces.<br><br>
 				No tienen iterador, aunque se pueden crear una o varias variables que actúen como tal declaradas <u>fuera</u> del bucle. <br><br>
 				<div class="alert alert-success border border-success ov-auto">
 					Sintaxis: <br><br>
 					<div class="alert alert-light border">
-						<span class="tipoDato">while</span> <span class="caracterEspecial">( condicion ) {</span><br>
+						<span class="tipo-dato">while</span> <span class="puntuacion">( condicion ) {</span><br>
 						// Código a ejecutar en el bucle <br>
-						<span class="caracterEspecial">}</span>
+						<span class="puntuacion">}</span>
 					</div>
 				</div>
 				Referencia:<br><br>
@@ -56,19 +56,19 @@
 					El <u>iterador</u> es la variable o conjunto de ellas que indican qué vuelta es la que se está ejecutando en el bucle.
 				</div>
 				<div class="alert alert-danger border border-danger ov-auto">
-					<h4>Bucles <span class="tipoDato">while</span> infinitos:</h4>
+					<h4>Bucles <span class="tipo-dato">while</span> infinitos:</h4>
 					<div class="alert alert-light border">
-						<span class="tipoDato">while</span> <span class="caracterEspecial">( <span class="ampAstBool">true</span> ) {</span><br>
+						<span class="tipo-dato">while</span> <span class="puntuacion">( <span class="ampAstBool">true</span> ) {</span><br>
 						// Código a ejecutar en el bucle <br>
-						<span class="caracterEspecial">}</span><br><br>
-						<span class="tipoDato">while</span> <span class="caracterEspecial">( <span class="numero">1</span> ) {</span><br>
+						<span class="puntuacion">}</span><br><br>
+						<span class="tipo-dato">while</span> <span class="puntuacion">( <span class="numero">1</span> ) {</span><br>
 						// Código a ejecutar en el bucle <br>
-						<span class="caracterEspecial">}</span>
+						<span class="puntuacion">}</span>
 					</div>
 					No se aconseja utilizarlo <u>nunca</u>.
 				</div>
 				<div class="alert alert-warning border border-warning ov-auto">
-					Un bucle <span class="tipoDato">while</span> <u>siempre</u> es un scope, por lo que las variables inicializadas dentro del mismo serán inútiles fuera de él.
+					Un bucle <span class="tipo-dato">while</span> <u>siempre</u> es un scope, por lo que las variables inicializadas dentro del mismo serán inútiles fuera de él.
 				</div>
 			</div>
 		</div>
@@ -79,22 +79,22 @@
 			<div class="seccion-contenido p-4">
 				<h5>Imprime los números del 0 al 10:</h5>
 				<div class="alert alert-light border">
-					<span class="tipoDato">int</span> <span class="caracterEspecial">iterador = </span><span class="numero">0</span><span class="caracterEspecial">;</span><br>
-					<span class="tipoDato">while</span> <span class="caracterEspecial">( iterador <span class="ampAstBool"><</span> <span class="numero">10</span> ) {</span><br>
+					<span class="tipo-dato">int</span> <span class="puntuacion">iterador = </span><span class="numero">0</span><span class="puntuacion">;</span><br>
+					<span class="tipo-dato">while</span> <span class="puntuacion">( iterador <span class="ampAstBool"><</span> <span class="numero">10</span> ) {</span><br>
 					&nbsp;&nbsp;// Código a ejecutar en el bucle <br>
-					&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(<span class="comilla">"</span><span class="cespecial">%i\n</span><span class="comilla">"</span>, iterador);</span><br>
-					&nbsp;&nbsp;<span class="caracterEspecial">iterador</span> <span class="ampAstBool">++</span><span class="caracterEspecial">;</span><br>
-					<span class="caracterEspecial">}</span>
+					&nbsp;&nbsp;<span class="fun-nombre">printf</span> <span class="puntuacion">(<span class="comilla">"</span><span class="cespecial">%i\n</span><span class="comilla">"</span>, iterador);</span><br>
+					&nbsp;&nbsp;<span class="puntuacion">iterador</span> <span class="ampAstBool">++</span><span class="puntuacion">;</span><br>
+					<span class="puntuacion">}</span>
 				</div>
 				<h5>Imprime los números 'i' y 'j' hasta que i sea mayor que 5 y j sea menor que 0:</h5>
 				<div class="alert alert-light border">
-					<span class="tipoDato">int</span> <span class="caracterEspecial">i = </span><span class="numero">0</span><span class="caracterEspecial">, j = </span> <span class="numero">7</span><span class="caracterEspecial">;</span><br>
-					<span class="tipoDato">while</span> <span class="caracterEspecial">( i <span class="ampAstBool"><</span> <span class="numero">5</span> <span class="ampAstBool">&&</span> j <span class="ampAstBool">></span> <span class="numero">0</span> ) {</span><br>
+					<span class="tipo-dato">int</span> <span class="puntuacion">i = </span><span class="numero">0</span><span class="puntuacion">, j = </span> <span class="numero">7</span><span class="puntuacion">;</span><br>
+					<span class="tipo-dato">while</span> <span class="puntuacion">( i <span class="ampAstBool"><</span> <span class="numero">5</span> <span class="ampAstBool">&&</span> j <span class="ampAstBool">></span> <span class="numero">0</span> ) {</span><br>
 					&nbsp;&nbsp;// Código a ejecutar en el bucle <br>
-					&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(<span class="comilla">"</span><span class="string">i: </span><span class="cespecial">%i</span> <span class="string">j: </span><span class="cespecial">%i\n</span><span class="comilla">"</span>, i, j);</span><br>
-					&nbsp;&nbsp;<span class="caracterEspecial">i</span> <span class="ampAstBool">++</span><span class="caracterEspecial">;</span><br>
-					&nbsp;&nbsp;<span class="caracterEspecial">j</span> <span class="ampAstBool">--</span><span class="caracterEspecial">;</span><br>
-					<span class="caracterEspecial">}</span>
+					&nbsp;&nbsp;<span class="fun-nombre">printf</span> <span class="puntuacion">(<span class="comilla">"</span><span class="string">i: </span><span class="cespecial">%i</span> <span class="string">j: </span><span class="cespecial">%i\n</span><span class="comilla">"</span>, i, j);</span><br>
+					&nbsp;&nbsp;<span class="puntuacion">i</span> <span class="ampAstBool">++</span><span class="puntuacion">;</span><br>
+					&nbsp;&nbsp;<span class="puntuacion">j</span> <span class="ampAstBool">--</span><span class="puntuacion">;</span><br>
+					<span class="puntuacion">}</span>
 				</div>
 			</div>
 		</div>

@@ -28,9 +28,9 @@
 				<h1>Función printf.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				<span class="funNombre">printf</span> <span class="caracterEspecial">()</span> es una función que se encuentra en la librería <span class="libreria">&#60;stdio.h&#62;</span>. <br><br>
-				Ésta función sirve para imprimir datos formateados por el canal <span class="tipoDato">stdout</span>. <br><br>
-				<span class="funNombre">printf</span> <span class="caracterEspecial">()</span> tiene mínimo 1 parámetro, sin máximo, el primero siempre debe ser un string, el resto son variables que se formatearán dentro del string para mostrar sus valores por pantalla. <br><br>
+				<span class="fun-nombre">printf</span> <span class="puntuacion">()</span> es una función que se encuentra en la librería <span class="libreria">&#60;stdio.h&#62;</span>. <br><br>
+				Ésta función sirve para imprimir datos formateados por el canal <span class="tipo-dato">stdout</span>. <br><br>
+				<span class="fun-nombre">printf</span> <span class="puntuacion">()</span> tiene mínimo 1 parámetro, sin máximo, el primero siempre debe ser un string, el resto son variables que se formatearán dentro del string para mostrar sus valores por pantalla. <br><br>
 				Deben estar formateados porque por éste canal sólo se puede imprimir cadenas de caracteres, y para incluir cualquier otro tipo de dato por ahí debe tener su correspondiente formateo. <br><br>
 				<div class="alert alert-success border border-success ov-auto">
 					Estos son los tipos de formateo en una cadena:<br><br>
@@ -49,19 +49,19 @@
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%e, %E</div>
-							<div class="col border text-center bg-light">Conversión a <span class="tipoDato">float</span> con signo en notación científica.</div>
+							<div class="col border text-center bg-light">Conversión a <span class="tipo-dato">float</span> con signo en notación científica.</div>
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%f, %F</div>
-							<div class="col border text-center bg-light">Conversión a <span class="tipoDato">float</span> con signo, usando punto y en decimal.</div>
+							<div class="col border text-center bg-light">Conversión a <span class="tipo-dato">float</span> con signo, usando punto y en decimal.</div>
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%g, %G</div>
-							<div class="col border text-center bg-light">Conversión a <span class="tipoDato">float</span>, usando la notación que requiera menor espacio.</div>
+							<div class="col border text-center bg-light">Conversión a <span class="tipo-dato">float</span>, usando la notación que requiera menor espacio.</div>
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%h</div>
-							<div class="col border text-center bg-light">Conversión decimal con signo de un entero (<span class="tipoDato">short</span>).</div>
+							<div class="col border text-center bg-light">Conversión decimal con signo de un entero (<span class="tipo-dato">short</span>).</div>
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%o</div>
@@ -77,7 +77,7 @@
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%u</div>
-							<div class="col border text-center bg-light">Conversión decimal sin signo de un entero (<span class="tipoDato">unsigned</span>).</div>
+							<div class="col border text-center bg-light">Conversión decimal sin signo de un entero (<span class="tipo-dato">unsigned</span>).</div>
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%x, %X</div>
@@ -93,44 +93,44 @@
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%lf</div>
-							<div class="col border text-center bg-light">Formatea un "<span class="tipoDato">long float</span>", al no existir formatea un <span class="tipoDato">double</span>.</div>
+							<div class="col border text-center bg-light">Formatea un "<span class="tipo-dato">long float</span>", al no existir formatea un <span class="tipo-dato">double</span>.</div>
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%li</div>
-							<div class="col border text-center bg-light">Formatea un <span class="tipoDato">long int</span> o un <span class="tipoDato">int32_t</span> (<a href="../{stdint.h}/"><?php echo sustituir_llave("{stdint.h}"); ?></a>).</div>
+							<div class="col border text-center bg-light">Formatea un <span class="tipo-dato">long int</span> o un <span class="tipo-dato">int32_t</span> (<a href="../{stdint.h}/"><?php echo sustituir_llave("{stdint.h}"); ?></a>).</div>
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%lli</div>
-							<div class="col border text-center bg-light">Formatea un <span class="tipoDato">long long int</span> o un <span class="tipoDato">int64_t</span> (<a href="../{stdint.h}/"><?php echo sustituir_llave("{stdint.h}"); ?></a>).</div>
+							<div class="col border text-center bg-light">Formatea un <span class="tipo-dato">long long int</span> o un <span class="tipo-dato">int64_t</span> (<a href="../{stdint.h}/"><?php echo sustituir_llave("{stdint.h}"); ?></a>).</div>
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%lu</div>
-							<div class="col border text-center bg-light">Formatea un <span class="tipoDato">unsigned long int</span> o un <span class="tipoDato">uint32_t</span> (<a href="../{stdint.h}/"><?php echo sustituir_llave("{stdint.h}"); ?></a>).</div>
+							<div class="col border text-center bg-light">Formatea un <span class="tipo-dato">unsigned long int</span> o un <span class="tipo-dato">uint32_t</span> (<a href="../{stdint.h}/"><?php echo sustituir_llave("{stdint.h}"); ?></a>).</div>
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%llu</div>
-							<div class="col border text-center bg-light">Formatea un <span class="tipoDato">unsigned long long int</span> o un <span class="tipoDato">uint64_t</span> (<a href="../{stdint.h}/"><?php echo sustituir_llave("{stdint.h}"); ?></a>).</div>
+							<div class="col border text-center bg-light">Formatea un <span class="tipo-dato">unsigned long long int</span> o un <span class="tipo-dato">uint64_t</span> (<a href="../{stdint.h}/"><?php echo sustituir_llave("{stdint.h}"); ?></a>).</div>
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%hi</div>
-							<div class="col border text-center bg-light">Formatea un <span class="tipoDato">short int</span>.</div>
+							<div class="col border text-center bg-light">Formatea un <span class="tipo-dato">short int</span>.</div>
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%hu</div>
-							<div class="col border text-center bg-light">Formatea un <span class="tipoDato">unsigned short int</span>.</div>
+							<div class="col border text-center bg-light">Formatea un <span class="tipo-dato">unsigned short int</span>.</div>
 						</div>
 					</div>
 				</div>
 				<div class="alert alert-success border border-success ov-auto">
 					Sintaxis:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="funNombre">printf</span> <span class="caracterEspecial">( Parametro(s) );</span>
+						<span class="fun-nombre">printf</span> <span class="puntuacion">( Parametro(s) );</span>
 					</div>
 				</div>
 				Referencia:<br><br>
 				<ul>
 					<li>
-						<h5>Parámetro 1 (<span class="ampAstBool">const</span> <span class="tipoDato">char</span> <span class="ampAstBool">*</span>) (Obligatorio):</h5> Es el string que se va a imprimir por consola, puede contener partes para formatear. <br><br>
+						<h5>Parámetro 1 (<span class="ampAstBool">const</span> <span class="tipo-dato">char</span> <span class="ampAstBool">*</span>) (Obligatorio):</h5> Es el string que se va a imprimir por consola, puede contener partes para formatear. <br><br>
 					</li>
 					<li>
 						<h5>Parámetros 2 - ... (Cualquier tipo) (Opcional):</h5> Son variables las cuales el valor se va a imprimir por consola. <br><br>
@@ -139,7 +139,7 @@
 				<div class="alert alert-success border border-success ov-auto">
 					Retorno:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="caracterEspecial">Imprime por consola el string del primer parámetro con los demás parámetros ya formteados. <br><br><span class="tipoDato">bool</span> (En caso de que se quiera comprobar si se ha realizado la acción).</span>
+						<span class="puntuacion">Imprime por consola el string del primer parámetro con los demás parámetros ya formteados. <br><br><span class="tipo-dato">bool</span> (En caso de que se quiera comprobar si se ha realizado la acción).</span>
 					</div>
 				</div>
 			</div>
@@ -149,14 +149,14 @@
 				<h1>Ejemplos de uso de printf.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				Ejemplos de uso de <span class="funNombre">printf</span> <span class="caracterEspecial">()</span>:<br><br>
+				Ejemplos de uso de <span class="fun-nombre">printf</span> <span class="puntuacion">()</span>:<br><br>
 				<div class="alert alert-light border">
-					<span class="funNombre">printf</span> <span class="caracterEspecial">(<span class="comilla">"</span><span class="string">Hola mundo!</span><span class="cespecial">\n</span><span class="comilla">"</span>);</span> <span class="coment">// Imprime por consola "Hola mundo!"</span><br><br>
-					<span class="funNombre">printf</span> <span class="caracterEspecial">(<span class="comilla">"</span><span class="string">Hola <span class="cespecial">%s</span>!</span><span class="cespecial">\n</span><span class="comilla">"</span><span class="caracterEspecial">,</span> <span class="comilla">"</span><span class="string">Lola</span><span class="comilla">"</span>);</span><span class="coment"> // Imprime "Hola Lola!" con formateo de string</span><br><br>
-					<span class="funNombre">printf</span> <span class="caracterEspecial">(<span class="comilla">"</span><span class="string">Hola <span class="cespecial">%i</span>!</span><span class="cespecial">\n</span><span class="comilla">"</span><span class="caracterEspecial">,</span> <span class="numero">10</span>);</span><span class="coment"> // Imprime "Hola 10!" con formateo de número entero</span><br><br>
-					<span class="funNombre">printf</span> <span class="caracterEspecial">(<span class="comilla">"</span><span class="string">Hola <span class="cespecial">%s</span> <span class="cespecial">%i</span>!</span><span class="cespecial">\n</span><span class="comilla">"</span><span class="caracterEspecial">,</span> <span class="comilla">"</span><span class="string">Lola</span><span class="comilla">"</span><span class="caracterEspecial">,</span> <span class="numero">10</span>);</span><span class="coment"> // Imprime "Hola Lola 10!" con formateo de string y de número entero</span>
+					<span class="fun-nombre">printf</span> <span class="puntuacion">(<span class="comilla">"</span><span class="string">Hola mundo!</span><span class="cespecial">\n</span><span class="comilla">"</span>);</span> <span class="coment">// Imprime por consola "Hola mundo!"</span><br><br>
+					<span class="fun-nombre">printf</span> <span class="puntuacion">(<span class="comilla">"</span><span class="string">Hola <span class="cespecial">%s</span>!</span><span class="cespecial">\n</span><span class="comilla">"</span><span class="puntuacion">,</span> <span class="comilla">"</span><span class="string">Lola</span><span class="comilla">"</span>);</span><span class="coment"> // Imprime "Hola Lola!" con formateo de string</span><br><br>
+					<span class="fun-nombre">printf</span> <span class="puntuacion">(<span class="comilla">"</span><span class="string">Hola <span class="cespecial">%i</span>!</span><span class="cespecial">\n</span><span class="comilla">"</span><span class="puntuacion">,</span> <span class="numero">10</span>);</span><span class="coment"> // Imprime "Hola 10!" con formateo de número entero</span><br><br>
+					<span class="fun-nombre">printf</span> <span class="puntuacion">(<span class="comilla">"</span><span class="string">Hola <span class="cespecial">%s</span> <span class="cespecial">%i</span>!</span><span class="cespecial">\n</span><span class="comilla">"</span><span class="puntuacion">,</span> <span class="comilla">"</span><span class="string">Lola</span><span class="comilla">"</span><span class="puntuacion">,</span> <span class="numero">10</span>);</span><span class="coment"> // Imprime "Hola Lola 10!" con formateo de string y de número entero</span>
 				</div>
-				Aunque en el ejemplo no sea así, lo normal en el formateo de strings en <span class="funNombre">printf</span> <span class="caracterEspecial">()</span> es añadir como parámetros (cualquiera menos el primero, que siempre es una cadena) los valores de variables.
+				Aunque en el ejemplo no sea así, lo normal en el formateo de strings en <span class="fun-nombre">printf</span> <span class="puntuacion">()</span> es añadir como parámetros (cualquiera menos el primero, que siempre es una cadena) los valores de variables.
 			</div>
 		</div>
 	</div>

@@ -42,7 +42,7 @@
 				Para crear un array debes especificar el tipo de dato, fijar un identificador para tu array, y entre corchetes especificar el número de elementos que va a tener la lista. <br><br>
 				<div class="alert alert-light border ov-auto">
 					// Esta es una lista que contendrá 3 números enteros <br>
-					<span class="tipoDato">int</span> <span class="caracterEspecial">listaEnteros[</span><span class="numero">3</span><span class="caracterEspecial">];</span>
+					<span class="tipo-dato">int</span> <span class="puntuacion">listaEnteros[</span><span class="numero">3</span><span class="puntuacion">];</span>
 				</div>
 				<div class="alert alert-success border border-success">
 					Las posiciones de un elemento en una lista se numeran desde 0 hasta la longitud del array menos 1.
@@ -50,15 +50,15 @@
 				Se puede fijar los valores del array posteriormente con las siguientes instrucciones:<br><br>
 				<div class="alert alert-light border ov-auto">
 					// Primer elemento <br>
-					<span class="caracterEspecial">listaEnteros[</span><span class="numero">0</span><span class="caracterEspecial">] = </span><span class="numero">45</span><span class="caracterEspecial">;</span><br>
+					<span class="puntuacion">listaEnteros[</span><span class="numero">0</span><span class="puntuacion">] = </span><span class="numero">45</span><span class="puntuacion">;</span><br>
 					// Segundo elemento <br>
-					<span class="caracterEspecial">listaEnteros[</span><span class="numero">1</span><span class="caracterEspecial">] = </span><span class="numero">47</span><span class="caracterEspecial">;</span><br>
+					<span class="puntuacion">listaEnteros[</span><span class="numero">1</span><span class="puntuacion">] = </span><span class="numero">47</span><span class="puntuacion">;</span><br>
 					// Tercer elemento <br>
-					<span class="caracterEspecial">listaEnteros[</span><span class="numero">2</span><span class="caracterEspecial">] = </span><span class="numero">73</span><span class="caracterEspecial">;</span><br>
+					<span class="puntuacion">listaEnteros[</span><span class="numero">2</span><span class="puntuacion">] = </span><span class="numero">73</span><span class="puntuacion">;</span><br>
 				</div><br>
 				También se pueden inicializar todos los elementos del array al ser declarado. <br><br>
 				<div class="alert alert-light border ov-auto">
-					<span class="tipoDato">int</span> <span class="caracterEspecial">listaEnteros[] = {</span><span class="numero">45</span><span class="caracterEspecial">, </span><span class="numero">47</span><span class="caracterEspecial">, </span><span class="numero">73</span><span class="caracterEspecial">};</span>
+					<span class="tipo-dato">int</span> <span class="puntuacion">listaEnteros[] = {</span><span class="numero">45</span><span class="puntuacion">, </span><span class="numero">47</span><span class="puntuacion">, </span><span class="numero">73</span><span class="puntuacion">};</span>
 				</div>
 				<div class="alert alert-warning border-warning ov-auto">
 					Si fijas los valores de un array al inicializarlo, no es necesario especificar entre corchetes la cantidad de elementos que se van a establecer, <u>el preprocesador se encargará de ello</u>, aunque también puedes especificarlos si gustas.
@@ -66,13 +66,13 @@
 				Al igual que se pueden hacer listas de números enteros, se puede hacer listas con otros tipos de datos, por ejemplo:<br><br>
 				<div class="alert alert-light border ov-auto">
 					// Lista de decimales dobles <br>
-					<span class="tipoDato">double</span> <span class="caracterEspecial">listaDouble[</span><span class="numero">2</span><span class="caracterEspecial">] = {</span><span class="numero">69.42</span><span class="caracterEspecial">, </span><span class="numero">73.37</span><span class="caracterEspecial">};</span><br><br>
+					<span class="tipo-dato">double</span> <span class="puntuacion">listaDouble[</span><span class="numero">2</span><span class="puntuacion">] = {</span><span class="numero">69.42</span><span class="puntuacion">, </span><span class="numero">73.37</span><span class="puntuacion">};</span><br><br>
 					// Lista de caracteres <br>
-					<span class="tipoDato">char</span> <span class="caracterEspecial">listaChar[</span><span class="numero">6</span><span class="caracterEspecial">] = {</span><span class="comilla">'</span><span class="string">S</span><span class="comilla">'</span><span class="caracterEspecial">, </span><span class="comilla">'</span><span class="string">a</span><span class="comilla">'</span><span class="caracterEspecial">, </span><span class="comilla">'</span><span class="string">n</span><span class="comilla">'</span><span class="caracterEspecial"><span class="caracterEspecial">, </span><span class="comilla">'</span><span class="string">d</span><span class="comilla">'</span><span class="caracterEspecial">, </span><span class="comilla">'</span><span class="string">r</span><span class="comilla">'</span><span class="caracterEspecial">, </span><span class="comilla">'</span><span class="string">a</span><span class="comilla">'</span>};</span><br><br>
+					<span class="tipo-dato">char</span> <span class="puntuacion">listaChar[</span><span class="numero">6</span><span class="puntuacion">] = {</span><span class="comilla">'</span><span class="string">S</span><span class="comilla">'</span><span class="puntuacion">, </span><span class="comilla">'</span><span class="string">a</span><span class="comilla">'</span><span class="puntuacion">, </span><span class="comilla">'</span><span class="string">n</span><span class="comilla">'</span><span class="puntuacion"><span class="puntuacion">, </span><span class="comilla">'</span><span class="string">d</span><span class="comilla">'</span><span class="puntuacion">, </span><span class="comilla">'</span><span class="string">r</span><span class="comilla">'</span><span class="puntuacion">, </span><span class="comilla">'</span><span class="string">a</span><span class="comilla">'</span>};</span><br><br>
 					// Lista de valores booleanos <br>
-					<span class="tipoDato">bool</span> <span class="caracterEspecial">listaBool[</span><span class="numero">4</span><span class="caracterEspecial">] = {</span><span class="ampAstBool">true</span><span class="caracterEspecial">, </span><span class="ampAstBool">false</span><span class="caracterEspecial">, </span><span class="ampAstBool">false</span><span class="caracterEspecial">, </span><span class="ampAstBool">true</span><span class="caracterEspecial">};</span><br><br>
+					<span class="tipo-dato">bool</span> <span class="puntuacion">listaBool[</span><span class="numero">4</span><span class="puntuacion">] = {</span><span class="ampAstBool">true</span><span class="puntuacion">, </span><span class="ampAstBool">false</span><span class="puntuacion">, </span><span class="ampAstBool">false</span><span class="puntuacion">, </span><span class="ampAstBool">true</span><span class="puntuacion">};</span><br><br>
 					// Lista de cadenas de caracteres <br>
-					<span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">listaString[</span><span class="numero">1</span><span class="caracterEspecial">] = {</span><span class="comilla">"</span><span class="string">Sandra</span><span class="comilla">"</span><span class="caracterEspecial">};</span>
+					<span class="tipo-dato">char</span> <span class="ampAstBool">*</span><span class="puntuacion">listaString[</span><span class="numero">1</span><span class="puntuacion">] = {</span><span class="comilla">"</span><span class="string">Sandra</span><span class="comilla">"</span><span class="puntuacion">};</span>
 				</div>
 			</div>
 		</div>
@@ -85,15 +85,15 @@
 				La única diferencia es que también debe ser especificada la longitud de cada lista anidada en unos corchetes adicionales en la declaración del array. <br><br>
 				Ejemplos: <br><br>
 				<div class="alert alert-light border ov-auto">
-					<span class="tipoDato">int</span> <span class="caracterEspecial">listaEnteros[][] = {</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">{</span><span class="numero">1</span><span class="caracterEspecial">, </span><span class="numero">2</span><span class="caracterEspecial">},</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">{</span><span class="numero">3</span><span class="caracterEspecial">, </span><span class="numero">4</span><span class="caracterEspecial">}</span><br>
-					<span class="caracterEspecial">};</span>
+					<span class="tipo-dato">int</span> <span class="puntuacion">listaEnteros[][] = {</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="puntuacion">{</span><span class="numero">1</span><span class="puntuacion">, </span><span class="numero">2</span><span class="puntuacion">},</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="puntuacion">{</span><span class="numero">3</span><span class="puntuacion">, </span><span class="numero">4</span><span class="puntuacion">}</span><br>
+					<span class="puntuacion">};</span>
 				</div>
 				<div class="alert alert-light border ov-auto">
 					// Acceso a datos en matrices <br>
-					<span class="caracterEspecial">listaEnteros[</span><span class="numero">0</span><span class="caracterEspecial">][</span><span class="numero">1</span><span class="caracterEspecial">];</span> // Devuelve <span class="numero">2</span> (Fila 0, elemento 1)<br><br>
-					<span class="caracterEspecial">listaEnteros[</span><span class="numero">1</span><span class="caracterEspecial">][</span><span class="numero">0</span><span class="caracterEspecial">];</span> // Devuelve <span class="numero">3</span> (Fila 1, elemento 0)
+					<span class="puntuacion">listaEnteros[</span><span class="numero">0</span><span class="puntuacion">][</span><span class="numero">1</span><span class="puntuacion">];</span> // Devuelve <span class="numero">2</span> (Fila 0, elemento 1)<br><br>
+					<span class="puntuacion">listaEnteros[</span><span class="numero">1</span><span class="puntuacion">][</span><span class="numero">0</span><span class="puntuacion">];</span> // Devuelve <span class="numero">3</span> (Fila 1, elemento 0)
 				</div>
 				<div class="alert alert-warning border-warning">
 					Se pueden hacer matrices con todos los tipos de datos y con cualquier número de dimensiones.

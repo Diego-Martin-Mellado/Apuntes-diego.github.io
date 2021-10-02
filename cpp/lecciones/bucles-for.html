@@ -36,14 +36,14 @@
 				<h1>Bucles for.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				Los bucles <span class="tipoDato">for</span> en <em>C/C++</em> se utilizan para repetir una serie de instrucciones un número determinado de veces.<br><br>
+				Los bucles <span class="tipo-dato">for</span> en <em>C/C++</em> se utilizan para repetir una serie de instrucciones un número determinado de veces.<br><br>
 				Se pueden utilizar de manera que en vez de atender a el valor de un iterador, termine con una condición ajena a éste. <br><br>
 				<div class="alert alert-success border border-success ov-auto">
 					Sintaxis: <br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="tipoDato">for</span> <span class="caracterEspecial">( inicializador ; condicion ; incremento ) {</span><br>
+						<span class="tipo-dato">for</span> <span class="puntuacion">( inicializador ; condicion ; incremento ) {</span><br>
 						// Código a ejecutar en el bucle <br>
-						<span class="caracterEspecial">}</span>
+						<span class="puntuacion">}</span>
 					</div>
 				</div>
 				Referencia:<br><br>
@@ -62,19 +62,19 @@
 					El <u>iterador</u> es la variable o conjunto de ellas que indican qué vuelta es la que se está ejecutando en el bucle.
 				</div>
 				<div class="alert alert-danger border-danger ov-auto">
-					<h4>Bucles <span class="tipoDato">for</span> infinitos:</h4>
+					<h4>Bucles <span class="tipo-dato">for</span> infinitos:</h4>
 					<div class="alert alert-light border">
-						<span class="tipoDato">for</span> <span class="caracterEspecial">( ; ; ) {</span><br>
+						<span class="tipo-dato">for</span> <span class="puntuacion">( ; ; ) {</span><br>
 						// Código a ejecutar en el bucle <br>
-						<span class="caracterEspecial">}</span>
+						<span class="puntuacion">}</span>
 					</div>
 					No se aconseja utilizarlo <u>nunca</u>.
 				</div>
 				<div class="alert alert-success border border-success ov-auto">
-					Los bucles <span class="tipoDato">for</span> también se pueden utilizar como bucles <span class="tipoDato">while</span> con iteradores si en la condición se deja al margen al iterador.
+					Los bucles <span class="tipo-dato">for</span> también se pueden utilizar como bucles <span class="tipo-dato">while</span> con iteradores si en la condición se deja al margen al iterador.
 				</div>
 				<div class="alert alert-warning border-warning ov-auto">
-					Un bucle <span class="tipoDato">for</span> <u>siempre</u> es un scope, por lo que las variables inicializadas dentro del mismo serán inútiles fuera de él.
+					Un bucle <span class="tipo-dato">for</span> <u>siempre</u> es un scope, por lo que las variables inicializadas dentro del mismo serán inútiles fuera de él.
 				</div>
 			</div>
 		</div>
@@ -85,15 +85,15 @@
 			<div class="seccion-contenido p-4">
 				<h5>Imprime los números del 0 al 10:</h5>
 				<div class="alert alert-light border ov-auto">
-					<span class="tipoDato">for</span> <span class="caracterEspecial">( <span class="tipoDato">int</span> i <span class="ampAstBool">=</span> <span class="numero">0</span> ; i <span class="ampAstBool"><=</span> <span class="numero">10</span> ; i<span class="ampAstBool">++</span> ) {</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(</span><span class="comilla">"</span><span class="string">Vuelta: </span><span class="cespecial">%i</span><span class="comilla">"</span><span class="caracterEspecial">, i);</span><br>
-					<span class="caracterEspecial">}</span>
+					<span class="tipo-dato">for</span> <span class="puntuacion">( <span class="tipo-dato">int</span> i <span class="ampAstBool">=</span> <span class="numero">0</span> ; i <span class="ampAstBool"><=</span> <span class="numero">10</span> ; i<span class="ampAstBool">++</span> ) {</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="fun-nombre">printf</span> <span class="puntuacion">(</span><span class="comilla">"</span><span class="string">Vuelta: </span><span class="cespecial">%i</span><span class="comilla">"</span><span class="puntuacion">, i);</span><br>
+					<span class="puntuacion">}</span>
 				</div>
 				<h5>Imprime los números 'i' y 'j' hasta que i sea mayor que 5 y j sea menor que 0:</h5>
 				<div class="alert alert-light border ov-auto">
-					<span class="tipoDato">for</span> <span class="caracterEspecial">( <span class="tipoDato">int</span> i <span class="ampAstBool">=</span> <span class="numero">0</span>, j <span class="ampAstBool">=</span> <span class="numero">7</span> ; i <span class="ampAstBool"><=</span> <span class="numero">5</span> <span class="ampAstBool">&&</span> j <span class="ampAstBool">>=</span> <span class="numero">0</span> ; i<span class="ampAstBool">++</span> , j<span class="ampAstBool">--</span> ) {</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(</span><span class="comilla">"</span><span class="string">Variable i: <span class="cespecial">%i\n</span>Variable j: <span class="cespecial">%i\n</span></span><span class="comilla">"</span><span class="caracterEspecial">, i, j);</span><br>
-					<span class="caracterEspecial">}</span>
+					<span class="tipo-dato">for</span> <span class="puntuacion">( <span class="tipo-dato">int</span> i <span class="ampAstBool">=</span> <span class="numero">0</span>, j <span class="ampAstBool">=</span> <span class="numero">7</span> ; i <span class="ampAstBool"><=</span> <span class="numero">5</span> <span class="ampAstBool">&&</span> j <span class="ampAstBool">>=</span> <span class="numero">0</span> ; i<span class="ampAstBool">++</span> , j<span class="ampAstBool">--</span> ) {</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="fun-nombre">printf</span> <span class="puntuacion">(</span><span class="comilla">"</span><span class="string">Variable i: <span class="cespecial">%i\n</span>Variable j: <span class="cespecial">%i\n</span></span><span class="comilla">"</span><span class="puntuacion">, i, j);</span><br>
+					<span class="puntuacion">}</span>
 				</div>
 			</div>
 		</div>

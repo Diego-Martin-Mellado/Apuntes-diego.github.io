@@ -28,13 +28,13 @@
 				<h1>Función strcpy.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				<span class="funNombre">strcpy</span> <span class="caracterEspecial">()</span> es una función que se encuentra en la librería <span class="libreria">&#60;string.h&#62;</span>. <br><br>
+				<span class="fun-nombre">strcpy</span> <span class="puntuacion">()</span> es una función que se encuentra en la librería <span class="libreria">&#60;string.h&#62;</span>. <br><br>
 				Sirve para alojar (o copiar) una cadena de caracteres en cierta dirección de memoria. <br><br>
-				Ésta dirección se obtiene con un puntero o reservando memoria con las funciones <span class="funNombre">malloc</span> <span class="caracterEspecial">()</span> y <span class="funNombre">realloc</span> <span class="caracterEspecial">()</span><br><br>
+				Ésta dirección se obtiene con un puntero o reservando memoria con las funciones <span class="fun-nombre">malloc</span> <span class="puntuacion">()</span> y <span class="fun-nombre">realloc</span> <span class="puntuacion">()</span><br><br>
 				<div class="alert alert-success border border-success ov-auto">
 					Sintaxis:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="funNombre">strcpy</span> <span class="caracterEspecial">(</span><span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial"> destino, </span><span class="ampAstBool">const</span> <span class="tipoDato">char</span> <span class="ampAstBool">*</span> <span class="caracterEspecial">string);</span>
+						<span class="fun-nombre">strcpy</span> <span class="puntuacion">(</span><span class="tipo-dato">char</span> <span class="ampAstBool">*</span><span class="puntuacion"> destino, </span><span class="ampAstBool">const</span> <span class="tipo-dato">char</span> <span class="ampAstBool">*</span> <span class="puntuacion">string);</span>
 					</div>
 				</div>
 				Referencia: <br><br>
@@ -49,7 +49,7 @@
 				<div class="alert alert-success border border-success ov-auto">
 					Retorno:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="tipoDato">void</span> <span class="ampAstBool">*</span>
+						<span class="tipo-dato">void</span> <span class="ampAstBool">*</span>
 					</div>
 				</div>
 			</div>
@@ -59,16 +59,16 @@
 				<h1>Uso de strcpy.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				Ejemplo de programa utilizando la función <span class="funNombre">strcpy</span> <span class="caracterEspecial">()</span>:<br><br>
+				Ejemplo de programa utilizando la función <span class="fun-nombre">strcpy</span> <span class="puntuacion">()</span>:<br><br>
 				<div class="alert alert-light border ov-auto">
-					<span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">palabra = </span><span class="comilla">"</span><span class="string">palabra</span><span class="comilla">"</span><span class="caracterEspecial">;</span><br>
-					<span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">punteroDest = </span><i><span class="ampAstBool">NULL</span></i><span class="caracterEspecial">;</span><br><br>
-					<span class="caracterEspecial">punteroDest =</span> <span class="caracterEspecial">(</span><span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">)</span> <span class="funNombre">malloc</span> <span class="caracterEspecial">(</span> <span class="funNombre">strlen</span> <span class="caracterEspecial">(palabra)</span> <span class="ampAstBool">*</span> <span class="funNombre">sizeof</span> <span class="caracterEspecial">(</span><span class="tipoDato">char</span><span class="caracterEspecial">));</span><span class="coment"> // Reserva espacio para (longitud de la palabra) + <span class="comilla">'</span><span class="string">\0</span><span class="comilla">'</span> multiplicado por el tamaño de un <span class="tipoDato">char</span> <span class="ampAstBool">*</span></span><br><br>
-					<span class="funNombre">strcpy</span> <span class="caracterEspecial">(punteroDest, palabra);</span><span class="coment"> // Introduce la palabra en el espacio en memoria reservado por <span class="funNombre">malloc</span> <span class="caracterEspecial">()</span></span><br><br>
-					<span class="funNombre">free</span> <span class="caracterEspecial">(punteroDest);</span><span class="coment"> // Libero el espacio sobrante reservado</span>
+					<span class="tipo-dato">char</span> <span class="ampAstBool">*</span><span class="puntuacion">palabra = </span><span class="comilla">"</span><span class="string">palabra</span><span class="comilla">"</span><span class="puntuacion">;</span><br>
+					<span class="tipo-dato">char</span> <span class="ampAstBool">*</span><span class="puntuacion">punteroDest = </span><i><span class="ampAstBool">NULL</span></i><span class="puntuacion">;</span><br><br>
+					<span class="puntuacion">punteroDest =</span> <span class="puntuacion">(</span><span class="tipo-dato">char</span> <span class="ampAstBool">*</span><span class="puntuacion">)</span> <span class="fun-nombre">malloc</span> <span class="puntuacion">(</span> <span class="fun-nombre">strlen</span> <span class="puntuacion">(palabra)</span> <span class="ampAstBool">*</span> <span class="fun-nombre">sizeof</span> <span class="puntuacion">(</span><span class="tipo-dato">char</span><span class="puntuacion">));</span><span class="coment"> // Reserva espacio para (longitud de la palabra) + <span class="comilla">'</span><span class="string">\0</span><span class="comilla">'</span> multiplicado por el tamaño de un <span class="tipo-dato">char</span> <span class="ampAstBool">*</span></span><br><br>
+					<span class="fun-nombre">strcpy</span> <span class="puntuacion">(punteroDest, palabra);</span><span class="coment"> // Introduce la palabra en el espacio en memoria reservado por <span class="fun-nombre">malloc</span> <span class="puntuacion">()</span></span><br><br>
+					<span class="fun-nombre">free</span> <span class="puntuacion">(punteroDest);</span><span class="coment"> // Libero el espacio sobrante reservado</span>
 				</div>
-				<a href="../stdlib-h/funcion-malloc.html">Uso de <span class="funNombre">malloc</span> <span class="caracterEspecial">();</span></a><br>
-				<a href="../stdlib-h/funcion-free.html">Uso de <span class="funNombre">free</span> <span class="caracterEspecial">();</span></a>
+				<a href="../stdlib-h/funcion-malloc.html">Uso de <span class="fun-nombre">malloc</span> <span class="puntuacion">();</span></a><br>
+				<a href="../stdlib-h/funcion-free.html">Uso de <span class="fun-nombre">free</span> <span class="puntuacion">();</span></a>
 			</div>
 		</div>
 	</div>

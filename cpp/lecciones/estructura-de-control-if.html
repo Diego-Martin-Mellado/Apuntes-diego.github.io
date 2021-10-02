@@ -39,19 +39,19 @@
 				Muchos programas requieren que se efectúe una comprobación lógica en algún punto del programa, para ejecutar o no una parte concreta del mismo, las estructuras de <em><u>C/C++</u></em> que se encargan de gestionar esto, son las llamadas <em>estructuras de control</em>.<br><br>
 				La <em>estructura de control</em> <span class="include">if</span> evalúa una condición o sentencia, y si ésta resulta verdadera (Distinta de <span class="numero">0</span>), ejecuta <u>una sola línea de código</u>.<br><br>
 				<div class="alert alert-primary border-primary ov-auto">
-					Los <a href="./conceptos-basicos.html#scope">scopes <span class="caracterEspecial">o</span> ámbitos</a> comprimen todo lo que esté escrito entre los caracteres '{' y '}' para que el compilador lo comprima en "una sola línea".
+					Los <a href="./conceptos-basicos.html#scope">scopes <span class="puntuacion">o</span> ámbitos</a> comprimen todo lo que esté escrito entre los caracteres '{' y '}' para que el compilador lo comprima en "una sola línea".
 				</div>
 				<div class="alert alert-success border border-success ov-auto">
 					Sintaxis:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="include">if</span> <span class="caracterEspecial">( condicion )</span><br> // Sentencia a ejecutar
+						<span class="include">if</span> <span class="puntuacion">( condicion )</span><br> // Sentencia a ejecutar
 					</div>
 					<div class="alert alert-light border ov-auto">
-						<span class="include">if</span> <span class="caracterEspecial">( condicion ) {</span><br>
+						<span class="include">if</span> <span class="puntuacion">( condicion ) {</span><br>
 						&nbsp;&nbsp;// Sentencias <br>
 						&nbsp;&nbsp;// a <br>
 						&nbsp;&nbsp;// ejecutar <br>
-						<span class="caracterEspecial">}</span>
+						<span class="puntuacion">}</span>
 					</div>
 				</div>
 				Referencia:<br><br>
@@ -69,14 +69,14 @@
 			<div class="seccion-contenido p-4">
 				Ejemplos de uso de <span class="include">if</span>:<br><br>
 				<div class="alert alert-light border ov-auto">
-					<span class="tipoDato">int</span> <span class="caracterEspecial">numero = </span><span class="numero">5</span><span class="caracterEspecial">;</span><br>
-					<span class="tipoDato">bool</span> <span class="caracterEspecial">booleano = </span><span class="include">false</span><span class="caracterEspecial">;</span><br><br>
-					<span class="include">if</span> <span class="caracterEspecial">( numero </span><span class="include"><</span> <span class="numero">10</span><span class="caracterEspecial">) {</span><br>
-					&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(</span><span class="comilla">"</span><span class="string">Enhorabuena! Es menor que 10</span><span class="cespecial">\n</span><span class="comilla">"</span><span class="caracterEspecial">);</span> // Aqui hay varias instrucciones (sentencias) por lo que se ponen llaves<br>
-					&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(</span><span class="comilla">"</span><span class="string">Tu número es </span><span class="cespecial">%i</span><span class="comilla">"</span><span class="caracterEspecial">, numero);</span><br>
-					<span class="caracterEspecial">}</span><br>
-					<span class="include">if</span> <span class="caracterEspecial">( booleano )</span> // Esto no se ejecutaría porque booleano es <span class="include">false</span><br>
-					&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(</span><span class="comilla">"</span><span class="string">La variable booleano es true</span><span class="cespecial">\n</span><span class="comilla">"</span><span class="caracterEspecial">);</span> // Aqui hay una instruccion (sentencia) por lo que no hace falta poner llaves<br>
+					<span class="tipo-dato">int</span> <span class="puntuacion">numero = </span><span class="numero">5</span><span class="puntuacion">;</span><br>
+					<span class="tipo-dato">bool</span> <span class="puntuacion">booleano = </span><span class="include">false</span><span class="puntuacion">;</span><br><br>
+					<span class="include">if</span> <span class="puntuacion">( numero </span><span class="include"><</span> <span class="numero">10</span><span class="puntuacion">) {</span><br>
+					&nbsp;&nbsp;<span class="fun-nombre">printf</span> <span class="puntuacion">(</span><span class="comilla">"</span><span class="string">Enhorabuena! Es menor que 10</span><span class="cespecial">\n</span><span class="comilla">"</span><span class="puntuacion">);</span> // Aqui hay varias instrucciones (sentencias) por lo que se ponen llaves<br>
+					&nbsp;&nbsp;<span class="fun-nombre">printf</span> <span class="puntuacion">(</span><span class="comilla">"</span><span class="string">Tu número es </span><span class="cespecial">%i</span><span class="comilla">"</span><span class="puntuacion">, numero);</span><br>
+					<span class="puntuacion">}</span><br>
+					<span class="include">if</span> <span class="puntuacion">( booleano )</span> // Esto no se ejecutaría porque booleano es <span class="include">false</span><br>
+					&nbsp;&nbsp;<span class="fun-nombre">printf</span> <span class="puntuacion">(</span><span class="comilla">"</span><span class="string">La variable booleano es true</span><span class="cespecial">\n</span><span class="comilla">"</span><span class="puntuacion">);</span> // Aqui hay una instruccion (sentencia) por lo que no hace falta poner llaves<br>
 				</div>
 			</div>
 		</div>

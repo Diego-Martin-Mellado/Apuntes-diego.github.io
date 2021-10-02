@@ -39,21 +39,21 @@
 				<h1>Clase Scanner - Java.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				La clase <span class="funNombre">Scanner</span> se usa para obtener datos de entrada desde el usuario. <br><br>
+				La clase <span class="fun-nombre">Scanner</span> se usa para obtener datos de entrada desde el usuario. <br><br>
 				<div class="alert alert-danger border-danger ov-auto">
-					Cada vez que se instancia la clase <span class="funNombre">Scanner</span>, se debe cerrar con el método <span class="funNombre">close</span> ().
+					Cada vez que se instancia la clase <span class="fun-nombre">Scanner</span>, se debe cerrar con el método <span class="fun-nombre">close</span> ().
 				</div>
 				<div class="alert alert-success border border-success ov-auto">
 					Sintaxis:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="tipoDato">Scanner</span> <span class="caracterEspecial">miTeclado = </span><span class="import">new</span> <span class="funNombre">Scanner</span><span class="caracterEspecial">(</span><span class="tipoDato">InputStream</span> <span class="caracterEspecial">canal);</span>
+						<span class="tipo-dato">Scanner</span> <span class="puntuacion">miTeclado = </span><span class="import">new</span> <span class="fun-nombre">Scanner</span><span class="puntuacion">(</span><span class="tipo-dato">InputStream</span> <span class="puntuacion">canal);</span>
 					</div>
 				</div>
 				Referencia:
 				<ul>
 					<li>Canal: </li>Archivo o fuente de información de la cual se va a extraer información.
 				</ul>
-				Si se está obteniendo información del input de una consola, que es donde normalmente se ejecuta ésta instrucción, el <span class="tipoDato">InputStream</span> será <span class="funNombre">System</span>.<span class="tipoDato">in</span>.
+				Si se está obteniendo información del input de una consola, que es donde normalmente se ejecuta ésta instrucción, el <span class="tipo-dato">InputStream</span> será <span class="fun-nombre">System</span>.<span class="tipo-dato">in</span>.
 			</div>
 		</div>
 		<div class="seccion">
@@ -86,24 +86,24 @@
 				<h1>Ejemplos de Scanner - Java.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				Ejemplos de <span class="funNombre">Scanner</span>. <br><br>
+				Ejemplos de <span class="fun-nombre">Scanner</span>. <br><br>
 				<div class="alert alert-light border ov-auto">
-					<span class="import">import</span> <span class="caracterEspecial">java.util.Scanner;</span><br><br>
-					<span class="import">public</span> <span class="tipoDato">class</span> <span class="caracterEspecial">Programa {</span><br>
-					&nbsp;&nbsp;<span class="import">public static</span> <span class="tipoDato">void</span> <span class="caracterEspecial">main (</span><span class="tipoDato">String</span> <span class="caracterEspecial">[] args) {</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="tipoDato">Scanner</span> <span class="caracterEspecial">teclado = </span><span class="import">new</span> <span class="funNombre">Scanner</span> <span class="caracterEspecial">(<span class="funNombre">System</span>.<span class="tipoDato">in</span>);<br></span>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="tipoDato">String</span> <span class="caracterEspecial">cadena;</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="tipoDato">double</span> <span class="caracterEspecial">doble;</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="tipoDato">int</span> <span class="caracterEspecial">ent;</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="funNombre">System</span><span class="caracterEspecial">.</span><span class="funNombre">out</span><span class="caracterEspecial">.</span><span class="funNombre">print</span> <span class="caracterEspecial">(</span><span class="comilla">"</span><span class="string">Introduce una cadena de texto: </span><span class="comilla">"</span><span class="caracterEspecial">);</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">cadena = </span><span class="caracterEspecial">teclado.</span><span class="funNombre">nextLine</span> <span class="caracterEspecial">();</span> // Recoje un String<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="funNombre">System</span><span class="caracterEspecial">.</span><span class="funNombre">out</span><span class="caracterEspecial">.</span><span class="funNombre">print</span> <span class="caracterEspecial">(</span><span class="comilla">"</span><span class="string">Introduce un double: </span><span class="comilla">"</span><span class="caracterEspecial">);</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">doble = </span><span class="caracterEspecial">teclado.</span><span class="funNombre">nextDouble</span> <span class="caracterEspecial">();</span> // Recoje un double<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="funNombre">System</span><span class="caracterEspecial">.</span><span class="funNombre">out</span><span class="caracterEspecial">.</span><span class="funNombre">print</span> <span class="caracterEspecial">(</span><span class="comilla">"</span><span class="string">Introduce un entero: </span><span class="comilla">"</span><span class="caracterEspecial">);</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">ent = </span><span class="caracterEspecial">teclado.</span><span class="funNombre">nextInt</span> <span class="caracterEspecial">();</span> // Recoje un int<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="caracterEspecial">teclado.<span class="funNombre">close</span> ()</span><br>
-					&nbsp;&nbsp;<span class="caracterEspecial">}</span><br>
-					<span class="caracterEspecial">}</span>
+					<span class="import">import</span> <span class="puntuacion">java.util.Scanner;</span><br><br>
+					<span class="import">public</span> <span class="tipo-dato">class</span> <span class="puntuacion">Programa {</span><br>
+					&nbsp;&nbsp;<span class="import">public static</span> <span class="tipo-dato">void</span> <span class="puntuacion">main (</span><span class="tipo-dato">String</span> <span class="puntuacion">[] args) {</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="tipo-dato">Scanner</span> <span class="puntuacion">teclado = </span><span class="import">new</span> <span class="fun-nombre">Scanner</span> <span class="puntuacion">(<span class="fun-nombre">System</span>.<span class="tipo-dato">in</span>);<br></span>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="tipo-dato">String</span> <span class="puntuacion">cadena;</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="tipo-dato">double</span> <span class="puntuacion">doble;</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="tipo-dato">int</span> <span class="puntuacion">ent;</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="fun-nombre">System</span><span class="puntuacion">.</span><span class="fun-nombre">out</span><span class="puntuacion">.</span><span class="fun-nombre">print</span> <span class="puntuacion">(</span><span class="comilla">"</span><span class="string">Introduce una cadena de texto: </span><span class="comilla">"</span><span class="puntuacion">);</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="puntuacion">cadena = </span><span class="puntuacion">teclado.</span><span class="fun-nombre">nextLine</span> <span class="puntuacion">();</span> // Recoje un String<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="fun-nombre">System</span><span class="puntuacion">.</span><span class="fun-nombre">out</span><span class="puntuacion">.</span><span class="fun-nombre">print</span> <span class="puntuacion">(</span><span class="comilla">"</span><span class="string">Introduce un double: </span><span class="comilla">"</span><span class="puntuacion">);</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="puntuacion">doble = </span><span class="puntuacion">teclado.</span><span class="fun-nombre">nextDouble</span> <span class="puntuacion">();</span> // Recoje un double<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="fun-nombre">System</span><span class="puntuacion">.</span><span class="fun-nombre">out</span><span class="puntuacion">.</span><span class="fun-nombre">print</span> <span class="puntuacion">(</span><span class="comilla">"</span><span class="string">Introduce un entero: </span><span class="comilla">"</span><span class="puntuacion">);</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="puntuacion">ent = </span><span class="puntuacion">teclado.</span><span class="fun-nombre">nextInt</span> <span class="puntuacion">();</span> // Recoje un int<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="puntuacion">teclado.<span class="fun-nombre">close</span> ()</span><br>
+					&nbsp;&nbsp;<span class="puntuacion">}</span><br>
+					<span class="puntuacion">}</span>
 				</div>
 			</div>
 		</div>

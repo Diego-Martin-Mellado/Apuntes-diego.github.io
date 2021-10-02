@@ -28,9 +28,9 @@
 				<h1>Función scanf.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				<span class="funNombre">scanf</span> <span class="caracterEspecial">()</span> es una función que se encuentra en la librería <span class="libreria"><?php echo sustituir_llave("{stdio.h}"); ?></span>. <br><br>
-				Ésta función sirve para recoger datos del canal <span class="tipoDato">stdin</span>. <br><br>
-				<span class="funNombre">scanf</span> <span class="caracterEspecial">()</span> tiene 2 parámetros, el primero siempre debe ser un string comenzando por un espacio seguido de un carácter de formateo, el otro es la variable o dirección de memoria en la que se va a alojar el dato recogido por <span class="funNombre">scanf</span> <span class="caracterEspecial">()</span>. <br><br>
+				<span class="fun-nombre">scanf</span> <span class="puntuacion">()</span> es una función que se encuentra en la librería <span class="libreria"><?php echo sustituir_llave("{stdio.h}"); ?></span>. <br><br>
+				Ésta función sirve para recoger datos del canal <span class="tipo-dato">stdin</span>. <br><br>
+				<span class="fun-nombre">scanf</span> <span class="puntuacion">()</span> tiene 2 parámetros, el primero siempre debe ser un string comenzando por un espacio seguido de un carácter de formateo, el otro es la variable o dirección de memoria en la que se va a alojar el dato recogido por <span class="fun-nombre">scanf</span> <span class="puntuacion">()</span>. <br><br>
 				<div class="alert alert-success border border-success ov-auto">
 					Estos son los tipos de formateo en una cadena:<br><br>
 					<div class="alert alert-dark border border-dark ov-auto">
@@ -48,19 +48,19 @@
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%e, %E</div>
-							<div class="col border text-center bg-light">Conversión a <span class="tipoDato">float</span> con signo en notación científica.</div>
+							<div class="col border text-center bg-light">Conversión a <span class="tipo-dato">float</span> con signo en notación científica.</div>
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%f, %F</div>
-							<div class="col border text-center bg-light">Conversión a <span class="tipoDato">float</span> con signo, usando punto y en decimal.</div>
+							<div class="col border text-center bg-light">Conversión a <span class="tipo-dato">float</span> con signo, usando punto y en decimal.</div>
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%g, %G</div>
-							<div class="col border text-center bg-light">Conversión a <span class="tipoDato">float</span>, usando la notación que requiera menor espacio.</div>
+							<div class="col border text-center bg-light">Conversión a <span class="tipo-dato">float</span>, usando la notación que requiera menor espacio.</div>
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%h</div>
-							<div class="col border text-center bg-light">Conversión decimal con signo de un entero (<span class="tipoDato">short</span>).</div>
+							<div class="col border text-center bg-light">Conversión decimal con signo de un entero (<span class="tipo-dato">short</span>).</div>
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%o</div>
@@ -76,7 +76,7 @@
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%u</div>
-							<div class="col border text-center bg-light">Conversión decimal sin signo de un entero (<span class="tipoDato">unsigned</span>).</div>
+							<div class="col border text-center bg-light">Conversión decimal sin signo de un entero (<span class="tipo-dato">unsigned</span>).</div>
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%x, %X</div>
@@ -84,7 +84,7 @@
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%m</div>
-							<div class="col border text-center bg-light">Realiza un <span class="funNombre">malloc</span> <span class="caracterEspecial">()</span> antes de guardar el dato en la variable.</div>
+							<div class="col border text-center bg-light">Realiza un <span class="fun-nombre">malloc</span> <span class="puntuacion">()</span> antes de guardar el dato en la variable.</div>
 						</div>
 						<div class="row">
 							<div class="col text-center text-light bg-dark">Combinaciones de formatos</div>
@@ -92,38 +92,38 @@
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%lf</div>
-							<div class="col border text-center bg-light">Formatea un "<span class="tipoDato">long float</span>", al no existir formatea un <span class="tipoDato">double</span>.</div>
+							<div class="col border text-center bg-light">Formatea un "<span class="tipo-dato">long float</span>", al no existir formatea un <span class="tipo-dato">double</span>.</div>
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%li</div>
-							<div class="col border text-center bg-light">Formatea un <span class="tipoDato">long int</span> o un <span class="tipoDato">int32_t</span> (<a href="../{stdint.h}/"><?php echo sustituir_llave("{stdint.h}"); ?></a>).</div>
+							<div class="col border text-center bg-light">Formatea un <span class="tipo-dato">long int</span> o un <span class="tipo-dato">int32_t</span> (<a href="../{stdint.h}/"><?php echo sustituir_llave("{stdint.h}"); ?></a>).</div>
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%lli</div>
-							<div class="col border text-center bg-light">Formatea un <span class="tipoDato">long long int</span> o un <span class="tipoDato">int64_t</span> (<a href="../{stdint.h}/"><?php echo sustituir_llave("{stdint.h}"); ?></a>).</div>
+							<div class="col border text-center bg-light">Formatea un <span class="tipo-dato">long long int</span> o un <span class="tipo-dato">int64_t</span> (<a href="../{stdint.h}/"><?php echo sustituir_llave("{stdint.h}"); ?></a>).</div>
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%lu</div>
-							<div class="col border text-center bg-light">Formatea un <span class="tipoDato">unsigned long int</span> o un <span class="tipoDato">uint32_t</span> (<a href="../{stdint.h}/"><?php echo sustituir_llave("{stdint.h}"); ?></a>).</div>
+							<div class="col border text-center bg-light">Formatea un <span class="tipo-dato">unsigned long int</span> o un <span class="tipo-dato">uint32_t</span> (<a href="../{stdint.h}/"><?php echo sustituir_llave("{stdint.h}"); ?></a>).</div>
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%llu</div>
-							<div class="col border text-center bg-light">Formatea un <span class="tipoDato">unsigned long long int</span> o un <span class="tipoDato">uint64_t</span> (<a href="../{stdint.h}/"><?php echo sustituir_llave("{stdint.h}"); ?></a>).</div>
+							<div class="col border text-center bg-light">Formatea un <span class="tipo-dato">unsigned long long int</span> o un <span class="tipo-dato">uint64_t</span> (<a href="../{stdint.h}/"><?php echo sustituir_llave("{stdint.h}"); ?></a>).</div>
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%hi</div>
-							<div class="col border text-center bg-light">Formatea un <span class="tipoDato">short int</span>.</div>
+							<div class="col border text-center bg-light">Formatea un <span class="tipo-dato">short int</span>.</div>
 						</div>
 						<div class="row">
 							<div class="col border text-center bg-light">%hu</div>
-							<div class="col border text-center bg-light">Formatea un <span class="tipoDato">unsigned short int</span>.</div>
+							<div class="col border text-center bg-light">Formatea un <span class="tipo-dato">unsigned short int</span>.</div>
 						</div>
 					</div>
 				</div>
 				<div class="alert alert-success border border-success ov-auto">
 					Sintaxis:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="funNombre">scanf</span> <span class="caracterEspecial">( <span class="ampAstBool">const</span> <span class="tipoDato">char</span> <span class="ampAstBool">*</span> Formato, Direccion en memoria de la variable destino );</span>
+						<span class="fun-nombre">scanf</span> <span class="puntuacion">( <span class="ampAstBool">const</span> <span class="tipo-dato">char</span> <span class="ampAstBool">*</span> Formato, Direccion en memoria de la variable destino );</span>
 					</div>
 				</div>
 				Referencia:<br><br>
@@ -138,7 +138,7 @@
 				<div class="alert alert-success border border-success ov-auto">
 					Retorno:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="caracterEspecial"><span class="tipoDato">bool</span> (En caso de que se quiera comprobar si se ha realizado con éxito la acción).</span>
+						<span class="puntuacion"><span class="tipo-dato">bool</span> (En caso de que se quiera comprobar si se ha realizado con éxito la acción).</span>
 					</div>
 				</div>
 			</div>
@@ -148,14 +148,14 @@
 				<h1>Ejemplos de uso de scanf.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				Ejemplos de uso de <span class="funNombre">scanf</span><span class="caracterEspecial">()</span>:<br><br>
+				Ejemplos de uso de <span class="fun-nombre">scanf</span><span class="puntuacion">()</span>:<br><br>
 				<div class="alert alert-light border">
-					<span class="funNombre">scanf</span><span class="caracterEspecial">(<span class="comilla">"</span> <span class="cespecial">%s</span><span class="comilla">"</span><span class="caracterEspecial">,</span> <span class="ampAstBool">&</span>vari);</span><span class="coment"> // Recoge un dato con formateo de string y lo mete en la dirección de memoria de vari que es de tipo (<span class="tipoDato">char</span> <span class="ampAstBool">*</span>)</span><br><br>
-					<span class="funNombre">scanf</span><span class="caracterEspecial">(<span class="comilla">"</span> <span class="cespecial">%u</span><span class="comilla">"</span><span class="caracterEspecial">,</span> <span class="ampAstBool">&</span>vari);</span><span class="coment"> // Recoge un dato con formateo de string y lo mete en la dirección de memoria de vari que es de tipo (<span class="tipoDato">unsigned int</span>)</span><br><br>
-					<span class="funNombre">scanf</span><span class="caracterEspecial">(<span class="comilla">"</span> <span class="cespecial">%i</span><span class="comilla">"</span><span class="caracterEspecial">,</span> <span class="ampAstBool">&</span>vari);</span><span class="coment"> // Recoge un dato con formateo de string y lo mete en la dirección de memoria de vari que es de tipo (<span class="tipoDato">int</span>)</span><br><br>
-					<span class="funNombre">scanf</span><span class="caracterEspecial">(<span class="comilla">"</span> <span class="cespecial">%c</span><span class="comilla">"</span><span class="caracterEspecial">,</span> vari);</span><span class="coment"> // Recoge un dato con formateo de string y lo mete en vari[] que es de tipo (<span class="tipoDato">char[<span class="numero">0x100</span>]</span>)</span><br><br>
+					<span class="fun-nombre">scanf</span><span class="puntuacion">(<span class="comilla">"</span> <span class="cespecial">%s</span><span class="comilla">"</span><span class="puntuacion">,</span> <span class="ampAstBool">&</span>vari);</span><span class="coment"> // Recoge un dato con formateo de string y lo mete en la dirección de memoria de vari que es de tipo (<span class="tipo-dato">char</span> <span class="ampAstBool">*</span>)</span><br><br>
+					<span class="fun-nombre">scanf</span><span class="puntuacion">(<span class="comilla">"</span> <span class="cespecial">%u</span><span class="comilla">"</span><span class="puntuacion">,</span> <span class="ampAstBool">&</span>vari);</span><span class="coment"> // Recoge un dato con formateo de string y lo mete en la dirección de memoria de vari que es de tipo (<span class="tipo-dato">unsigned int</span>)</span><br><br>
+					<span class="fun-nombre">scanf</span><span class="puntuacion">(<span class="comilla">"</span> <span class="cespecial">%i</span><span class="comilla">"</span><span class="puntuacion">,</span> <span class="ampAstBool">&</span>vari);</span><span class="coment"> // Recoge un dato con formateo de string y lo mete en la dirección de memoria de vari que es de tipo (<span class="tipo-dato">int</span>)</span><br><br>
+					<span class="fun-nombre">scanf</span><span class="puntuacion">(<span class="comilla">"</span> <span class="cespecial">%c</span><span class="comilla">"</span><span class="puntuacion">,</span> vari);</span><span class="coment"> // Recoge un dato con formateo de string y lo mete en vari[] que es de tipo (<span class="tipo-dato">char[<span class="numero">0x100</span>]</span>)</span><br><br>
 				</div>
-				Aunque en el ejemplo no sea así, lo normal en el formateo de strings en <span class="funNombre">scanf</span><span class="caracterEspecial">()</span> es añadir como parámetros (2+) los valores de variables.
+				Aunque en el ejemplo no sea así, lo normal en el formateo de strings en <span class="fun-nombre">scanf</span><span class="puntuacion">()</span> es añadir como parámetros (2+) los valores de variables.
 			</div>
 		</div>
 	</div>

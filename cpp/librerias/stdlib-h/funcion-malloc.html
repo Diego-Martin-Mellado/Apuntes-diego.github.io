@@ -28,16 +28,16 @@
 				<h1>Función malloc.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				<span class="funNombre">malloc</span> <span class="caracterEspecial">()</span> es una función que se encuentra en la librería <span class="libreria">&#60;stdlib.h&#62;</span>. <br><br>
-				<span class="funNombre">malloc</span> <span class="caracterEspecial">()</span> sirve para solicitar un bloque de memoria del tamaño especificado en su parámetro. En concreto busca un espacio en la memoria del tamaño que el programador quiera. <br><br>
-				Devuelve un puntero que apunta a la zona de memoria concedida. <span class="caracterEspecial">(</span><span class="tipoDato">void</span> <span class="ampAstBool">*</span><span class="caracterEspecial">)</span><br><br>
+				<span class="fun-nombre">malloc</span> <span class="puntuacion">()</span> es una función que se encuentra en la librería <span class="libreria">&#60;stdlib.h&#62;</span>. <br><br>
+				<span class="fun-nombre">malloc</span> <span class="puntuacion">()</span> sirve para solicitar un bloque de memoria del tamaño especificado en su parámetro. En concreto busca un espacio en la memoria del tamaño que el programador quiera. <br><br>
+				Devuelve un puntero que apunta a la zona de memoria concedida. <span class="puntuacion">(</span><span class="tipo-dato">void</span> <span class="ampAstBool">*</span><span class="puntuacion">)</span><br><br>
 				<div class="alert alert-success border border-success ov-auto">
-					La función <span class="funNombre">malloc</span> <span class="caracterEspecial">()</span> devuelve <span class="caracterEspecial">(</span><span class="tipoDato">void</span> <span class="ampAstBool">*</span><span class="caracterEspecial">)</span> precisamente para que los programadores puedan convertir ese dato al que sea preciso.
+					La función <span class="fun-nombre">malloc</span> <span class="puntuacion">()</span> devuelve <span class="puntuacion">(</span><span class="tipo-dato">void</span> <span class="ampAstBool">*</span><span class="puntuacion">)</span> precisamente para que los programadores puedan convertir ese dato al que sea preciso.
 				</div>
 				<div class="alert alert-success border border-success ov-auto">
 					Sintaxis:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="caracterEspecial">( molde )</span> <span class="funNombre">malloc</span> <span class="caracterEspecial">( [</span><span class="tipoDato">unsigned long int<span class="caracterEspecial">/</span>int</span> <span class="caracterEspecial">] espacio a reservar);</span>
+						<span class="puntuacion">( molde )</span> <span class="fun-nombre">malloc</span> <span class="puntuacion">( [</span><span class="tipo-dato">unsigned long int<span class="puntuacion">/</span>int</span> <span class="puntuacion">] espacio a reservar);</span>
 					</div>
 				</div><br>
 				Referencia:<br>
@@ -47,9 +47,9 @@
 					</li>
 				</ul><br>
 				<div class="alert alert-success border border-success ov-auto">
-					Retorno de <span class="funNombre">malloc</span> <span class="caracterEspecial">()</span>.<br><br>
+					Retorno de <span class="fun-nombre">malloc</span> <span class="puntuacion">()</span>.<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="caracterEspecial">(</span><span class="tipoDato">void</span> <span class="ampAstBool">*</span><span class="caracterEspecial">);</span>
+						<span class="puntuacion">(</span><span class="tipo-dato">void</span> <span class="ampAstBool">*</span><span class="puntuacion">);</span>
 					</div>
 				</div>
 			</div>
@@ -59,9 +59,9 @@
 				<h1>Ejemplo de uso de malloc.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				Uso de <span class="funNombre">malloc</span> ():<br><br>
+				Uso de <span class="fun-nombre">malloc</span> ():<br><br>
 				<div class="alert alert-light border ov-auto">
-					<span class="tipoDato">int</span> <span class="ampAstBool">*</span><span class="caracterEspecial">buffer =</span> <span class="caracterEspecial">(</span><span class="tipoDato">int</span> <span class="ampAstBool">*</span><span class="caracterEspecial">)</span> <span class="funNombre">malloc</span> <span class="caracterEspecial">(</span> <span class="funNombre">sizeof</span> <span class="caracterEspecial">(</span><span class="tipoDato">int</span><span class="caracterEspecial">)</span><span class="caracterEspecial"> <span class="ampAstBool">*</span> <span class="numero">40</span>);</span><span class="coment"> // Reserva espacio para 40 <span class="tipoDato">int</span> e introduce el sitio de la memoria en la variable <span class="caracterEspecial">buffer</span></span>
+					<span class="tipo-dato">int</span> <span class="ampAstBool">*</span><span class="puntuacion">buffer =</span> <span class="puntuacion">(</span><span class="tipo-dato">int</span> <span class="ampAstBool">*</span><span class="puntuacion">)</span> <span class="fun-nombre">malloc</span> <span class="puntuacion">(</span> <span class="fun-nombre">sizeof</span> <span class="puntuacion">(</span><span class="tipo-dato">int</span><span class="puntuacion">)</span><span class="puntuacion"> <span class="ampAstBool">*</span> <span class="numero">40</span>);</span><span class="coment"> // Reserva espacio para 40 <span class="tipo-dato">int</span> e introduce el sitio de la memoria en la variable <span class="puntuacion">buffer</span></span>
 				</div>
 			</div>
 		</div>

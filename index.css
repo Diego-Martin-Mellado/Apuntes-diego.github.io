@@ -315,11 +315,11 @@ html, body {
 
 /*--------------------------------------------------------------------------------------------------------*/
 
-.html .delim, .cpp .comilla, .js .comilla, .java .comilla, .py .comilla, .mysql .comilla {
+.html .delim, .cpp .comilla, .js .comilla, .java .comilla, .py .comilla, .mysql .comilla, .css .include {
 	color: #008080;
 }
 
-.html .nombreEtiqueta {
+.html .nombre-etiqueta {
 	color: #C72727;
 }
 
@@ -335,7 +335,7 @@ html, body {
 	color: #84BC42;
 }
 
-.html .texto, .cpp .caracterEspecial, .js .caracterEspecial, .java .caracterEspecial, .py .caracterEspecial, .mysql .caracterEspecial, .css .caracterEspecial {
+.html .texto, .cpp .puntuacion, .js .puntuacion, .java .puntuacion, .py .puntuacion, .mysql .puntuacion, .css .puntuacion {
 	color: #000000;
 }
 
@@ -351,11 +351,11 @@ html, body {
 	color: #6F6F6F;
 }
 
-.cpp .libreria, .cpp .numero, .js .numero, .java .numero, .py .numero, .css .seleEspecial, .css .hex {
+.cpp .libreria, .cpp .numero, .js .numero, .java .numero, .py .numero, .css .selector-especial, .css .hex {
 	color: #DD9922;
 }
 
-.cpp .tipoDato, .js .tipoDato, .java .tipoDato, .py .tipoDato, .mysql .ins, .css .valor {
+.cpp .tipo-dato, .js .tipo-dato, .java .tipo-dato, .py .tipo-dato, .mysql .ins, .css .valor {
 	color: #A000A0;
 	font-style: italic;
 }
@@ -364,7 +364,7 @@ html, body {
 	color: #DD4422;
 }
 
-.cpp .funNombre, .js .funNombre, .java .funNombre, .py .funNombre, .css .propiedad {
+.cpp .fun-nombre, .js .fun-nombre, .java .fun-nombre, .py .fun-nombre, .css .propiedad, .css .fun-nombre {
 	color: #0F54AC;
 	font-style: italic;
 }

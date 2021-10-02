@@ -38,34 +38,34 @@
 					<h1>Función print - Python</h1>
 				</div>
 				<div class="seccion-contenido p-4">
-					La función <span class="funNombre">print</span> () sirve para imprimir cualquier tipo de dato, formateado o no por el canal <span class="tipoDato">stdout</span>, vease, por la consola del intérprete de Python. <br>
+					La función <span class="fun-nombre">print</span> () sirve para imprimir cualquier tipo de dato, formateado o no por el canal <span class="tipo-dato">stdout</span>, vease, por la consola del intérprete de Python. <br>
 					<br>
-					<span class="funNombre">print</span>
+					<span class="fun-nombre">print</span>
 					() puede imprimir cualquier tipo de dato, incluyendo clases, diccionarios, números enteros... En definitiva, todos. <br>
 					<br>
-					En el caso de las clases creadas por el programador, si no tienen definido el método <span class="funNombre">__repr__</span>
-					(), devolverá <span class="border border-dark px-2 rounded caracterEspecial">&#60;class '__main__.miClase'&#62;</span>
+					En el caso de las clases creadas por el programador, si no tienen definido el método <span class="fun-nombre">__repr__</span>
+					(), devolverá <span class="border border-dark px-2 rounded puntuacion">&#60;class '__main__.miClase'&#62;</span>
 					Por ejemplo, ésa clase colgaría del archivo en el que se está programando, por el contrario, si es una clase que está en en archivo <span class="border border-dark px-2 rounded">clases.py</span>
-					y éste está importado debidamente, el resultado será <span class="border border-dark px-2 rounded caracterEspecial">&#60;class 'clases.miClase'&#62;</span>
+					y éste está importado debidamente, el resultado será <span class="border border-dark px-2 rounded puntuacion">&#60;class 'clases.miClase'&#62;</span>
 					.<br>
 					<br>
-					En el caso de las clases creadas por el programador, si tienen definido el método <span class="funNombre">__repr__</span>
-					(), imprimirá el retorno de dicho método (<span class="funNombre">__repr__</span>
+					En el caso de las clases creadas por el programador, si tienen definido el método <span class="fun-nombre">__repr__</span>
+					(), imprimirá el retorno de dicho método (<span class="fun-nombre">__repr__</span>
 					()).<br>
 					<br>
 					<div class="alert alert-success border border-success ov-auto">
 						Sintaxis:<br>
 						<br>
 						<div class="alert alert-light border ov-auto">
-							<span class="funNombre">print</span>
-							<span class="caracterEspecial">
-								( <span class="tipoDato">type</span>
+							<span class="fun-nombre">print</span>
+							<span class="puntuacion">
+								( <span class="tipo-dato">type</span>
 								 <span class="nombreParametro">objects</span>,
 								 ... ,
-								 <span class="tipoDato">str</span> <span class="nombreParametro">sep</span> <span class="igual">=</span> <span class="comilla">'</span> <span class="comilla">'</span>,
-								 <span class="tipoDato">str</span> <span class="nombreParametro">end</span> <span class="igual">=</span> <span class="comilla">'</span><span class="cespecial">\n</span><span class="comilla">'</span>,
-								 <span class="tipoDato">file</span> <span class="nombreParametro">file</span> <span class="igual">=</span> sys.<span class="tipoDato">stdout</span>,
-								 <span class="tipoDato">bool</span> <span class="nombreParametro">flush</span> <span class="igual">=</span> <span class="bool">False</span> )
+								 <span class="tipo-dato">str</span> <span class="nombreParametro">sep</span> <span class="igual">=</span> <span class="comilla">'</span> <span class="comilla">'</span>,
+								 <span class="tipo-dato">str</span> <span class="nombreParametro">end</span> <span class="igual">=</span> <span class="comilla">'</span><span class="cespecial">\n</span><span class="comilla">'</span>,
+								 <span class="tipo-dato">file</span> <span class="nombreParametro">file</span> <span class="igual">=</span> sys.<span class="tipo-dato">stdout</span>,
+								 <span class="tipo-dato">bool</span> <span class="nombreParametro">flush</span> <span class="igual">=</span> <span class="bool">False</span> )
 							</span>
 						</div>
 					</div>
@@ -86,11 +86,11 @@
 						</li>
 						<li>
 							<h5>File: </h5>
-							Es el canal en el que se quiere imprimir, puede ser <span class="funNombre">sys</span>.<span class="tipoDato">stdout</span>, <span class="funNombre">sys</span>.<span class="tipoDato">stderr</span> o un archivo abierto con la función <span class="funNombre">open</span> (). El valor por defecto es <span class="funNombre">sys</span>.<span class="tipoDato">stdout</span>.<br><br>
+							Es el canal en el que se quiere imprimir, puede ser <span class="fun-nombre">sys</span>.<span class="tipo-dato">stdout</span>, <span class="fun-nombre">sys</span>.<span class="tipo-dato">stderr</span> o un archivo abierto con la función <span class="fun-nombre">open</span> (). El valor por defecto es <span class="fun-nombre">sys</span>.<span class="tipo-dato">stdout</span>.<br><br>
 						</li>
 						<li>
 							<h5>Flush: </h5>
-							Indica si se quiere limpiar posibles pérdidas de información en el canal por el que <span class="funNombre">print</span> () realiza su acción. El valor por defecto es <span class="bool">False</span>.
+							Indica si se quiere limpiar posibles pérdidas de información en el canal por el que <span class="fun-nombre">print</span> () realiza su acción. El valor por defecto es <span class="bool">False</span>.
 						</li>
 					</ul>
 					<br>
@@ -98,7 +98,7 @@
 						Retorno:<br>
 						<br>
 						<div class="alert alert-light border ov-auto">
-							<span class="tipoDato">None</span>
+							<span class="tipo-dato">None</span>
 						</div>
 					</div>
 				</div>
@@ -108,89 +108,89 @@
 					<h1>Uso de print</h1>
 				</div>
 				<div class="seccion-contenido p-4">
-					Ejemplos de uso de <span class="funNombre">print</span>
+					Ejemplos de uso de <span class="fun-nombre">print</span>
 					():<br>
 					<br>
 					<div class="alert alert-light border ov-auto">
 						// Uso básico <br>
-						<span class="funNombre">print</span>
-						<span class="caracterEspecial">(</span>
+						<span class="fun-nombre">print</span>
+						<span class="puntuacion">(</span>
 						<span class="comilla">'</span>
 						<span class="string">Hola mundo</span>
 						<span class="comilla">'</span>
-						<span class="caracterEspecial">)</span>
+						<span class="puntuacion">)</span>
 						// Imprime "Hola mundo"<br>
-						<span class="funNombre">print</span>
-						<span class="caracterEspecial">(</span>
+						<span class="fun-nombre">print</span>
+						<span class="puntuacion">(</span>
 						<span class="comilla">"</span>
 						<span class="string">Hola mundo</span>
 						<span class="comilla">"</span>
-						<span class="caracterEspecial">)</span>
+						<span class="puntuacion">)</span>
 						// Imprime "Hola mundo"<br>
 						// Varios objetos <br>
-						<span class="funNombre">print</span>
-						<span class="caracterEspecial">(</span>
+						<span class="fun-nombre">print</span>
+						<span class="puntuacion">(</span>
 						<span class="comilla">'</span>
 						<span class="string">Número</span>
 						<span class="comilla">'</span>
-						<span class="caracterEspecial">, </span>
+						<span class="puntuacion">, </span>
 						<span class="numero">1</span>
-						<span class="caracterEspecial">)</span>
+						<span class="puntuacion">)</span>
 						// Imprime "Número 1"<br>
-						<span class="funNombre">print</span>
-						<span class="caracterEspecial">(</span>
+						<span class="fun-nombre">print</span>
+						<span class="puntuacion">(</span>
 						<span class="bool">True</span>
-						<span class="caracterEspecial">, </span>
+						<span class="puntuacion">, </span>
 						<span class="comilla">"</span>
 						<span class="string">Booleano</span>
 						<span class="comilla">"</span>
-						<span class="caracterEspecial">)</span>
+						<span class="puntuacion">)</span>
 						// Imprime "True Booleano"<br>
 						// Varios objetos con separadores <br>
-						<span class="funNombre">print</span>
-						<span class="caracterEspecial">(</span>
+						<span class="fun-nombre">print</span>
+						<span class="puntuacion">(</span>
 						<span class="comilla">'</span>
 						<span class="string">Número</span>
 						<span class="comilla">'</span>
-						<span class="caracterEspecial">, </span>
+						<span class="puntuacion">, </span>
 						<span class="numero">1</span>
-						<span class="caracterEspecial">, </span>
+						<span class="puntuacion">, </span>
 						<span class="nombreParametro">sep</span>
-						<span class="caracterEspecial">= </span>
+						<span class="puntuacion">= </span>
 						<span class="comilla">'</span>
 						<span class="string">-</span>
 						<span class="comilla">'</span>
-						<span class="caracterEspecial">)</span>
+						<span class="puntuacion">)</span>
 						// Imprime "Número-1"<br>
 						// Sin caracteres al final del string <br>
-						<span class="funNombre">print</span>
-						<span class="caracterEspecial">(</span>
+						<span class="fun-nombre">print</span>
+						<span class="puntuacion">(</span>
 						<span class="comilla">'</span>
 						<span class="string">Hola mundo</span>
 						<span class="comilla">'</span>
-						<span class="caracterEspecial">, </span>
+						<span class="puntuacion">, </span>
 						<span class="numero">1</span>
-						<span class="caracterEspecial">, </span>
+						<span class="puntuacion">, </span>
 						<span class="nombreParametro">end</span>
-						<span class="caracterEspecial">= </span>
+						<span class="puntuacion">= </span>
 						<span class="comilla">''</span>
-						<span class="caracterEspecial">)</span>
-						// Imprime "Hola mundo 1" y el siguiente <span class="funNombre">print</span>
+						<span class="puntuacion">)</span>
+						// Imprime "Hola mundo 1" y el siguiente <span class="fun-nombre">print</span>
 						se hará a continuación<br>
 						// Limpiando el tubo de salida <br>
-						<span class="funNombre">print</span>
-						<span class="caracterEspecial">(</span>
+						<span class="fun-nombre">print</span>
+						<span class="puntuacion">(</span>
 						<span class="comilla">'</span>
 						<span class="string">Hola mundo</span>
 						<span class="comilla">'</span>
-						<span class="caracterEspecial">, </span>
+						<span class="puntuacion">, </span>
 						<span class="numero">2</span>
-						<span class="caracterEspecial">, </span>
+						<span class="puntuacion">, </span>
 						<span class="nombreParametro">flush</span>
-						<span class="caracterEspecial">= </span>
+						<span class="puntuacion">= </span>
 						<span class="bool">True</span>
-						<span class="caracterEspecial">)</span>
-						// Imprime "Hola mundo 2" y limpia <span class="tipoDato">stdout</span>
+						<span class="puntuacion">)</span>
+						// Imprime "Hola mundo 2" y limpia <span class="tipo-dato">stdout</span>
 						<br>
 					</div>
 				</div>

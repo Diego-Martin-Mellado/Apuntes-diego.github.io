@@ -32,19 +32,19 @@
 				<div class="alert alert-light border ov-auto">
 					// Programa básico con &#60;ncurses.h&#62;<br>
 					<span class="include">#include</span> <span class="libreria">&#60;ncurses.h&#62;</span><br><br>
-					<span class="tipoDato">int</span> <span class="caracterEspecial">main (</span><span class="tipoDato">int</span> <span class="caracterEspecial">argc,</span> <span class="tipoDato">char</span> <span class="ampAstBool">*</span><span class="caracterEspecial">argv[]) {</span><br>
-					&nbsp;&nbsp;<span class="funNombre">initscr</span> <span class="caracterEspecial">();</span> // Inicializa la ventana<br>
-					&nbsp;&nbsp;<span class="funNombre">printw</span> <span class="caracterEspecial">(</span><span class="comilla">"</span><span class="string">Hola mundo!</span><span class="comilla">"</span><span class="caracterEspecial">);</span> // Imprime "Hola mundo" en la posición (0, 0)<br>
-					&nbsp;&nbsp;<span class="funNombre">refresh</span> <span class="caracterEspecial">();</span><br>
-					&nbsp;&nbsp;<span class="funNombre">getch</span> <span class="caracterEspecial">();</span><br>
-					&nbsp;&nbsp;<span class="funNombre">endwin</span> <span class="caracterEspecial">();</span> // Cierra la ventana<br>
-					&nbsp;&nbsp;<span class="include">return</span> <span class="numero">0</span><span class="caracterEspecial">;</span><br>
-					<span class="caracterEspecial">}</span>
+					<span class="tipo-dato">int</span> <span class="puntuacion">main (</span><span class="tipo-dato">int</span> <span class="puntuacion">argc,</span> <span class="tipo-dato">char</span> <span class="ampAstBool">*</span><span class="puntuacion">argv[]) {</span><br>
+					&nbsp;&nbsp;<span class="fun-nombre">initscr</span> <span class="puntuacion">();</span> // Inicializa la ventana<br>
+					&nbsp;&nbsp;<span class="fun-nombre">printw</span> <span class="puntuacion">(</span><span class="comilla">"</span><span class="string">Hola mundo!</span><span class="comilla">"</span><span class="puntuacion">);</span> // Imprime "Hola mundo" en la posición (0, 0)<br>
+					&nbsp;&nbsp;<span class="fun-nombre">refresh</span> <span class="puntuacion">();</span><br>
+					&nbsp;&nbsp;<span class="fun-nombre">getch</span> <span class="puntuacion">();</span><br>
+					&nbsp;&nbsp;<span class="fun-nombre">endwin</span> <span class="puntuacion">();</span> // Cierra la ventana<br>
+					&nbsp;&nbsp;<span class="include">return</span> <span class="numero">0</span><span class="puntuacion">;</span><br>
+					<span class="puntuacion">}</span>
 				</div>
 				<div class="alert alert-success border border-success ov-auto">
 					Recuerda compilar con la siguiente línea:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="caracterEspecial"><em>g++ archivo.cpp -o ejecutable -lncurses</em></span>
+						<span class="puntuacion"><em>g++ archivo.cpp -o ejecutable -lncurses</em></span>
 					</div>
 				</div>
 				<div class="alert alert-primary border-primary ov-auto">

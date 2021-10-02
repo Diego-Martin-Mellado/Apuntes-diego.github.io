@@ -37,10 +37,10 @@
 				<h1>Función time.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				<span class="funNombre">time</span> <span class="caracterEspecial">()</span> es una función que está en la librería <span class="libreria">&#60;time.h&#62;</span><br><br>
-				<span class="funNombre">time</span> <span class="caracterEspecial">()</span> obtiene el número de segundos transcurridos desde la fecha indicada como parámetro hasta el segundo en que se ejecuta la función.<br><br>
+				<span class="fun-nombre">time</span> <span class="puntuacion">()</span> es una función que está en la librería <span class="libreria">&#60;time.h&#62;</span><br><br>
+				<span class="fun-nombre">time</span> <span class="puntuacion">()</span> obtiene el número de segundos transcurridos desde la fecha indicada como parámetro hasta el segundo en que se ejecuta la función.<br><br>
 				<div class="alert alert-warning border-warning ov-auto">
-					Para saber los segundos transcurridos desde el inicio de los tiempos, se le pasa un puntero nulo <span class="tipoDato">NULL</span>.
+					Para saber los segundos transcurridos desde el inicio de los tiempos, se le pasa un puntero nulo <span class="tipo-dato">NULL</span>.
 				</div>
 				<div class="alert alert-primary border-primary ov-auto">
 					El inicio de los tiempos en informática es el día 1 de Enero de 1970 a las 0:00:00.
@@ -48,19 +48,19 @@
 				<div class="alert alert-success border border-success ov-auto">
 					Sintaxis:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="funNombre">time</span> <span class="caracterEspecial">( <span class="tipoDato">time_t</span> <span class="include">*</span>temporizador );</span>
+						<span class="fun-nombre">time</span> <span class="puntuacion">( <span class="tipo-dato">time_t</span> <span class="include">*</span>temporizador );</span>
 					</div>
 				</div>
 				Referencia:<br><br>
 				<ul>
 					<li>
-						<h5>Temporizador:</h5> Es la dirección de memoria de un objeto de tipo <span class="tipoDato">time_t</span>. <br><br>
+						<h5>Temporizador:</h5> Es la dirección de memoria de un objeto de tipo <span class="tipo-dato">time_t</span>. <br><br>
 					</li>
 				</ul>
 				<div class="alert alert-success border border-success ov-auto">
 					Retorno:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="tipoDato">time_t</span>
+						<span class="tipo-dato">time_t</span>
 					</div>
 				</div>
 			</div>
@@ -70,26 +70,26 @@
 				<h1>Ejemplos de uso de time.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				Ejemplos de uso de <span class="funNombre">time</span> <span class="caracterEspecial">()</span>:<br><br>
+				Ejemplos de uso de <span class="fun-nombre">time</span> <span class="puntuacion">()</span>:<br><br>
 				<div class="alert alert-light border">
 					<span class="include">#include</span><span class="libreria">&#60;stdio.h&#62;</span>      // printf<br>
 					<span class="include">#include</span><span class="libreria">&#60;time.h&#62;</span>       // time_t, struct tm, difftime, time, mktime <br>
 					<span class="include">#include</span><span class="libreria">&#60;stdlib.h&#62;</span>       // EXIT_SUCCESS <br><br>
 
-					<span class="tipoDato">int</span> <span class="caracterEspecial">main (<span class="tipoDato">int</span> argc, <span class="tipoDato">char</span> <span class="include">*</span>argv[]) {</span><br>
-					&nbsp;&nbsp;<span class="tipoDato">time_t</span> <span class="caracterEspecial">timer;</span><br>
-					&nbsp;&nbsp;<span class="tipoDato">struct tm</span> <span class="caracterEspecial">y2k = {<span class="numero">0</span>};</span><br>
-					&nbsp;&nbsp;<span class="tipoDato">double</span> <span class="caracterEspecial">seconds;</span><br><br>
-					&nbsp;&nbsp;<span class="caracterEspecial">y2k.<span class="tipoDato">tm_hour</span> = <span class="numero">0</span>; y2k.<span class="tipoDato">tm_min</span> = <span class="numero">0</span>; y2k.<span class="tipoDato">tm_sec</span> = <span class="numero">0</span>;</span><br>
-					&nbsp;&nbsp;<span class="caracterEspecial">y2k.<span class="tipoDato">tm_year</span> = <span class="numero">100</span>; y2k.<span class="tipoDato">tm_mon</span> = <span class="numero">0</span>; y2k.<span class="tipoDato">tm_mday</span> = <span class="numero">1</span>;</span><br><br>
+					<span class="tipo-dato">int</span> <span class="puntuacion">main (<span class="tipo-dato">int</span> argc, <span class="tipo-dato">char</span> <span class="include">*</span>argv[]) {</span><br>
+					&nbsp;&nbsp;<span class="tipo-dato">time_t</span> <span class="puntuacion">timer;</span><br>
+					&nbsp;&nbsp;<span class="tipo-dato">struct tm</span> <span class="puntuacion">y2k = {<span class="numero">0</span>};</span><br>
+					&nbsp;&nbsp;<span class="tipo-dato">double</span> <span class="puntuacion">seconds;</span><br><br>
+					&nbsp;&nbsp;<span class="puntuacion">y2k.<span class="tipo-dato">tm_hour</span> = <span class="numero">0</span>; y2k.<span class="tipo-dato">tm_min</span> = <span class="numero">0</span>; y2k.<span class="tipo-dato">tm_sec</span> = <span class="numero">0</span>;</span><br>
+					&nbsp;&nbsp;<span class="puntuacion">y2k.<span class="tipo-dato">tm_year</span> = <span class="numero">100</span>; y2k.<span class="tipo-dato">tm_mon</span> = <span class="numero">0</span>; y2k.<span class="tipo-dato">tm_mday</span> = <span class="numero">1</span>;</span><br><br>
 
-					&nbsp;&nbsp;<span class="funNombre">time</span> <span class="caracterEspecial">(<span class="include">&</span>timer);</span>  // Obtiene el tiempo actual; Lo mismo que: timer = time(NULL)<br>
+					&nbsp;&nbsp;<span class="fun-nombre">time</span> <span class="puntuacion">(<span class="include">&</span>timer);</span>  // Obtiene el tiempo actual; Lo mismo que: timer = time(NULL)<br>
 
-					&nbsp;&nbsp;<span class="caracterEspecial">seconds = <span class="funNombre">difftime</span> (timer, <span class="funNombre">mktime</span> ( <span class="include">&</span>y2k));</span><br><br>
-					&nbsp;&nbsp;<span class="funNombre">printf</span> <span class="caracterEspecial">(<span class="comilla">"</span><span class="cespecial">%.f</span> <span class="string">segundos desde el 1 de enero de 2000 en tu zona horaria</span><span class="comilla">"</span>, seconds);</span><br><br>
+					&nbsp;&nbsp;<span class="puntuacion">seconds = <span class="fun-nombre">difftime</span> (timer, <span class="fun-nombre">mktime</span> ( <span class="include">&</span>y2k));</span><br><br>
+					&nbsp;&nbsp;<span class="fun-nombre">printf</span> <span class="puntuacion">(<span class="comilla">"</span><span class="cespecial">%.f</span> <span class="string">segundos desde el 1 de enero de 2000 en tu zona horaria</span><span class="comilla">"</span>, seconds);</span><br><br>
 
-					&nbsp;&nbsp;<span class="tipoDato">return</span> <span class="include">EXIT_SUCCESS</span><span class="caracterEspecial">;</span><br>
-					<span class="caracterEspecial">}</span>
+					&nbsp;&nbsp;<span class="tipo-dato">return</span> <span class="include">EXIT_SUCCESS</span><span class="puntuacion">;</span><br>
+					<span class="puntuacion">}</span>
 				</div>
 			</div>
 		</div>

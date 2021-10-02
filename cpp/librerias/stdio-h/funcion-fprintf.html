@@ -28,23 +28,23 @@
 				<h1>Función fprintf.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				<span class="funNombre">fprintf</span> <span class="caracterEspecial">()</span> es una función que se encuentra en la librería <span class="libreria">&#60;stdio.h&#62;</span>. <br><br>
+				<span class="fun-nombre">fprintf</span> <span class="puntuacion">()</span> es una función que se encuentra en la librería <span class="libreria">&#60;stdio.h&#62;</span>. <br><br>
 				Ésta función sirve para imprimir datos formateados por el canal indicado en su primer parámetro. <br><br>
-				<span class="funNombre">fprintf</span> <span class="caracterEspecial">()</span> tiene mínimo 2 parámetros, sin máximo, el primero es el archivo al que se va a introducir la información, el segundo siempre debe ser un string, el resto son variables que se formatearán dentro del string para mostrar sus valores por pantalla. <br><br>
-				Deben estar formateados porque sólo puede imprimir cadenas de caracteres, y para incluir cualquier otro tipo de dato por ahí debe tener su correspondiente formateo (Indicados en <a href="./funcion-printf.html"><span class="funNombre">printf</span> <span class="caracterEspecial">()</span></a>). <br><br>
+				<span class="fun-nombre">fprintf</span> <span class="puntuacion">()</span> tiene mínimo 2 parámetros, sin máximo, el primero es el archivo al que se va a introducir la información, el segundo siempre debe ser un string, el resto son variables que se formatearán dentro del string para mostrar sus valores por pantalla. <br><br>
+				Deben estar formateados porque sólo puede imprimir cadenas de caracteres, y para incluir cualquier otro tipo de dato por ahí debe tener su correspondiente formateo (Indicados en <a href="./funcion-printf.html"><span class="fun-nombre">printf</span> <span class="puntuacion">()</span></a>). <br><br>
 				<div class="alert alert-success border border-success ov-auto">
 					Sintaxis:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="funNombre">fprintf</span> <span class="caracterEspecial">( Parametro(s) );</span>
+						<span class="fun-nombre">fprintf</span> <span class="puntuacion">( Parametro(s) );</span>
 					</div>
 				</div>
 				Referencia:<br><br>
 				<ul>
 					<li>
-						<h5>Parámetro 1 (<span class="tipoDato">FILE</span> <span class="include">*</span>canal) (Obligatorio):</h5> Es el canal de transmisión de datos por el que se imprimirá la información. <br><br>
+						<h5>Parámetro 1 (<span class="tipo-dato">FILE</span> <span class="include">*</span>canal) (Obligatorio):</h5> Es el canal de transmisión de datos por el que se imprimirá la información. <br><br>
 					</li>
 					<li>
-						<h5>Parámetro 2 (<span class="ampAstBool">const</span> <span class="tipoDato">char</span> <span class="ampAstBool">*</span>) (Obligatorio):</h5> Es el string que se va a imprimir por el canal indicado, puede contener partes para formatear. <br><br>
+						<h5>Parámetro 2 (<span class="ampAstBool">const</span> <span class="tipo-dato">char</span> <span class="ampAstBool">*</span>) (Obligatorio):</h5> Es el string que se va a imprimir por el canal indicado, puede contener partes para formatear. <br><br>
 					</li>
 					<li>
 						<h5>Parámetros 3 - ... (Cualquier tipo) (Opcional):</h5> Son variables las cuales el valor se va a imprimir por consola. <br><br>
@@ -53,7 +53,7 @@
 				<div class="alert alert-success border border-success ov-auto">
 					Retorno:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="caracterEspecial">Imprime por el canar indicado el string del primer parámetro con los demás parámetros ya formteados. <br><br><span class="tipoDato">bool</span> (En caso de que se quiera comprobar si se ha realizado la acción).</span>
+						<span class="puntuacion">Imprime por el canar indicado el string del primer parámetro con los demás parámetros ya formteados. <br><br><span class="tipo-dato">bool</span> (En caso de que se quiera comprobar si se ha realizado la acción).</span>
 					</div>
 				</div>
 			</div>
@@ -63,14 +63,14 @@
 				<h1>Ejemplos de uso de fprintf.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				Ejemplos de uso de <span class="funNombre">fprintf</span> <span class="caracterEspecial">()</span>:<br><br>
+				Ejemplos de uso de <span class="fun-nombre">fprintf</span> <span class="puntuacion">()</span>:<br><br>
 				<div class="alert alert-light border">
-					<span class="funNombre">fprintf</span> <span class="caracterEspecial">(<span class="tipoDato">stdout</span>, <span class="comilla">"</span><span class="string">Hola mundo!</span><span class="cespecial">\n</span><span class="comilla">"</span>);</span> <span class="coment">// Imprime por consola "Hola mundo!"</span><br><br>
-					<span class="funNombre">fprintf</span> <span class="caracterEspecial">(<span class="tipoDato">stdout</span>, <span class="comilla">"</span><span class="string">Hola <span class="cespecial">%s</span>!</span><span class="cespecial">\n</span><span class="comilla">"</span><span class="caracterEspecial">,</span> <span class="comilla">"</span><span class="string">Lola</span><span class="comilla">"</span>);</span><span class="coment"> // Imprime "Hola Lola!" con formateo de string</span><br><br>
-					<span class="funNombre">fprintf</span> <span class="caracterEspecial">(<span class="tipoDato">stdout</span>, <span class="comilla">"</span><span class="string">Hola <span class="cespecial">%i</span>!</span><span class="cespecial">\n</span><span class="comilla">"</span><span class="caracterEspecial">,</span> <span class="numero">10</span>);</span><span class="coment"> // Imprime "Hola 10!" con formateo de número entero</span><br><br>
-					<span class="funNombre">fprintf</span> <span class="caracterEspecial">(<span class="tipoDato">stdout</span>, <span class="comilla">"</span><span class="string">Hola <span class="cespecial">%s</span> <span class="cespecial">%i</span>!</span><span class="cespecial">\n</span><span class="comilla">"</span><span class="caracterEspecial">,</span> <span class="comilla">"</span><span class="string">Lola</span><span class="comilla">"</span><span class="caracterEspecial">,</span> <span class="numero">10</span>);</span><span class="coment"> // Imprime "Hola Lola 10!" con formateo de string y de número entero</span>
+					<span class="fun-nombre">fprintf</span> <span class="puntuacion">(<span class="tipo-dato">stdout</span>, <span class="comilla">"</span><span class="string">Hola mundo!</span><span class="cespecial">\n</span><span class="comilla">"</span>);</span> <span class="coment">// Imprime por consola "Hola mundo!"</span><br><br>
+					<span class="fun-nombre">fprintf</span> <span class="puntuacion">(<span class="tipo-dato">stdout</span>, <span class="comilla">"</span><span class="string">Hola <span class="cespecial">%s</span>!</span><span class="cespecial">\n</span><span class="comilla">"</span><span class="puntuacion">,</span> <span class="comilla">"</span><span class="string">Lola</span><span class="comilla">"</span>);</span><span class="coment"> // Imprime "Hola Lola!" con formateo de string</span><br><br>
+					<span class="fun-nombre">fprintf</span> <span class="puntuacion">(<span class="tipo-dato">stdout</span>, <span class="comilla">"</span><span class="string">Hola <span class="cespecial">%i</span>!</span><span class="cespecial">\n</span><span class="comilla">"</span><span class="puntuacion">,</span> <span class="numero">10</span>);</span><span class="coment"> // Imprime "Hola 10!" con formateo de número entero</span><br><br>
+					<span class="fun-nombre">fprintf</span> <span class="puntuacion">(<span class="tipo-dato">stdout</span>, <span class="comilla">"</span><span class="string">Hola <span class="cespecial">%s</span> <span class="cespecial">%i</span>!</span><span class="cespecial">\n</span><span class="comilla">"</span><span class="puntuacion">,</span> <span class="comilla">"</span><span class="string">Lola</span><span class="comilla">"</span><span class="puntuacion">,</span> <span class="numero">10</span>);</span><span class="coment"> // Imprime "Hola Lola 10!" con formateo de string y de número entero</span>
 				</div>
-				Aunque en el ejemplo no sea así, lo normal en el formateo de strings en <span class="funNombre">fprintf</span> <span class="caracterEspecial">()</span> es añadir como parámetros (cualquiera menos el primero, que siempre es un canal o el segundo, que siempre es una cadena) los valores de variables.
+				Aunque en el ejemplo no sea así, lo normal en el formateo de strings en <span class="fun-nombre">fprintf</span> <span class="puntuacion">()</span> es añadir como parámetros (cualquiera menos el primero, que siempre es un canal o el segundo, que siempre es una cadena) los valores de variables.
 			</div>
 		</div>
 	</div>
