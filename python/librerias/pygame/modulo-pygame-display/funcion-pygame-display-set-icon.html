@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="../../../../img/imglib/Python/PyGame.png">
+	<link rel="stylesheet" type="text/css" href="../../../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../../../bootstrap/css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="../../../../index.css">
+	<title>pygame.display.set_icon () - Python</title>
+</head>
+<body class="bg-pygame-suave py">
+	<nav class="navbar navbar-expand-sm bg-pygame text-light mb-0 p-4 bordeInf">
+		<a href="#" class="navbar-brand">
+			<img src="../../../../img/imglib/Python/PyGame.png" class="logo rounded float-right">
+		</a>
+		<h1>PyGame</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../../../">Menu</a> / 
+			<a href="../../../">Python</a> / 
+			<a href="../../">Librerías</a> / 
+			<a href="../">PyGame</a> / 
+			<a href="./">Módulo pygame.display</a> / 
+			Función pygame.display.set_icon ()
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-pygame text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Función pygame.display.set_icon - Python</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				La función pygame.display.<span class="fun-nombre">set_icon</span> () establece un icono en la ventana inicializada por PyGame. <br><br>
+				Su único parámetro es la propia imagen ya cargada como superficie de pygame. <br><br>
+				<div class="alert alert-success border border-success ov-auto">
+					Sintaxis: <br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="puntuacion">pygame.display.</span><span class="fun-nombre">set_icon</span> <span class="puntuacion">(<span class="nombreParametro">source</span>)</span>
+					</div>
+				</div>
+				Referencia: <br><br>
+				<ul>
+					<li>
+						<h5>Source: </h5>Es una <u>superficie</u> (<span class="tipo-dato">Surface</span>), es la imagen previamente cargada en una superficie de PyGame. <br><br>
+					</li>
+				</ul><br>
+				<div class="alert alert-success border border-success ov-auto">
+					Retorno: <br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="tipo-dato">None</span> <span class="puntuacion">(<span class="tipo-dato">NoneType</span>)</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-pygame text-light rounded sticky-top bordeInf rounded-0">
+				<h1>Uso de pygame.display.set_icon - Python</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				Uso de pygame.display.<span class="fun-nombre">set_icon</span> ():<br><br>
+				<div class="alert alert-light border ov-auto">
+					<span class="import">import</span> <span class="puntuacion">pygame</span><br><br>
+					<span class="puntuacion">pygame.</span><span class="fun-nombre">init</span> <span class="puntuacion">()</span><br>
+					<span class="puntuacion">pantalla = pygame.display.</span><span class="fun-nombre">set_mode</span><span class="puntuacion">((<span class="numero">500</span>, <span class="numero">500</span>))</span> // Fijo el ancho y el alto de la ventana a <span class="numero">500</span><br>
+					<span class="puntuacion">pantalla = pygame.display.</span><span class="fun-nombre">set_icon</span><span class="puntuacion">(pygame.image.<span class="fun-nombre">load</span> (<span class="comilla">'</span><span class="string">ruta/a/la/imagen.png</span><span class="comilla">'</span>))</span> // Fija la imgaen de icono<br><br>
+					<span class="puntuacion">salir = </span><span class="bool">False</span><br><br>
+					<span class="cond">while</span> <span class="fun-nombre">not</span> <span class="puntuacion">(salir):</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="cond">for</span> <span class="puntuacion">event</span> <span class="cond">in</span> <span class="puntuacion">pygame.event.</span><span class="fun-nombre">get</span> <span class="puntuacion">():</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cond">if</span> <span class="puntuacion">event.type == pygame.QUIT:</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="puntuacion">salir = </span><span class="bool">True</span><br>
+					<span class="puntuacion">pygame.</span><span class="fun-nombre">quit</span> <span class="puntuacion">()</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
