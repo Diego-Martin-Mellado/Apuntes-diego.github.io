@@ -288,12 +288,12 @@ html, body {
 	background-color: #99F0E0;
 }
 
-.bg-skeleton, .bg-watchdog {
+.bg-skeleton, .bg-watchdog, .bg-flask {
 	background-color: #000000;
 	color: #FFFFFF;
 }
 
-.bg-skeleton-suave, .bg-watchdog-suave {
+.bg-skeleton-suave, .bg-watchdog-suave, .bg-flask-suave {
 	background-color: #444444;
 }
 
@@ -311,6 +311,14 @@ html, body {
 
 .bg-php-suave, .bg-r-suave {
 	background-color: #4F94EC;
+}
+
+.bg-django {
+	background-color: #092C1E;
+}
+
+.bg-django-suave  {
+	background-color: #29A071;
 }
 
 /*--------------------------------------------------------------------------------------------------------*/
