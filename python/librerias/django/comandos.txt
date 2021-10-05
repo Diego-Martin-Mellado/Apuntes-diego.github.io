@@ -1,0 +1,4 @@
+django-admin startproject primeraweb (Crea el servidor)
+cd primeraweb
+python manage.py runserver (Enciende el servidor)
+py manage.py startapp blog (Crea una app)
