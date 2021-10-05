@@ -30,13 +30,28 @@
 				<h1>Función path - Python</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				La función django.urls.<span class="fun-nombre">path</span> () crea y retorna un elemento para incluirlo en el array <u><em>urlpatterns</em></u> que está en el archivo auto-generado <span class="border border-dark px-2 rounded puntuacion">urls.py</span>.
+				La función django.urls.<span class="fun-nombre">path</span> () crea y retorna un elemento para incluirlo en el array <u><em>urlpatterns</em></u> que está en el archivo auto-generado <span class="border border-dark px-2 rounded puntuacion">urls.py</span>. <br><br>
 				<div class="alert alert-success border border-success ov-auto">
 					Sintaxis:
 					<div class="alert alert-light border ov-auto">
-						<span class="puntuacion">django.urls.</span><span class="fun-nombre">path</span><span class="puntuacion">(</span><span class="nombreParametro">route</span>: <span class="tipo-dato">str</span>, <span class="nombreParametro">view</span>: (<span class="cond">*</span><span class="nombreParametro">args</span>: <span class="tipo-dato">Any</span>, <span class="cond">**</span><span class="nombreParametro">kwargs</span>: <span class="tipo-dato">Any</span>) -> <span class="tipo-dato">HttpResponseBase</span>, <span class="nombreParametro"></span>kwargs</span></span>: <span class="tipo-dato">Dict</span>[<span class="tipo-dato">str</span>, <span class="tipo-dato">Any</span>] = ..., <span class="nombreParametro">name</span>: <span class="tipo-dato">str</span> = ...<span class="puntuacion">)</span>
+						<span class="puntuacion">django.urls.</span><span class="fun-nombre">path</span> <span class="puntuacion">(<span class="nombreParametro">route</span>: <span class="tipo-dato">str</span>, <span class="nombreParametro">view</span>: (<span class="cond">*</span><span class="nombreParametro">args</span>: <span class="tipo-dato">Any</span>, <span class="cond">**</span><span class="nombreParametro">kwargs</span>: <span class="tipo-dato">Any</span>) -> <span class="tipo-dato">HttpResponseBase</span>, <span class="nombreParametro">kwargs</span>: <span class="tipo-dato">Dict</span>[<span class="tipo-dato">str</span>, <span class="tipo-dato">Any</span>] = ..., <span class="nombreParametro">name</span>: <span class="tipo-dato">str</span> = ...)</span>
 					</div>
 				</div>
+				Referencia:
+				<ul>
+					<li>
+						<h5>Route:</h5> Establece el recurso que debe indicar la URL para que se muestre la vista.
+					</li>
+					<li>
+						<h5>View:</h5> Es una función que retorna el recurso (Que es de tipo <span class="tipo-dato">HttpResponseBase</span>, el cual es un tipo de dato base de muchos otros posibles retornos).
+					</li>
+					<li>
+						<h5>Kwargs:</h5> Argumentos arbitrarios pasados indicando claves y valores.
+					</li>
+					<li>
+						<h5>Name:</h5> Nombre del patrón (A discreción).
+					</li>
+				</ul>
 				<div class="alert alert-success border border-success ov-auto">
 					Retorno:
 					<div class="alert alert-light border ov-auto">
@@ -47,49 +62,16 @@
 		</div>
 		<div class="seccion">
 			<div class="seccion-titulo p-2 bg-django text-light rounded sticky-top bordeInf rounded-0">
-				<h1>Módulos de Django - Python</h1>
+				<h1>Ejemplos de path - Python</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				<style type="text/css">
-					.todo {
-						height: 700px;
-						margin: 0;
-						padding: 0;
-						width: 100%;
-						background-image: url("../../../img/lupa.png");
-						background-position: center;
-						background-repeat: no-repeat;
-						background-size: cover;
-					}
-					.todo > div {
-						height: 100%;
-						margin-left: 20%;
-						margin-right: 20%;
-						padding-top: 15%;
-						width: 60%;
-					}
-					.todo > div > h1 {
-						font-size: 80px;
-						color: black;
-					}
-					.todo > div > p {
-						font-size: 30px;
-						color: grey;
-					}
-					.todo > div > p.dos {
-						font-size: 20px;
-						color: grey;
-					}
-				</style>
-				<div class="todo">
-					<div>
-						<h1>Oops...</h1><br>
-						<p>El administrador aún no ha introducido contenido en esta sección...</p>
-						<p class="dos">Recuerda en todo momento que puedes solicitar que se añada algo en específico a la página.</p>
-						<div align="center">
-							<a href="mailto:diemarmel14@gmail.com?subject=Añade a los apuntes..." class="btn btn-light rounded-0">Solicitar que se añada algo a la página.</a>
-						</div>
-					</div>
+				Ejemplo de uso de la función django.urls.<span class="fun-nombre">path</span> ():
+				<div class="alert alert-light border ov-auto">
+					<span class="import">from</span> <span class="puntuacion">django.contrib</span> <span class="import">import</span> <span class="puntuacion">admin</span><br>
+					<span class="import">import</span> <span class="puntuacion">django.urls</span><br><br>
+					<span class="puntuacion">urlpatterns = [</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="puntuacion">django.urls.</span><span class="fun-nombre">path</span> <span class="puntuacion">(<span class="comilla">'</span><span class="string">blog/</span><span class="comilla">'</span>, django.urls.<span class="fun-nombre">include</span> (<span class="comilla">'</span><span class="string">blog.urls</span><span class="comilla">'</span>)),</span><br>
+					<span class="puntuacion">]</span>
 				</div>
 			</div>
 		</div>
