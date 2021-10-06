@@ -28,12 +28,34 @@
 				<h1>Django - Python</h1>
 			</div>
 			<div class="seccion-contenido p-4">
+				Django es un framework de alto nivel dedicado al desarrollo web con Python. Django se encarga de gran parte de las complicaciones del desarrollo web, por lo que con poco código puedes obtener grandes resultados. <br><br>
+				Django es gratis y de código abierto, tiene una comunidad muy activa, una buena documentación y muchas opciones de soporte. <br><br>
+				Se basa en el modelo de programación MVT (Model View Template) (Modelo Vista Plantilla en castellano). <br><br>
+				<div class="alert alert-warning border border-warning ov-auto">
+					<h4>Modelo Vista Template (MVT):</h4>
+					<div>
+						Éste modelo de programación se basa en recibir la petición del cliente o visitante web, se pasará a la vista, en la vista recuperaremos los datos del modelo correspondiente, y finalmente la renderizaremos el Template pero esta vez integrando los datos dinámicos recuperados del modelo, antes de enviar el HTML final al navegador.
+					</div>
+				</div>
+				La versión de Python mínima requerida para utilizar <u>Django</u> es <span class="border border-dark px-2 rounded puntuacion">3.6</span>. <br><br>
 				<div class="alert alert-success border border-success ov-auto">
 					Instalación:<br><br>
 					<div class="alert border border-dark ov-auto" style="background-color: #000000;">
 						<span class="text-success">~$:</span> <span class="text-warning">pip</span> <span class="text-light">install django</span>
 					</div>
 				</div>
+				Dependencias:
+				<ul>
+					<li>
+						<span class="border border-dark px-2 rounded puntuacion">pytz</span>
+					</li>
+					<li>
+						<span class="border border-dark px-2 rounded puntuacion">sqlparse >= 0.2.2</span>
+					</li>
+					<li>
+						<span class="border border-dark px-2 rounded puntuacion">asgiref < 4 & asgiref >= 3.3.2</4></span>
+					</li>
+				</ul>
 			</div>
 		</div>
 		<div class="seccion">
