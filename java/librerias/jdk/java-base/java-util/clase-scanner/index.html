@@ -16,9 +16,40 @@
 	<link rel="stylesheet" type="text/css" href="../../../../../../bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../../../../../../index.css">
 	<title>Clase Scanner - Java</title>
+	<style type="text/css">
+		.todo {
+			height: 700px;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			background-image: url("../../../../../../img/lupa.png");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.todo > div {
+			height: 100%;
+			margin-left: 20%;
+			margin-right: 20%;
+			padding-top: 15%;
+			width: 60%;
+		}
+		.todo > div > h1 {
+			font-size: 80px;
+			color: black;
+		}
+		.todo > div > p {
+			font-size: 30px;
+			color: grey;
+		}
+		.todo > div > p.dos {
+			font-size: 20px;
+			color: grey;
+		}
+	</style>
 </head>
 <body class="bg-java-suave java">
-	<nav class="navbar navbar-expand-sm bg-java text-light mb-0 p-4 bordeInf">
+	<nav class="navbar navbar-expand-sm bg-java text-light mb-0 p-4 borde-inferior">
 		<a href="#" class="navbar-brand">
 			<img src="../../../../../../img/leng/Java.png" class="logo rounded-circle float-right">
 		</a>
@@ -35,13 +66,19 @@
 			Clase Scanner
 		</div>
 		<div class="seccion">
-			<div class="seccion-titulo p-2 bg-java text-light rounded sticky-top bordeInf rounded-0">
+			<div class="seccion-titulo p-2 bg-java text-light rounded sticky-top borde-inferior rounded-0">
 				<h1>Clase Scanner - Java.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				La clase <span class="fun-nombre">Scanner</span> se usa para obtener datos de entrada desde el usuario. <br><br>
+				La clase <span class="fun-nombre">Scanner</span> se usa para obtener datos de entrada desde el usuario o para leer archivos como si fueran iterables. <br><br>
 				<div class="alert alert-danger border-danger ov-auto">
-					Cada vez que se instancia la clase <span class="fun-nombre">Scanner</span>, se debe cerrar con el método <span class="fun-nombre">close</span> ().
+					Cada vez que se instancia la clase <span class="fun-nombre">Scanner</span>, se debe cerrar con el método <span class="fun-nombre">close</span> <span class="puntuacion">()</span> debido a que implementa las interfaces <span class="tipo-dato">AutoCloseable</span> y <span class="tipo-dato">Closeable</span>.
+				</div>
+				<div class="alert alert-success border border-success ov-auto">
+					Sintaxis:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="tipo-dato">Scanner</span> <span class="puntuacion">miTeclado = </span><span class="import">new</span> <span class="fun-nombre">Scanner</span><span class="puntuacion">(</span><span class="tipo-dato">InputStream</span> <span class="puntuacion">canal);</span>
+					</div>
 				</div>
 				<div class="alert alert-success border border-success ov-auto">
 					Sintaxis:<br><br>
@@ -53,36 +90,73 @@
 				<ul>
 					<li>Canal: </li>Archivo o fuente de información de la cual se va a extraer información.
 				</ul>
-				Si se está obteniendo información del input de una consola, que es donde normalmente se ejecuta ésta instrucción, el <span class="tipo-dato">InputStream</span> será <span class="fun-nombre">System</span>.<span class="tipo-dato">in</span>.
+				Si se está obteniendo información del input de una consola, que es donde normalmente se ejecuta ésta instrucción, el <span class="tipo-dato">InputStream</span> será <span class="fun-nombre">System</span>.<span class="tipo-dato">in</span>. <br><br>
+				<h4>Superinterfaces</h4>
+				<ul>
+					<li>AutoCloseable</li>
+					<li>Closeable</li>
+					<li>Iterator &lt;String&gt;</li>
+				</ul>
 			</div>
 		</div>
 		<div class="seccion">
-			<div class="seccion-titulo p-2 bg-java text-light rounded sticky-top bordeInf rounded-0">
+			<div class="seccion-titulo p-2 bg-java text-light rounded sticky-top borde-inferior rounded-0">
 				<h1>Clases y métodos de Scanner</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				<div class='row p-0 border'>	
-					<div class='col p-0'>
-						<a href='../../java-io/interfaz-closeable/metodo-close.html' class='btn btn-light w-100 rounded-0 p-3 ov-auto'>
-							<h3 class='float-left'>Método close ()</h3>
-							<br><br>
-							<p class='float-left text-secondary mb-0'>Método para cerrar el uso de un objeto de la clase Scanner, proviene de la interfaz 'Closeable'.</p>
-						</a>
+				<div class="seccion border mb-2">
+					<div class="seccion-titulo p-2 bg-java text-light rounded sticky-top borde-inferior rounded-0">
+						<h1>Heredados de AutoCloseable y Closeable.</h1>
+					</div>
+					<div class="seccion-contenido p-4">
+						<div class='row p-0 border'>	
+							<div class='col p-0'>
+								<a href='../../java-io/interfaz-closeable/metodo-close.html' class='btn btn-light w-100 rounded-0 p-3 ov-auto'>
+									<h3 class='float-left'>Método close ()</h3>
+									<br><br>
+									<p class='float-left text-secondary mb-0'>Método para cerrar el uso de un objeto de la clase Scanner, proviene de la interfaz 'Closeable'.</p>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class='row p-0 border'>
-					<div class='col p-0'>
-						<a href='./metodo-nextdouble.html' class='btn btn-light w-100 rounded-0 p-3 ov-auto'>
-							<h3 class='float-left'>Método nextDouble ()</h3>
-							<br><br>
-							<p class='float-left text-secondary mb-0'>Método de Scanner para leer números decimales.</p>
-						</a>
+				<div class="seccion border mb-2">
+					<div class="seccion-titulo p-2 bg-java text-light rounded sticky-top borde-inferior rounded-0">
+						<h1>Heredados de Iterator &lt;String&gt;.</h1>
+					</div>
+					<div class="seccion-contenido p-4">
+						<div class="todo">
+							<div>
+								<h1>Oops...</h1><br>
+								<p>El administrador aún no ha introducido contenido en esta sección...</p>
+								<p class="dos">Recuerda en todo momento que puedes solicitar que se añada algo en específico a la página.</p>
+								<div align="center">
+									<a href="mailto:diemarmel14@gmail.com?subject=Añade a los apuntes..." class="btn btn-light rounded-0">Solicitar que se añada algo a la página.</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="seccion border mb-2">
+					<div class="seccion-titulo p-2 bg-java text-light rounded sticky-top borde-inferior rounded-0">
+						<h1>Métodos propios.</h1>
+					</div>
+					<div class="seccion-contenido p-4">
+						<div class='row p-0 border'>
+							<div class='col p-0'>
+								<a href='./metodo-nextdouble.html' class='btn btn-light w-100 rounded-0 p-3 ov-auto'>
+									<h3 class='float-left'>Método nextDouble ()</h3>
+									<br><br>
+									<p class='float-left text-secondary mb-0'>Método de Scanner para leer números decimales.</p>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="seccion">
-			<div class="seccion-titulo p-2 bg-java text-light rounded sticky-top bordeInf rounded-0">
+			<div class="seccion-titulo p-2 bg-java text-light rounded sticky-top borde-inferior rounded-0">
 				<h1>Ejemplos de Scanner - Java.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
