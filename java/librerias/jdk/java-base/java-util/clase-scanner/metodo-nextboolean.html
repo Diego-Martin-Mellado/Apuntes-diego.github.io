@@ -3,19 +3,19 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta itemprop="name" content="java.util.Scanner.nextDouble - Java">
-	<meta itemprop="description" content="Escanea el siguiente token de la entrada como un doble.">
+	<meta itemprop="name" content="java.util.Scanner.nextBoolean - Java">
+	<meta itemprop="description" content="Escanea el siguiente token de la entrada como un valor booleano.">
 	<meta itemprop="image" content="../../../../../../img/leng/Java.png">
-	<meta name="twitter:title" content="java.util.Scanner.nextDouble - Java">
-	<meta name="twitter:description" content="Escanea el siguiente token de la entrada como un doble.">
+	<meta name="twitter:title" content="java.util.Scanner.nextBoolean - Java">
+	<meta name="twitter:description" content="Escanea el siguiente token de la entrada como un valor booleano.">
 	<meta name="twitter:image" content="../../../../../../img/leng/Java.png">
-	<meta property="og:title" content="java.util.Scanner.nextDouble - Java">
-	<meta property="og:description" content="Escanea el siguiente token de la entrada como un doble.">
+	<meta property="og:title" content="java.util.Scanner.nextBoolean - Java">
+	<meta property="og:description" content="Escanea el siguiente token de la entrada como un valor booleano.">
 	<meta property="og:image" content="../../../../../../img/leng/Java.png">
 	<link rel="shortcut icon" type="image/png" href="../../../../../../img/leng/Java.png">
 	<link rel="stylesheet" type="text/css" href="../../../../../../bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../../../../../../index.css">
-	<title>Método nextDouble - Java</title>
+	<title>Método nextBoolean - Java</title>
 </head>
 <body class="bg-java-suave java">
 	<nav class="navbar navbar-expand-sm bg-java text-light mb-0 p-4 borde-inferior">
@@ -33,22 +33,22 @@
 			<a href="../../">java.base</a> / 
 			<a href="../">java.util</a> / 
 			<a href="./">Clase Scanner</a> / 
-			Método nextDouble.
+			Método nextBoolean.
 		</div>
 		<div class="seccion">
 			<div class="seccion-titulo p-2 bg-java text-light rounded sticky-top borde-inferior rounded-0">
-				<h1>Método nextDouble - Java.</h1>
+				<h1>Método nextBoolean - Java.</h1>
 			</div>
 			<div class="seccion-contenido p-4">
-				<span class="fun-nombre">nextDouble</span> () es un método que está en la clase <span class="fun-nombre">Scanner</span> que se encuentra en la librería <span class="include">java.util</span> de Java.<br><br>
-				<span class="fun-nombre">nextDouble</span> () indica al objeto de clase <span class="fun-nombre">Scanner</span> que lo siguiente que introduzca el usuario será convertido a datos de tipo <span class="tipo-dato">double</span>. <br><br>
+				<span class="fun-nombre">nextBoolean</span> () es un método que está en la clase <span class="fun-nombre">Scanner</span> que se encuentra en la librería <span class="include">java.util</span> de Java.<br><br>
+				<span class="fun-nombre">nextBoolean</span> () indica al objeto de clase <span class="fun-nombre">Scanner</span> que lo siguiente que introduzca el usuario será convertido a datos de tipo <span class="tipo-dato">boolean</span>. <br><br>
 				<div class="alert alert-danger border-danger ov-auto">
-					Si el usuario introduce un dato que no es <span class="tipo-dato">double</span>, <span class="fun-nombre">nextDouble</span> <span class="puntuacion">()</span> resultará un error que finalizará el programa.
+					Si el usuario introduce un dato que no es <span class="tipo-dato">boolean</span>, <span class="fun-nombre">nextBoolean</span> <span class="puntuacion">()</span> resultará un error que finalizará el programa.
 				</div>
 				<div class="alert alert-success border border-success ov-auto">
 					Sintaxis:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="fun-nombre">Scanner</span><span class="puntuacion">.</span><span class="fun-nombre">nextDouble</span> <span class="puntuacion">();</span>
+						<span class="fun-nombre">Scanner</span><span class="puntuacion">.</span><span class="fun-nombre">nextBoolean</span> <span class="puntuacion">();</span>
 					</div>
 				</div>
 				<div class="alert alert-success border border-success ov-auto">
@@ -72,22 +72,24 @@
 							</li>
 						</ul>
 					</div>
+				</div>
 			</div>
 		</div>
 		<div class="seccion">
 			<div class="seccion-titulo p-2 text-light bg-java rounded sticky-top borde-inferior rounded-0">
-				<h1>Ejemplos de uso de nextDouble</h1>
+				<h1>Ejemplos de uso de nextBoolean</h1>
 			</div>
 			<div class="seccion-content p-4">
-				Uso del método <span class="fun-nombre">Scanner</span>.<span class="fun-nombre">nextDouble</span> ():<br><br>
+				Uso del método <span class="fun-nombre">Scanner</span>.<span class="fun-nombre">nextBoolean</span> ():<br><br>
 				<div class="alert alert-light border ov-auto">
 					<span class="import">public</span> <span class="tipo-dato">class</span> <span class="puntuacion">Programa {</span><br>
 					&nbsp;&nbsp;<span class="import">public static</span> <span class="tipo-dato">void</span> <span class="puntuacion">main (</span><span class="tipo-dato">String</span> <span class="puntuacion">[] args) {</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="tipo-dato">double</span> <span class="puntuacion">numero;</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="tipo-dato">Scanner</span> <span class="puntuacion">teclado = </span><span class="import">new</span> <span class="fun-nombre">Scanner</span><span class="puntuacion">(<span class="fun-nombre">System</span>.<span class="tipo-dato">in</span>);</span> // Creo el teclado<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="fun-nombre">System</span><span class="puntuacion">.</span><span class="fun-nombre">out</span><span class="puntuacion">.</span><span class="fun-nombre">println</span> <span class="puntuacion">(</span><span class="comilla">"</span><span class="string">Introduce un double: </span><span class="comilla">"</span><span class="puntuacion">);</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="puntuacion">numero = teclado.</span><span class="fun-nombre">nextDouble</span><span class="puntuacion">();</span> // Recoje un <span class="tipo-dato">double</span><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="puntuacion">teclado.</span><span class="fun-nombre">close</span><span class="puntuacion">();</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="tipo-dato">boolean</span> <span class="puntuacion">condicion;</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="tipo-dato">Scanner</span> <span class="puntuacion">teclado = </span><span class="import">new</span> <span class="fun-nombre">Scanner</span> <span class="puntuacion">(<span class="fun-nombre">System</span>.<span class="tipo-dato">in</span>);</span> // Creo el teclado<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="fun-nombre">System</span><span class="puntuacion">.</span><span class="fun-nombre">out</span><span class="puntuacion">.</span><span class="fun-nombre">println</span> <span class="puntuacion">(</span><span class="comilla">"</span><span class="string">Introduce un booleano válido: </span><span class="comilla">"</span><span class="puntuacion">);</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="puntuacion">condicion = teclado.</span><span class="fun-nombre">nextBoolean</span> <span class="puntuacion">();</span> // Recoje un <span class="tipo-dato">double</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;// Random stuff con el booleano <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="puntuacion">teclado.</span><span class="fun-nombre">close</span> <span class="puntuacion">();</span><br>
 					&nbsp;&nbsp;<span class="puntuacion">}</span><br>
 					<span class="puntuacion">}</span>
 				</div>

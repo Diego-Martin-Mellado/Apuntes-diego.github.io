@@ -75,15 +75,15 @@
 					Cada vez que se instancia la clase <span class="fun-nombre">Scanner</span>, se debe cerrar con el método <span class="fun-nombre">close</span> <span class="puntuacion">()</span> debido a que implementa las interfaces <span class="tipo-dato">AutoCloseable</span> y <span class="tipo-dato">Closeable</span>.
 				</div>
 				<div class="alert alert-success border border-success ov-auto">
-					Sintaxis:<br><br>
+					Definición:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="tipo-dato">Scanner</span> <span class="puntuacion">miTeclado = </span><span class="import">new</span> <span class="fun-nombre">Scanner</span><span class="puntuacion">(</span><span class="tipo-dato">InputStream</span> <span class="puntuacion">canal);</span>
+						<span class="tipo-dato">public class</span> <span class="puntuacion">Scanner</span> <span class="tipo-dato">extends</span> <span class="puntuacion">Object</span> <span class="tipo-dato">implements</span> <span class="puntuacion">Closeable, Iterator &lt;<span class="tipo-dato">String</span>&gt; {}</span>
 					</div>
 				</div>
 				<div class="alert alert-success border border-success ov-auto">
 					Sintaxis:<br><br>
 					<div class="alert alert-light border ov-auto">
-						<span class="tipo-dato">Scanner</span> <span class="puntuacion">miTeclado = </span><span class="import">new</span> <span class="fun-nombre">Scanner</span><span class="puntuacion">(</span><span class="tipo-dato">InputStream</span> <span class="puntuacion">canal);</span>
+						<span class="tipo-dato">Scanner</span> <span class="puntuacion">miTeclado = </span><span class="import">new</span> <span class="fun-nombre">Scanner</span> <span class="puntuacion">(</span><span class="tipo-dato">InputStream</span> <span class="puntuacion">canal);</span>
 					</div>
 				</div>
 				Referencia:
@@ -142,6 +142,15 @@
 						<h1>Métodos propios.</h1>
 					</div>
 					<div class="seccion-contenido p-4">
+						<div class='row p-0 border'>
+							<div class='col p-0'>
+								<a href='./metodo-nextboolean.html' class='btn btn-light w-100 rounded-0 p-3 ov-auto'>
+									<h3 class='float-left'>Método nextBoolean ()</h3>
+									<br><br>
+									<p class='float-left text-secondary mb-0'>Método de Scanner para leer datos booleanos.</p>
+								</a>
+							</div>
+						</div>
 						<div class='row p-0 border'>
 							<div class='col p-0'>
 								<a href='./metodo-nextdouble.html' class='btn btn-light w-100 rounded-0 p-3 ov-auto'>

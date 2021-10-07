@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta itemprop="name" content="java.util.Iterator - Java">
+	<meta itemprop="description" content="Indica que la clase en la que se implementa es iterable por un bulcle 'for :'.">
+	<meta itemprop="image" content="../../../../../../img/leng/Java.png">
+	<meta name="twitter:title" content="java.util.Iterator - Java">
+	<meta name="twitter:description" content="Indica que la clase en la que se implementa es iterable por un bulcle 'for :'.">
+	<meta name="twitter:image" content="../../../../../../img/leng/Java.png">
+	<meta property="og:title" content="java.util.Iterator - Java">
+	<meta property="og:description" content="Indica que la clase en la que se implementa es iterable por un bulcle 'for :'.">
+	<meta property="og:image" content="../../../../../../img/leng/Java.png">
+	<link rel="shortcut icon" type="image/png" href="../../../../../../img/leng/Java.png">
+	<link rel="stylesheet" type="text/css" href="../../../../../../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../../../../../index.css">
+	<title>Interfaz Iterable - Java</title>
+	<style type="text/css">
+		.todo {
+			height: 700px;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			background-image: url("../../../../../../img/lupa.png");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.todo > div {
+			height: 100%;
+			margin-left: 20%;
+			margin-right: 20%;
+			padding-top: 15%;
+			width: 60%;
+		}
+		.todo > div > h1 {
+			font-size: 80px;
+			color: black;
+		}
+		.todo > div > p {
+			font-size: 30px;
+			color: grey;
+		}
+		.todo > div > p.dos {
+			font-size: 20px;
+			color: grey;
+		}
+	</style>
+</head>
+<body class="bg-java-suave java">
+	<nav class="navbar navbar-expand-sm bg-java text-light mb-0 p-4 borde-inferior">
+		<a href="#" class="navbar-brand">
+			<img src="../../../../../../img/leng/Java.png" class="logo rounded-circle float-right">
+		</a>
+		<h1>Java</h1>
+	</nav>
+	<div class="container bg-light p-0 mb-5">
+		<div class="ruta bg-light p-3">
+			<a href="../../../../../../">Menu</a> / 
+			<a href="../../../../../">Java</a> / 
+			<a href="../../../../">Librerías</a> / 
+			<a href="../../../">JDK</a> / 
+			<a href="../../">java.base</a> / 
+			<a href="../">java.util</a> / 
+			Interfaz Iterable
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-java text-light rounded sticky-top borde-inferior rounded-0">
+				<h1>Interfaz Iterable - Java.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				La interfaz <span class="tipo-dato">iterable</span> se usa para indicar que un objeto se puede recorrer con un bucle o representa una colección. <br><br>
+				<div class="alert alert-success border border-success ov-auto">
+					Definición:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="tipo-dato">public interface</span> <span class="puntuacion">Iterator</span> <span class="puntuacion">&lt;<span class="tipo-dato">E</span>&gt; {}</span>
+					</div>
+				</div>
+				Parámetros plantilla:
+				<ul>
+					<li>
+						<h6>E:</h6> Tipo de dato por el cual se itera.
+					</li>
+				</ul>
+				<div class="alert alert-success border border-success ov-auto">
+					Implementación:<br><br>
+					<div class="alert alert-light border ov-auto">
+						<span class="tipo-dato">public class</span> <span class="puntuacion">MyClass</span> <span class="tipo-dato">implements</span> <span class="puntuacion">Iterator</span> <span class="puntuacion">&lt;<span class="tipo-dato">Object</span>&gt; { ... }</span>
+					</div>
+				</div>
+				Referencia:
+				<ul>
+					<li>
+						<h6>Canal: </h6>Archivo o fuente de información de la cual se va a extraer información.
+					</li>
+				</ul>
+				<h4>Superinterfaces</h4>
+				<ul>
+					<li>AutoCloseable</li>
+					<li>Closeable</li>
+					<li>Iterator &lt;String&gt;</li>
+				</ul>
+			</div>
+		</div>
+		<div class="seccion">
+			<div class="seccion-titulo p-2 bg-java text-light rounded sticky-top borde-inferior rounded-0">
+				<h1>Métodos de Iterator &lt;T&gt;.</h1>
+			</div>
+			<div class="seccion-contenido p-4">
+				<div class='row p-0 border'>
+					<div class='col p-0'>
+						<a class='btn btn-light w-100 rounded-0 p-3 ov-auto'>
+							<h3 class='float-left'>Método forEachRemaining ()</h3>
+							<br><br>
+							<p class='float-left text-secondary mb-0'>Realiza la acción dada para cada elemento restante hasta que todos los elementos hayan sido procesados ​​o la acción arroje una excepción.</p>
+						</a>
+					</div>
+				</div>
+				<div class='row p-0 border'>
+					<div class='col p-0'>
+						<a class='btn btn-light w-100 rounded-0 p-3 ov-auto'>
+							<h3 class='float-left'>Método hasNext ()</h3>
+							<br><br>
+							<p class='float-left text-secondary mb-0'>Retorna un booleano que indica si existe un siguiente elemento en la iteración.</p>
+						</a>
+					</div>
+				</div>
+				<div class='row p-0 border'>
+					<div class='col p-0'>
+						<a class='btn btn-light w-100 rounded-0 p-3 ov-auto'>
+							<h3 class='float-left'>Método next ()</h3>
+							<br><br>
+							<p class='float-left text-secondary mb-0'>Retorna el siguiente elemento en la iteración.</p>
+						</a>
+					</div>
+				</div>
+				<div class='row p-0 border'>
+					<div class='col p-0'>
+						<a class='btn btn-light w-100 rounded-0 p-3 ov-auto'>
+							<h3 class='float-left'>Método remove ()</h3>
+							<br><br>
+							<p class='float-left text-secondary mb-0'>Elimina de la colección subyacente el último elemento devuelto por este iterador (operación opcional)..</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
