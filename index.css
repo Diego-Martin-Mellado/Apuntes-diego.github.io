@@ -288,6 +288,13 @@ html, body {
 	background-color: #99F0E0;
 }
 
+.bg-expressjs {
+	background-color: #353535;
+}
+.bg-expressjs-suave {
+	background-color: #6d6d6d;
+}
+
 .bg-skeleton, .bg-watchdog, .bg-flask {
 	background-color: #000000;
 	color: #FFFFFF;
